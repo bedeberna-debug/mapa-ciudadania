@@ -1,0 +1,10 @@
+{
+  "name": "mapa-ciudadania",
+  "version": "0.1.0",
+  "private": true,
+  "description": "El Estado abierto, explicado — versión Ciudadanía del Mapa del Sistema (marco normativo chileno de Gobierno Abierto)",
+  "scripts": {
+    "dev": "node server.js",
+    "sync": "node scripts/sync-data.js"
+  }
+}

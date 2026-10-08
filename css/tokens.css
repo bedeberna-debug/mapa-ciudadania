@@ -1,0 +1,41 @@
+/* tokens.css — Gramática visual compartida con la versión Estudio.
+   Los colores por tipo de nodo y de arista son IDÉNTICOS a
+   mapa-del-sistema/css/app.css, para que ambas apps se reconozcan como familia.
+   Lo que cambia aquí: contraste, escala tipográfica y espaciados (audiencia móvil). */
+:root {
+  /* --- colores por tipo de nodo (compartidos, no modificar) --- */
+  --c-norma: #1e6fd9;
+  --c-institucion: #8e44ad;
+  --c-horizonte: #1e9e6a;
+  --c-nivel: #c98a1e;
+
+  /* --- colores por tipo de arista (compartidos, no modificar) --- */
+  --c-modifica: #d64541;
+  --c-desarrolla: #1e6fd9;
+  --c-complementa: #6b7a8d;
+  --c-opera: #8e44ad;
+  --c-soporte: #1e9e6a;
+  --c-territorio: #c98a1e;
+  --c-responsable: #d63384;
+  --alerta: #b3261e;
+
+  /* --- paleta Ciudadanía: mayor contraste y legibilidad --- */
+  --fondo: #fdfbf6;
+  --panel: #ffffff;
+  --tinta: #182634;       /* más oscuro que Estudio (#22303c): contraste AA */
+  --tenue: #46586a;       /* más oscuro que Estudio (#6b7a8d): texto secundario legible */
+  --linea: #d9d4c7;
+  --acento: #155bb5;      /* derivado de --c-norma, más oscuro para texto sobre blanco */
+  --acento-suave: #e8f0fb;
+
+  /* --- escala tipográfica ciudadana (móvil primero) --- */
+  --fs-base: 1.0625rem;   /* 17px */
+  --fs-grande: 1.25rem;
+  --fs-titulo: 1.6rem;
+  --fs-hero: clamp(1.9rem, 5.5vw, 2.8rem);
+  --lh-base: 1.65;
+
+  --radio: 12px;
+  --sombra: 0 2px 10px rgba(24, 38, 52, .10);
+  --toque: 48px;          /* altura mínima de objetivos táctiles */
+}

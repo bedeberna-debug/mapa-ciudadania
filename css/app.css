@@ -1,0 +1,223 @@
+/* app.css — Chrome de la versión Ciudadanía. Mobile-first. */
+* { box-sizing: border-box; }
+html { font-size: 100%; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size: var(--fs-base);
+  line-height: var(--lh-base);
+  background: var(--fondo);
+  color: var(--tinta);
+}
+
+/* --- barra superior --- */
+.barra {
+  position: sticky; top: 0; z-index: 20;
+  display: flex; align-items: center; gap: .8rem;
+  padding: .55rem 1rem;
+  background: var(--panel); border-bottom: 1px solid var(--linea);
+  flex-wrap: wrap;
+}
+.marca { min-width: 0; }
+.marca h1 { font-size: 1.1rem; margin: 0; line-height: 1.2; }
+.marca .sub { margin: 0; font-size: .78rem; color: var(--tenue); }
+.vistas {
+  display: flex; gap: .35rem; margin-left: auto;
+  overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%;
+}
+.vistas a {
+  text-decoration: none; color: var(--tinta);
+  padding: .5rem .95rem; min-height: 44px; display: inline-flex; align-items: center;
+  border-radius: 999px; font-size: .92rem; white-space: nowrap;
+  border: 1px solid transparent;
+}
+.vistas a.activa { background: var(--acento); color: #fff; }
+.vistas a:hover { border-color: var(--linea); }
+.chip-version {
+  font-size: .72rem; color: var(--tenue); border: 1px solid var(--linea);
+  border-radius: 999px; padding: .2rem .7rem; white-space: nowrap;
+}
+
+/* --- layout --- */
+.layout { display: flex; flex-direction: column; min-height: calc(100vh - 120px); }
+.vista { flex: 1; padding: 1rem 1rem 2rem; }
+@media (min-width: 900px) {
+  .layout { flex-direction: row; }
+  .vista { padding: 1.4rem 1.8rem 2rem; }
+}
+
+/* --- panel de detalle: hoja inferior en móvil, panel lateral en escritorio --- */
+.panel {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
+  max-height: 78vh; overflow-y: auto;
+  background: var(--panel);
+  border-top: 1px solid var(--linea);
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -6px 24px rgba(24, 38, 52, .18);
+}
+.panel.oculto { display: none; }
+@media (min-width: 900px) {
+  .panel {
+    position: sticky; top: 0; align-self: flex-start;
+    width: 480px; max-width: 44vw; max-height: calc(100vh - 120px);
+    border-top: 0; border-left: 1px solid var(--linea);
+    border-radius: 0; box-shadow: none;
+  }
+}
+.panel-cab { display: flex; justify-content: flex-end; padding: .6rem .9rem 0; }
+.panel-cab button {
+  border: 1px solid var(--linea); background: var(--fondo); border-radius: 8px;
+  cursor: pointer; padding: .35rem .8rem; font-size: 1rem; min-height: 40px;
+}
+.panel-contenido { padding: 0 1.3rem 2.2rem; }
+
+/* --- pie --- */
+.pie {
+  display: flex; justify-content: space-between; gap: .6rem 1.2rem;
+  padding: .6rem 1rem; font-size: .78rem; color: var(--tenue);
+  border-top: 1px solid var(--linea); background: var(--panel); flex-wrap: wrap;
+}
+.pie a { color: var(--acento); }
+
+/* --- landing --- */
+.hero { max-width: 720px; margin: 0 auto; padding: 1.5rem 0 1rem; }
+.hero h2 { font-size: var(--fs-hero); line-height: 1.15; margin: 0 0 1rem; }
+.hero p { font-size: var(--fs-grande); line-height: 1.55; margin: 0 0 1rem; }
+.hero .tres-principios { display: grid; gap: .7rem; margin: 1.2rem 0 1.6rem; }
+@media (min-width: 700px) { .hero .tres-principios { grid-template-columns: repeat(3, 1fr); } }
+.principio {
+  background: var(--panel); border: 1px solid var(--linea); border-radius: var(--radio);
+  padding: .9rem 1rem;
+}
+.principio h3 { margin: 0 0 .3rem; font-size: 1.05rem; }
+.principio p { margin: 0; font-size: .95rem; color: var(--tenue); }
+.entradas { display: grid; gap: .9rem; margin-top: 1.4rem; }
+@media (min-width: 700px) { .entradas { grid-template-columns: 1fr 1fr; } }
+.entrada {
+  display: block; text-decoration: none; color: var(--tinta);
+  background: var(--panel); border: 2px solid var(--acento); border-radius: var(--radio);
+  padding: 1.1rem 1.2rem; min-height: var(--toque);
+}
+.entrada strong { display: block; font-size: var(--fs-grande); color: var(--acento); margin-bottom: .25rem; }
+.entrada span { font-size: .95rem; color: var(--tenue); }
+.entrada.secundaria { border-color: var(--linea); }
+.entrada.secundaria strong { color: var(--tinta); }
+.enlace-estudio { display: block; margin-top: 2rem; font-size: .85rem; color: var(--tenue); }
+
+/* --- texto de acompañamiento de cada vista --- */
+.titulo-vista { font-size: var(--fs-titulo); margin: 0 0 .6rem; line-height: 1.25; }
+.ayuda {
+  background: var(--acento-suave); border-radius: var(--radio);
+  padding: .75rem 1rem; margin: 0 0 1rem; font-size: .95rem; line-height: 1.5;
+}
+.intro { color: var(--tenue); font-size: .95rem; }
+.meta { color: var(--tenue); font-size: .85rem; }
+
+/* --- vista orden (capas por jerarquía) --- */
+.capa { margin-bottom: 1.4rem; }
+.capa-titulo {
+  font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; font-weight: 700;
+  color: var(--tinta); border-bottom: 2px solid var(--linea); padding-bottom: .25rem; margin-bottom: .2rem;
+}
+.capa-glosa { margin: .2rem 0 .6rem; font-size: .88rem; color: var(--tenue); }
+.capa-nodos { display: grid; grid-template-columns: 1fr; gap: .45rem; }
+@media (min-width: 700px) { .capa-nodos { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); } }
+
+/* --- vista temas (filtros con glosa) --- */
+.filtros { display: grid; grid-template-columns: 1fr; gap: .55rem; margin-bottom: 1rem; }
+@media (min-width: 700px) { .filtros { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); } }
+.filtros button {
+  display: flex; flex-direction: column; align-items: flex-start; gap: .15rem;
+  border: 1px solid var(--linea); background: var(--panel); border-radius: var(--radio);
+  padding: .7rem 1rem; cursor: pointer; font-size: 1rem; text-align: left;
+  min-height: var(--toque);
+}
+.filtros button span { font-size: .82rem; color: var(--tenue); }
+.filtros button.activo { background: var(--acento); border-color: var(--acento); }
+.filtros button.activo, .filtros button.activo span { color: #fff; }
+
+/* --- vista tiempo (slider) --- */
+.slider-fila { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+.slider-fila input[type=range] { flex: 1; min-height: var(--toque); accent-color: var(--acento); }
+.anio-actual { font-size: 1.8rem; font-weight: 700; min-width: 4.5rem; text-align: center; }
+.grupo-anio { margin-bottom: 1.2rem; }
+.grupo-anio h3 { margin: 0 0 .35rem; font-size: 1.05rem; color: var(--acento); }
+
+/* --- tarjetas de nodo --- */
+.tarjeta {
+  background: var(--panel); border: 1px solid var(--linea);
+  border-left: 5px solid var(--c-norma);
+  border-radius: var(--radio); padding: .7rem 1rem; margin: .5rem 0; cursor: pointer;
+}
+.tarjeta:hover { box-shadow: var(--sombra); }
+.tarjeta.institucion { border-left-color: var(--c-institucion); }
+.tarjeta.horizonte { border-left-color: var(--c-horizonte); }
+.tarjeta.nivel { border-left-color: var(--c-nivel); }
+.tarjeta .nombre { font-weight: 600; font-size: 1rem; line-height: 1.35; }
+.tarjeta .meta { font-size: .8rem; color: var(--tenue); margin-top: .2rem; }
+.alerta { color: var(--alerta); font-weight: 700; }
+.chip {
+  display: inline-block; font-size: .72rem; padding: .12rem .55rem; border-radius: 999px;
+  background: var(--fondo); border: 1px solid var(--linea); margin-right: .3rem;
+}
+
+/* --- grafo --- */
+#grafo-svg {
+  width: 100%; height: calc(100vh - 260px); min-height: 420px;
+  background: var(--panel); border: 1px solid var(--linea); border-radius: var(--radio);
+  touch-action: none;
+}
+.leyenda { display: flex; flex-wrap: wrap; gap: .55rem .9rem; font-size: .82rem; margin: .5rem 0 .8rem; }
+.leyenda .item { display: flex; align-items: center; gap: .35rem; cursor: pointer; user-select: none; min-height: 36px; }
+.leyenda .item.apagado { opacity: .35; }
+.leyenda .muestra { width: 24px; height: 4px; display: inline-block; border-radius: 2px; }
+.leyenda .punto { width: 14px; height: 14px; border-radius: 50%; display: inline-block; }
+.leyenda .meta { color: var(--tenue); flex-basis: 100%; cursor: default; }
+.nodo-svg { cursor: pointer; }
+.nodo-svg text { font-size: 11px; pointer-events: none; fill: var(--tinta); paint-order: stroke; stroke: var(--panel); stroke-width: 3px; }
+.atenuado { opacity: .12; }
+
+/* --- flujo guiado "Quiero resolver algo" --- */
+.rutas { display: grid; gap: .9rem; }
+@media (min-width: 700px) { .rutas { grid-template-columns: 1fr 1fr; } }
+.volver { color: var(--acento); text-decoration: none; font-size: .92rem; }
+.pasos { display: grid; gap: .6rem; }
+.tarjeta.paso { cursor: pointer; }
+.paso-porque { margin: .35rem 0 0; font-size: .92rem; color: var(--tenue); line-height: 1.5; }
+
+/* --- panel de detalle ciudadano --- */
+.detalle h2 { font-size: 1.25rem; line-height: 1.3; margin: .2rem 0 .5rem; }
+.detalle .desc { font-size: 1rem; line-height: 1.6; margin: .6rem 0; }
+.detalle .afecta {
+  background: var(--acento-suave); border-radius: var(--radio);
+  padding: .8rem 1rem; margin: .9rem 0;
+}
+.detalle .afecta h3 { margin: 0 0 .35rem; font-size: 1rem; }
+.detalle .afecta p { margin: .3rem 0; font-size: .95rem; }
+.detalle dl { font-size: .9rem; margin: .8rem 0; }
+.detalle dt { font-weight: 600; color: var(--tenue); font-size: .74rem; text-transform: uppercase; letter-spacing: .04em; }
+.detalle dd { margin: 0 0 .6rem; }
+.detalle .conexiones { list-style: none; padding: 0; margin: .5rem 0; }
+.detalle .conexiones li { margin-bottom: .5rem; font-size: .92rem; }
+.detalle .conexiones a { color: var(--acento); }
+.ev { display: block; font-size: .72rem; color: var(--tenue); font-style: italic; }
+.btn-tecnico {
+  display: inline-flex; align-items: center; margin-top: .8rem;
+  background: transparent; color: var(--acento);
+  border: 1px solid var(--acento); padding: .55rem 1.1rem; border-radius: 999px;
+  cursor: pointer; font-size: .92rem; min-height: var(--toque);
+}
+.btn-tecnico:hover { background: var(--acento-suave); }
+
+/* --- ficha técnica (contenido incrustado bajo demanda) --- */
+.ficha-tecnica { border-top: 1px dashed var(--linea); margin-top: 1.2rem; padding-top: .6rem; }
+.ficha h1 { font-size: 1.1rem; line-height: 1.35; }
+.ficha h2 { font-size: .98rem; color: var(--acento); margin-top: 1.2rem; }
+.ficha blockquote {
+  margin: .5rem 0; padding: .5rem .9rem; background: var(--fondo);
+  border-left: 3px solid var(--linea); font-size: .85rem; color: var(--tenue);
+}
+.ficha li, .ficha p { font-size: .95rem; line-height: 1.6; }
+.ficha hr { border: 0; border-top: 1px solid var(--linea); margin: 1rem 0 .5rem; }
+.ficha em { font-size: .76rem; color: var(--tenue); }
+.ficha code { font-size: .8rem; }
