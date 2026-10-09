@@ -40,6 +40,16 @@ if (!fs.existsSync(dirFichas)) {
   }
 }
 
+// PDFs oficiales / de referencia (directorio completo, si existe en Estudio)
+const dirPdfs = path.join(ORIGEN, 'pdfs');
+if (fs.existsSync(dirPdfs)) {
+  for (const f of fs.readdirSync(dirPdfs).filter(f => f.endsWith('.pdf'))) {
+    ok += copiar(path.join('pdfs', f), path.join('pdfs', f));
+  }
+} else {
+  console.log('  (sin carpeta pdfs/ en Estudio por ahora — se omite)');
+}
+
 console.log(`✓ Sincronización completa: ${ok} archivos copiados desde mapa-del-sistema/`);
 console.log('  Recordatorio: estos archivos son GENERADOS. Los errores de datos se reportan,');
 console.log('  se corrigen en el acervo (marco normativo/) y se recompilan — nunca se editan aquí.');

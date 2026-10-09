@@ -177,6 +177,55 @@ body {
 .nodo-svg text { font-size: 11px; pointer-events: none; fill: var(--tinta); paint-order: stroke; stroke: var(--panel); stroke-width: 3px; }
 .atenuado { opacity: .12; }
 
+/* --- página Compromisos internacionales --- */
+.seccion-int { max-width: 780px; }
+.seccion-int h3 { font-size: 1.15rem; margin: 1.5rem 0 .5rem; }
+.seccion-int > p { font-size: 1rem; line-height: 1.6; }
+.vias { display: grid; gap: .6rem; margin: .8rem 0; }
+@media (min-width: 700px) { .vias { grid-template-columns: 1fr 1fr; } }
+.via { background: var(--panel); border: 1px solid var(--linea); border-radius: var(--radio); padding: .85rem 1rem; }
+.via h4 { margin: 0 0 .25rem; font-size: .98rem; }
+.via p { margin: 0; font-size: .88rem; color: var(--tenue); line-height: 1.5; }
+.mensaje-clave {
+  background: var(--acento-suave); border-radius: var(--radio);
+  padding: .8rem 1rem; margin-top: .8rem; font-size: .95rem; line-height: 1.55;
+}
+.desplegable { background: var(--panel); border: 1px solid var(--linea); border-radius: var(--radio); margin: .7rem 0; }
+.desplegable summary {
+  cursor: pointer; padding: .9rem 1.1rem; font-weight: 600; font-size: 1.02rem;
+  min-height: var(--toque); display: flex; align-items: center; list-style-position: inside;
+}
+.desplegable[open] summary { border-bottom: 1px solid var(--linea); }
+.desplegable .cuerpo-des { padding: .8rem 1.1rem 1rem; }
+.desplegable .cuerpo-des p { font-size: .93rem; line-height: 1.55; margin: .5rem 0; }
+.meta-ods {
+  border-left: 3px solid var(--c-horizonte); padding: .4rem .85rem; margin: .5rem 0;
+  background: var(--fondo); border-radius: 0 8px 8px 0; font-size: .92rem; line-height: 1.5;
+}
+.meta-ods .num { font-weight: 700; color: var(--c-horizonte); }
+.cta-implementa {
+  display: inline-flex; align-items: center; margin-top: .6rem;
+  color: var(--acento); font-weight: 600; text-decoration: none; min-height: var(--toque);
+}
+.cta-implementa:hover { text-decoration: underline; }
+
+/* --- botón PDF en el panel --- */
+.btn-pdf {
+  display: inline-flex; align-items: center; margin-top: .8rem; margin-right: .6rem;
+  background: var(--acento); color: #fff; border: 0; padding: .55rem 1.1rem;
+  border-radius: 999px; cursor: pointer; font-size: .92rem; min-height: var(--toque);
+  text-decoration: none;
+}
+.btn-pdf:hover { filter: brightness(1.12); }
+
+/* --- créditos del pie --- */
+.pie-creditos {
+  flex-basis: 100%; font-size: .78rem; color: var(--tenue);
+  border-top: 1px dashed var(--linea); padding-top: .45rem; line-height: 1.6;
+}
+.pie-links { margin-left: .4rem; }
+.pie a { color: var(--acento); }
+
 /* --- flujo guiado "Quiero resolver algo" --- */
 .rutas { display: grid; gap: .9rem; }
 @media (min-width: 700px) { .rutas { grid-template-columns: 1fr 1fr; } }

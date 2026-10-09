@@ -42,6 +42,20 @@ const Panel = {
     div.appendChild(this.bloqueDatos(nodo, app));
     div.appendChild(this.listaConexiones(nodo, app));
 
+    // Botón "Ver documento oficial / de referencia (PDF)" — según campo pdf.
+    // norma = oficial; compromiso / ODS = de referencia. Si pdf es null, no se muestra.
+    if (nodo.pdf) {
+      const btnPdf = document.createElement('a');
+      btnPdf.className = 'btn-pdf';
+      btnPdf.href = nodo.pdf;
+      btnPdf.target = '_blank';
+      btnPdf.rel = 'noopener';
+      btnPdf.textContent = nodo.tipo === 'norma'
+        ? 'Ver documento oficial (PDF)'
+        : 'Ver documento de referencia (PDF)';
+      div.appendChild(btnPdf);
+    }
+
     // Botón discreto "Ver detalle técnico": solo normas con ficha compilada
     if (nodo.tipo === 'norma' && nodo.ficha_html) {
       const btn = document.createElement('button');
@@ -150,7 +164,9 @@ const Panel = {
     return pasiva[tipo] || app.etiquetaArista(tipo);
   },
 
-  /* Detalle técnico bajo demanda: carga la ficha compilada dentro del panel */
+  /* Detalle técnico bajo demanda: carga la ficha compilada dentro del panel.
+     Presentación Ciudadanía: se omite la sección 7 "Relevancia para el curso"
+     (el contenido fuente no se toca; solo no se muestra en esta app). */
   async cargarFicha(nodo, div, btn) {
     btn.disabled = true;
     btn.textContent = 'Cargando detalle técnico…';
@@ -160,6 +176,7 @@ const Panel = {
       const doc = new DOMParser().parseFromString(htmlText, 'text/html');
       const cuerpo = doc.querySelector('main.ficha');
       if (!cuerpo) throw new Error('ficha sin <main.ficha>');
+      this.omitirSeccionCurso(cuerpo);
       const env = document.createElement('div');
       env.className = 'ficha-tecnica';
       const inner = document.createElement('div');
@@ -172,5 +189,20 @@ const Panel = {
       btn.disabled = false;
       btn.textContent = 'Ver detalle técnico (reintentar)';
     }
+  },
+
+  /* Elimina del árbol el h2 "7. Relevancia para el curso" y todo su contenido
+     hasta el siguiente h2 (o el final de la ficha). */
+  omitirSeccionCurso(cuerpo) {
+    cuerpo.querySelectorAll('h2').forEach(h => {
+      if (!/relevancia para el curso/i.test(h.textContent)) return;
+      let el = h.nextSibling;
+      while (el && !(el.nodeType === 1 && el.tagName === 'H2')) {
+        const sig = el.nextSibling;
+        el.remove();
+        el = sig;
+      }
+      h.remove();
+    });
   },
 };

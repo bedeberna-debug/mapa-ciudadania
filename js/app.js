@@ -53,6 +53,7 @@ const App = {
     const vistas = {
       inicio: Landing,
       resolver: Guiado,
+      internacional: VistaInternacional,
       orden: VistaPiramide,
       relaciones: VistaGrafo,
       temas: VistaTematica,
