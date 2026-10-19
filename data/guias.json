@@ -1,0 +1,578 @@
+{
+  "fecha_corte": "19-10-2026",
+  "disclaimer": "Información general con fines educativos. No constituye asesoría legal. Verifica siempre la fuente oficial antes de actuar.",
+  "rutas": {
+    "informacion": {
+      "resumen_general": "Toda persona puede pedir información pública a los órganos del Estado sin explicar para qué la quiere (transparencia pasiva), y los órganos tienen el deber de publicar de oficio información clave —normas, presupuestos, remuneraciones, contratos— en sus sitios web, actualizada cada mes (transparencia activa). Si un órgano no responde, responde incompleto o se niega a entregar, existe un reclamo gratuito ante el Consejo para la Transparencia (CPLT), y contra su decisión se puede ir a la Corte de Apelaciones. Además, cada persona puede pedir acceder, rectificar, cancelar u oponerse al uso de sus datos personales (derechos ARCO). **Ojo:** la Ley 19.628 de protección de datos pierde vigencia el **30-11-2026** y desde el **01-12-2026** rige la nueva Ley 21.719 con una nueva Agencia de Protección de Datos (ver las advertencias al final de esta guía).",
+      "instituciones": [
+        {
+          "nombre": "Consejo para la Transparencia (CPLT)",
+          "rol": "Conoce los reclamos cuando un órgano niega o no entrega información; fiscaliza la transparencia activa; administra el Portal de Transparencia.",
+          "urls": ["https://www.consejotransparencia.cl", "https://www.portaltransparencia.cl"],
+          "nodo_grafo": "inst-cplt"
+        },
+        {
+          "nombre": "Órganos de la Administración del Estado (ministerios, servicios, gobernaciones, municipalidades, etc.)",
+          "rol": "Obligados a responder solicitudes y a mantener publicada la información de transparencia activa.",
+          "urls": [],
+          "nota_url": "Sitio web de cada órgano (sección \"Transparencia\")",
+          "nodo_grafo": null
+        },
+        {
+          "nombre": "Corte de Apelaciones (del domicilio del reclamante)",
+          "rol": "Revisa las resoluciones del CPLT vía reclamo de ilegalidad.",
+          "urls": ["https://www.pjud.cl"],
+          "nodo_grafo": null
+        },
+        {
+          "nombre": "Agencia de Protección de Datos Personales",
+          "rol": "Futura autoridad de protección de datos (desde 01-12-2026, si no se posterga). Institución en implementación.",
+          "urls": ["https://www.agenciadeprotecciondedatos.gob.cl"],
+          "nodo_grafo": null
+        }
+      ],
+      "obligaciones": [
+        "**Transparencia activa:** cada órgano debe publicar de oficio en su sitio web: marco normativo que lo rige, estructura orgánica, facultades de sus autoridades, remuneraciones, plantas de personal, contratos, transferencias de fondos, presupuesto y su ejecución, auditorías, entre otros (arts. 7° y 9°, Ley 20.285; D.S. 13/2009 MINSEGPRES).",
+        "**Periodicidad:** la información de transparencia activa debe mantenerse permanentemente disponible y **actualizada mensualmente**: los órganos deben actualizar dentro de los **primeros 10 días de cada mes** la información del mes anterior (art. 50°, D.S. 13/2009).",
+        "**Transparencia pasiva:** todo órgano debe responder las solicitudes de acceso a la información que reciba, por escrito o por medios electrónicos (art. 12, Ley 20.285).",
+        "**Gratuidad:** el acceso a la información pública es gratuito; solo pueden cobrarse los **costos directos de reproducción** (art. 17, Ley 20.285)."
+      ],
+      "nivel_obligaciones": ["documento"],
+      "ambito_obligados": [
+        "Obligados por la Ley 20.285 (art. 2°): los órganos de la Administración del Estado —Presidencia, ministerios, servicios públicos, gobernaciones y delegaciones presidenciales, Fuerzas Armadas y de Orden y Seguridad, Carabineros e Investigaciones, Policía de Investigaciones, municipalidades— y, en lo que les sea aplicable, el Congreso (Cámara y Senado), el Poder Judicial, el Ministerio Público, la Contraloría, el Banco Central y el Consejo de Defensa del Estado, conforme a sus propios textos."
+      ],
+      "ambito_excepciones": [
+        "La información **secreta o reservada** (seguridad nacional, relaciones internacionales, datos personales, entre otros supuestos de los arts. 20 y 21) puede denegarse, pero la denegación debe ser fundada y es reclamable.",
+        "El Poder Judicial y el Congreso responden por su **gestión administrativa**, no por el contenido de sus fallos o debates.",
+        "En protección de datos personales, la Ley 19.628 alcanza a registros o bancos de datos de organismos públicos **y privados**; los datos sensibles tienen reglas más estrictas."
+      ],
+      "procedimientos": [
+        {
+          "id": "E1",
+          "nombre": "Solicitud de acceso a la información pública",
+          "cuando_usar": "Cuando necesitas un documento, dato o antecedente que un órgano del Estado tiene y no está publicado. No necesitas justificar tu interés.",
+          "pasos": [
+            "Identifica qué órgano probablemente tiene la información (si no lo sabes, pídela igual: el órgano debe orientarte o derivarla según corresponda).",
+            "Ingresa a **www.portaltransparencia.cl**, selecciona el órgano y completa el formulario de solicitud (también puedes presentarla por escrito en la oficina de partes del órgano). La solicitud debe ser clara y permitir identificar la información.",
+            "Si la solicitud es confusa, el órgano puede pedirte aclararla **dentro de 5 días**; si no aclaras, se tiene por no presentada (art. 12).",
+            "Recibirás respuesta por el mismo medio que indicaste."
+          ],
+          "plazo": "**20 días hábiles**, prorrogables por otros **10 días hábiles** por causas fundadas que el órgano debe comunicarte (art. 14, Ley 20.285).",
+          "costo": "Gratis. Solo pueden cobrar el costo directo de reproducción (art. 17).",
+          "si_no": "Reclama ante el **CPLT** (procedimiento E3). Un tercero afectado por la entrega de información que lo concierne también puede oponerse: el órgano debe comunicarle en **2 días hábiles** y el tercero tiene **3 días hábiles** para oponerse (art. 20).",
+          "fuente": "Ley 20.285 (bcn.cl/leychile) · https://www.portaltransparencia.cl",
+          "nivel_verificacion": ["documento", "institucional"],
+          "advertencia": null
+        },
+        {
+          "id": "E2",
+          "nombre": "Revisar la transparencia activa (lo que ya debe estar publicado)",
+          "cuando_usar": "Antes de pedir, revisa: gran parte de la información más solicitada (remuneraciones, contratos, presupuestos, convenios, directorios) ya debe estar publicada.",
+          "pasos": [
+            "Entra al sitio web del órgano y busca la sección **\"Transparencia\"** (obligatoria).",
+            "También puedes usar el buscador transversal del CPLT en **www.portaltransparencia.cl**.",
+            "Si la información obligatoria no está publicada o está desactualizada, reclama directamente (procedimiento E4)."
+          ],
+          "plazo": "No aplica (consulta directa); la obligación de actualización del órgano es mensual (primeros 10 días del mes, art. 50° D.S. 13).",
+          "costo": "Gratis.",
+          "si_no": "Reclamo ante el CPLT por incumplimiento de transparencia activa (procedimiento E4).",
+          "fuente": "Ley 20.285, arts. 7°–9°; D.S. 13/2009, arts. 50° y 53° · https://www.portaltransparencia.cl",
+          "nivel_verificacion": ["documento", "institucional"],
+          "advertencia": null
+        },
+        {
+          "id": "E3",
+          "nombre": "Reclamo ante el CPLT por denegación o silencio",
+          "cuando_usar": "Cuando un órgano te niega información, te entrega una respuesta incompleta, no responde dentro del plazo, o responde de forma evasiva.",
+          "pasos": [
+            "Reúne la solicitud y la respuesta (o acredita el silencio con el comprobante de ingreso).",
+            "Ingresa el reclamo en **www.consejotransparencia.cl** (\"Realizar un reclamo\") o presencialmente en la oficina del CPLT (Morandé 360, piso 7, Santiago) o en las gobernaciones/delegaciones presidenciales regionales.",
+            "El CPLT notifica al órgano, que tiene **10 días hábiles** para presentar descargos (art. 25).",
+            "El Consejo resuelve en sesión (puede ordenar la entrega de la información)."
+          ],
+          "plazo": "**Dentro de los 15 días siguientes** a la denegación o al vencimiento del plazo legal de respuesta (art. 24, Ley 20.285). El texto legal dice \"quince días\"; la práctica e instructivos del CPLT los computan como **días hábiles**.",
+          "costo": "Gratis.",
+          "si_no": "Si el CPLT resuelve en tu contra: **reclamo de ilegalidad ante la Corte de Apelaciones de tu domicilio**, dentro de **15 días corridos** desde la notificación de la resolución del Consejo; no procede más recurso (art. 28, Ley 20.285). El órgano recurre por la misma vía si le ordenan entregar.",
+          "fuente": "Ley 20.285, arts. 24–28 · https://www.consejotransparencia.cl · Ficha ChileAtiende N° 58527",
+          "nivel_verificacion": ["documento", "institucional"],
+          "advertencia": "Práctica real: ChileAtiende informa que la tramitación de un reclamo puede llegar hasta **120 días corridos** (ver las advertencias al final de esta guía)."
+        },
+        {
+          "id": "E4",
+          "nombre": "Reclamo por incumplimiento de la transparencia activa",
+          "cuando_usar": "Cuando el órgano no publica en su sitio la información que la ley le obliga a tener disponible (o la tiene desactualizada).",
+          "pasos": [
+            "Identifica qué información obligatoria falta (arts. 7° y 9° Ley 20.285; D.S. 13).",
+            "Presenta el reclamo ante el **CPLT** por los mismos canales del procedimiento E3, indicando el incumplimiento concreto (art. 8°, Ley 20.285; art. 53°, D.S. 13).",
+            "El CPLT puede ordenar la publicación y aplicar los procedimientos correccionales que correspondan."
+          ],
+          "plazo": "No tiene plazo caducable para reclamar (el incumplimiento es permanente mientras persista).",
+          "costo": "Gratis.",
+          "si_no": "El incumplimiento reiterado de transparencia activa tiene sanciones para el jefe de servicio (multa de 20% a 50% de su remuneración, arts. 45–49 Ley 20.285) y puede requerirse sumario; también puedes denunciar ante la Contraloría (guía 03).",
+          "fuente": "Ley 20.285, arts. 8° y 45–49; D.S. 13/2009, arts. 50° y 53°",
+          "nivel_verificacion": ["documento"],
+          "advertencia": null
+        },
+        {
+          "id": "E5",
+          "nombre": "Derechos ARCO sobre tus datos personales (régimen vigente hasta el 30-11-2026)",
+          "cuando_usar": "Para conocer qué datos tuyos tiene un registro o banco de datos (público o privado), y pedir su **rectificación, cancelación/eliminación u oposición** al tratamiento (acceso, rectificación, cancelación, oposición = ARCO), por ejemplo datos financieros o comerciales incorrectos.",
+          "pasos": [
+            "Dirige la solicitud al **responsable del registro o banco de datos** (la empresa u organismo), indicando qué derecho ejerces y sobre qué datos (art. 12, Ley 19.628).",
+            "Si se trata de datos publicados por un órgano público en cumplimiento de transparencia activa, puedes pedir además su rectificación o eliminación ante ese órgano, y reclamar ante el **CPLT** si no hay respuesta (arts. 8° y 33 m), Ley 20.285)."
+          ],
+          "plazo": "Si el responsable **no responde dentro de 2 días hábiles** o deniega la solicitud, se habilita la vía judicial (art. 16, Ley 19.628).",
+          "costo": "El ejercicio de los derechos es **gratuito** (art. 12).",
+          "si_no": "**Reclamación judicial especial ante el juez de letras en lo civil del domicilio del responsable** del registro (procedimiento del art. 16, Ley 19.628 — no es el recurso de protección constitucional). **Importante:** la Ley 19.628 **no** contempla una reclamación general ante el CPLT para datos en manos de privados; la vía CPLT solo opera para datos publicados por órganos públicos bajo transparencia activa (vía Ley 20.285).",
+          "fuente": "Ley 19.628, arts. 12 y 16 (bcn.cl/leychile); Ley 20.285, arts. 8° y 33 m)",
+          "nivel_verificacion": ["documento"],
+          "advertencia": "Cambio próximo: desde el **01-12-2026** regirá la Ley 21.719 (ver las advertencias al final de esta guía)."
+        }
+      ],
+      "advertencias": [
+        "**Cambio de régimen en protección de datos (vivo al 19-10-2026):** la Ley 21.719 (publicada 13-12-2024) reemplaza a la Ley 19.628 desde el **01-12-2026**. Los derechos pasan a ser ARSOP (acceso, rectificación, supresión, oposición, portabilidad) más bloqueo; la solicitud se hace al responsable, que responde en **30 días corridos, prorrogables una vez por 30** (art. 11); si no hay respuesta satisfactoria, reclamación ante la nueva **Agencia de Protección de Datos Personales** en **30 días hábiles** (art. 41), y luego reclamo de ilegalidad ante la Corte de Apelaciones en 15 días hábiles (art. 43). **Estado al 19-10-2026: la Agencia NO está constituida** (el Senado rechazó la terna de consejeros en mayo de 2026) y hay un proyecto con suma urgencia (Boletín 18.623-07) que postergaría la entrada en vigencia al **01-12-2027**. Antes de actuar en esta materia, confirma el estado del proyecto. [Documento oficial para la ley; plataforma institucional (bcn/senado.cl) para el estado de tramitación, verificado 19-10-2026]",
+        "**Ley 21.755 (11-07-2025):** LeyChile la registra como última modificación de la Ley 20.285, sin cambios sustantivos en el procedimiento de acceso; la transición real es la del 01-12-2026, cuando la 21.719 elimina el art. 33 m) y la vigilancia de protección de datos pasa del CPLT a la Agencia. [Documento oficial, verificado 19-10-2026]",
+        "**Práctica vs. texto en el reclamo CPLT:** los plazos legales (descargos 10 días hábiles, art. 25; decisión del Consejo dentro del 5° día hábil siguiente, art. 27) no coinciden con los tiempos reales: ChileAtiende informa una tramitación de **hasta 120 días corridos**. Planifica con ese margen. [Plataforma institucional, verificado 19-10-2026]",
+        "**Cómputo del plazo de reclamo (art. 24):** la ley dice \"quince días\"; la práctica del CPLT lo cuenta en días hábiles, pero para no arriesgar el reclamo, **preséntalo lo antes posible** y ojalá dentro de 15 días corridos.",
+        "**Datos personales de terceros:** si pides información que contiene datos personales de otros, el órgano puede denegarla o entregarla tarjada; es la causal de denegación más frecuente."
+      ]
+    },
+    "participar": {
+      "resumen_general": "La ley chilena obliga a los órganos públicos a abrir canales de participación: cada servicio y cada municipalidad debe tener mecanismos publicados (cuentas públicas participativas, consultas ciudadanas, consejos de la sociedad civil —COSOC—). En tu comuna puedes pedir audiencias públicas al concejo, usar la oficina municipal de reclamos (que debe responder en máximo 30 días) e incluso impulsar un plebiscito comunal con firmas. Para incidir con más fuerza puedes constituir una organización comunitaria con personalidad jurídica (junta de vecinos u organización funcional). Y si un proyecto con impacto ambiental se evalúa en el Servicio de Evaluación Ambiental, cualquier persona u organización puede presentar observaciones ciudadanas. El Acuerdo de Escazú, vigente para Chile desde 2022, refuerza los derechos de acceso a información, participación y justicia en temas ambientales.",
+      "instituciones": [
+        {
+          "nombre": "Municipalidades (alcalde, concejo, Secretaría Municipal)",
+          "rol": "Ordenanza de participación, audiencias públicas, oficina de reclamos, plebiscito comunal, COSOC comunal, registro de organizaciones comunitarias.",
+          "urls": [],
+          "nota_url": "Sitio web de cada municipalidad",
+          "nodo_grafo": null
+        },
+        {
+          "nombre": "Servicio de Registro Civil e Identificación",
+          "rol": "Emite los certificados de vigencia definitivos de organizaciones comunitarias; ministro de fe en asambleas constitutivas.",
+          "urls": ["https://www.registrocivil.cl"],
+          "nodo_grafo": "inst-registro-civil"
+        },
+        {
+          "nombre": "Órganos de la Administración del Estado (cada servicio/ministerio)",
+          "rol": "Deben dictar y publicar sus propias modalidades de participación y hacer cuenta pública participativa anual.",
+          "urls": [],
+          "nota_url": "Sitio web de cada órgano",
+          "nodo_grafo": null
+        },
+        {
+          "nombre": "Servicio de Evaluación Ambiental (SEA)",
+          "rol": "Administra la participación ciudadana en la evaluación ambiental de proyectos (Portal Ciudadano).",
+          "urls": ["https://www.sea.gob.cl"],
+          "nodo_grafo": null
+        },
+        {
+          "nombre": "Ministerio del Medio Ambiente",
+          "rol": "Implementación del Acuerdo de Escazú en Chile.",
+          "urls": ["https://escazu.mma.gob.cl"],
+          "nodo_grafo": "escazu"
+        }
+      ],
+      "obligaciones": [
+        "**Cada órgano público debe establecer modalidades de participación** y publicarlas (art. 70, Ley 20.500): mecanismos para informar, consultar y recibir propuestas de la ciudadanía.",
+        "**Cuenta pública participativa anual:** todos los órganos deben rendirla con participación ciudadana (art. 72, Ley 20.500); los municipios deben hacerla **a más tardar en abril** de cada año (art. 67, Ley 18.695).",
+        "**Consejos de la Sociedad Civil (COSOC):** los órganos deben constituirlos como instancia consultiva (art. 74, Ley 20.500); cada comuna debe tener su COSOC comunal, elegido por las organizaciones (art. 94, Ley 18.695).",
+        "**Ordenanza municipal de participación:** cada municipalidad debe regular sus modalidades de participación, audiencias públicas y la oficina de informaciones y reclamos (arts. 93, 97 y 98, Ley 18.695).",
+        "**Información oportuna:** los órganos deben entregar información de manera oportuna y en formatos accesibles para que la participación sea real (art. 71, Ley 20.500).",
+        "**Escazú:** garantiza acceso a información ambiental, participación en decisiones y acceso a la justicia ambiental; Chile es Estado Parte desde septiembre de 2022 (Decreto 209/2022, MINREL)."
+      ],
+      "nivel_obligaciones": ["documento"],
+      "ambito_obligados": [
+        "**Ley 20.500:** órganos de la Administración del Estado (ministerios, servicios, gobernaciones, municipalidades, entre otros). Exclusiones y reglas especiales en el art. 75 (por ejemplo, materias reservadas o de seguridad nacional no son consultables).",
+        "**Ley 18.695 (municipal):** alcanza a todas las comunas; en comunas de **menos de 5.000 habitantes** el concejo puede fijar un número menor de ciudadanos para pedir audiencias públicas (art. 97).",
+        "**Ley 19.418 (organizaciones comunitarias):** cualquier grupo de vecinos o personas con intereses comunes; los mínimos de integrantes varían según el tamaño de la comuna (ver procedimiento E2).",
+        "**Participación ambiental (SEA):** cualquier persona, sin necesidad de ser vecino del proyecto, puede observar en un EIA; en DIA la participación se abre cuando hay cargas ambientales y lo piden al menos 2 organizaciones o 10 personas."
+      ],
+      "ambito_excepciones": [
+        "La consulta indígena (Convenio 169 OIT) es un mecanismo especializado para pueblos indígenas, no un trámite ciudadano general: queda fuera del alcance de esta guía."
+      ],
+      "procedimientos": [
+        {
+          "id": "E1",
+          "nombre": "Participar en los mecanismos de un servicio público (cuenta pública, consultas, COSOC)",
+          "cuando_usar": "Para opinar, proponer o fiscalizar la gestión de un ministerio, servicio o gobierno regional: asistir a su cuenta pública participativa, responder consultas ciudadanas o seguir/postular a su COSOC.",
+          "pasos": [
+            "Entra al sitio web del órgano y busca la sección **\"Participación ciudadana\"** (debe existir por el art. 70, Ley 20.500).",
+            "Revisa las modalidades publicadas: calendario de cuenta pública, consultas abiertas, reglamento del COSOC.",
+            "Inscríbete o asiste según la convocatoria (muchas usan formularios en línea; algunas exigen inscripción previa)."
+          ],
+          "plazo": "No hay plazo legal único: depende de la convocatoria de cada órgano. La cuenta pública participativa es anual (art. 72). **Las modalidades y plazos concretos los fija cada órgano: verifica su sitio web.**",
+          "costo": "Gratis.",
+          "si_no": "Si el órgano no tiene mecanismos publicados es un incumplimiento del art. 70; puedes pedir la información por solicitud de acceso (guía 01) y denunciar ante la Contraloría (guía 03).",
+          "fuente": "Ley 20.500, arts. 69–74 (bcn.cl/leychile)",
+          "nivel_verificacion": ["documento"],
+          "advertencia": null
+        },
+        {
+          "id": "E2",
+          "nombre": "Constituir una junta de vecinos u organización comunitaria (personalidad jurídica)",
+          "cuando_usar": "La personería jurídica permite a la organización postular a fondos, celebrar convenios, participar en el COSOC comunal y representar al barrio ante la municipalidad.",
+          "pasos": [
+            "Convoca a una **asamblea constitutiva** ante un **ministro de fe** (funcionario municipal habilitado, oficial del Registro Civil o notario). Quórum mínimo: **50 vecinos** en comunas de hasta 10.000 habitantes; **100** hasta 30.000; **150** hasta 100.000; **200** en comunas mayores (art. 40, Ley 19.418). En localidades alejadas de la sede comunal con menos habitantes que el mínimo, el alcalde puede eximir del requisito por resolución.",
+            "En la asamblea se aprueban los **estatutos** y se elige un **directorio provisional**.",
+            "Una **copia autorizada del acta constitutiva** debe depositarse en la **Secretaría Municipal dentro de 30 días** desde la asamblea → efectuado el depósito, la organización obtiene **personalidad jurídica por el solo ministerio de la ley** (arts. 8° y 4°, Ley 19.418). El secretario municipal debe expedir una certificación del depósito a más tardar dentro de **3 días hábiles**.",
+            "La Secretaría Municipal puede **objetar la constitución dentro de 30 días** desde el depósito; si lo hace, la organización tiene **90 días** para subsanar (puede pedir asesoría al municipio, que debe proporcionarla). Si no subsana, **la personalidad caduca por el solo ministerio de la ley** (art. 8°).",
+            "Si no hubo objeción, el directorio provisional debe convocar a asamblea para elegir el **directorio definitivo** entre los **30 y 60 días** posteriores a la obtención de la personalidad (art. 9°).",
+            "Para acreditar vigencia ante terceros (bancos, fondos públicos): el secretario municipal emite certificados **provisorios** (60 días corridos) y los **definitivos solo los emite el Registro Civil** (art. 6° bis).",
+            "**Organizaciones funcionales** (clubes deportivos, centros de padres, agrupaciones culturales, etc.): mismo camino general, con un mínimo de **15 personas en zonas urbanas y 10 en zonas rurales** (art. 46, Ley 19.418)."
+          ],
+          "plazo": "Depósito del acta: **30 días** desde la asamblea; objeción municipal: 30 días desde el depósito; subsanación: 90 días; directorio definitivo: entre 30 y 60 días tras la personalidad.",
+          "costo": "La constitución es gratuita ante ministro de fe municipal; puede haber costos si se usa notario (aranceles notariales — **monto por verificar** según notaría). Las inscripciones y anotaciones en los registros municipales son de costo del solicitante (art. 6°, Ley 19.418).",
+          "si_no": "Si la municipalidad objeta sin fundamento o decreta la disolución: la organización puede **reclamar ante el Tribunal Electoral Regional** correspondiente (la ley contempla reclamaciones ante el TER en el proceso de constitución —art. 6° bis— y, contra la disolución por decreto alcaldicio, reclamo dentro de **30 días** —art. 36—).",
+          "fuente": "Ley 19.418 (DTO 58/1997 MININTERIOR, texto actualizado por Ley 21.487/2022; bcn.cl/leychile) · https://www.registrocivil.cl",
+          "nivel_verificacion": ["documento", "institucional"],
+          "advertencia": null
+        },
+        {
+          "id": "E3",
+          "nombre": "Pedir una audiencia pública al concejo municipal y usar la oficina de reclamos",
+          "cuando_usar": "Para que el alcalde y el concejo conozcan formalmente un tema de interés comunal (seguridad, un proyecto, un servicio deficiente) o para hacer un reclamo municipal con respuesta obligatoria.",
+          "pasos": [
+            "Audiencia pública: revisa la **ordenanza municipal de participación** (art. 93) en el sitio web de tu municipalidad: ahí está el procedimiento exacto.",
+            "Junta las firmas de **a lo menos 100 ciudadanos de la comuna** (comunas de menos de 5.000 habitantes: el número lo fija el concejo) y presenta la solicitud por escrito en la oficina de partes municipal (art. 97).",
+            "El concejo debe considerar la materia en una audiencia pública conforme a la ordenanza.",
+            "Oficina de informaciones, reclamos y sugerencias: presenta tu reclamo o sugerencia en la oficina municipal (presencial o en línea, según la comuna).",
+            "La municipalidad debe responder dentro de los plazos de su ordenanza, que **en ningún caso pueden superar 30 días** (art. 98, en conformidad a la Ley 19.880)."
+          ],
+          "plazo": "Reclamos: **máximo 30 días** (art. 98). Audiencias: según ordenanza comunal — **por verificar en cada municipio**.",
+          "costo": "Gratis.",
+          "si_no": "Si no responden o no convocan: denuncia el incumplimiento ante la **Contraloría** (guía 03) o reclama por transparencia si la ordenanza no está publicada (guía 01).",
+          "fuente": "Ley 18.695 (DFL 1/2006 MININTERIOR), arts. 93, 97 y 98 (bcn.cl/leychile)",
+          "nivel_verificacion": ["documento"],
+          "advertencia": null
+        },
+        {
+          "id": "E4",
+          "nombre": "Impulsar un plebiscito comunal por iniciativa ciudadana",
+          "cuando_usar": "Someter a votación vecinal materias de administración local: inversiones específicas de desarrollo comunal, aprobación o modificación del plan comunal de desarrollo, modificación del plan regulador u otras materias de interés comunal (art. 99).",
+          "pasos": [
+            "Define la materia (debe ser de administración local; no puede versar sobre la misma materia más de una vez por período alcaldicio).",
+            "Reúne las firmas de **a lo menos el 10% de los ciudadanos que sufragaron en la última elección municipal al 31 de diciembre del año anterior**, ante **notario u oficial del Registro Civil** (art. 100). El porcentaje se acredita con certificación del Director Regional del **Servicio Electoral (SERVEL)**.",
+            "Presenta el requerimiento al alcalde. Dentro del **décimo día** de recepcionado, el alcalde debe dictar el **decreto convocatorio**, que se publica dentro de los **15 días** siguientes en el Diario Oficial y en un diario comunal (art. 101).",
+            "El plebiscito lo organiza la municipalidad coordinada con el SERVEL."
+          ],
+          "plazo": "Decreto convocatorio: dentro de 10 días de recibido el requerimiento; publicación: dentro de 15 días de dictado (arts. 101–102).",
+          "costo": "La iniciativa es gratuita; la autenticación notarial de firmas puede tener costo (**por verificar** según notaría).",
+          "si_no": "**Límites (art. 102):** no se puede convocar en los **8 meses previos ni 2 meses posteriores** a una elección popular, ni en el año de elecciones municipales, ni sobre el mismo asunto más de una vez por período alcaldicio. Si el alcalde no convoca habiendo requisitos, el asunto puede llevarse a conocimiento del SERVEL/Contraloría según el caso (**vía específica por verificar** en la práctica comunal).",
+          "fuente": "Ley 18.695, arts. 99–102",
+          "nivel_verificacion": ["documento"],
+          "advertencia": null
+        },
+        {
+          "id": "E5",
+          "nombre": "Participación ciudadana en la evaluación ambiental de proyectos (SEA)",
+          "cuando_usar": "Cuando un proyecto (inmobiliario, industrial, energético, etc.) se evalúa ambientalmente, cualquier persona u organización puede presentar **observaciones ciudadanas** fundadas, que la autoridad debe considerar y responder en la resolución (RCA). (Mecanismo fuera del acervo del curso, incluido por ser la vía ambiental verificable con fuente oficial.)",
+          "pasos": [
+            "Entra al **Portal Ciudadano del SEA** (https://www.sea.gob.cl) y revisa los proyectos en evaluación por región/comuna.",
+            "En proyectos con **Estudio de Impacto Ambiental (EIA)**, la participación está siempre abierta: tienes **60 días hábiles** desde la última publicación del extracto (art. 90, D.S. 40/2012 RSEIA).",
+            "En proyectos con **Declaración de Impacto Ambiental (DIA)**, la participación se abre solo si hay cargas ambientales y lo piden **al menos 2 organizaciones o 10 personas** con domicilio en la zona, dentro de **10 días** desde la publicación; abierto el proceso, dura **20 días hábiles** (arts. 94–96, D.S. 40). Si hay modificaciones sustantivas, se abre una nueva etapa de 10 días (+5 de prórroga).",
+            "Presenta tus observaciones por el Portal Ciudadano (con **ClaveÚnica**) o en la Oficina de Partes del SEA. Funda técnicamente: identifica el impacto y la medida que falta."
+          ],
+          "plazo": "EIA: 60 días hábiles; DIA: 20 días hábiles (si se abre).",
+          "costo": "Gratis.",
+          "si_no": "Si tus observaciones no fueron consideradas o fueron mal respondidas: **reclamación ante el Director Ejecutivo del SEA dentro de 30 días** desde la notificación de la RCA (art. 78, D.S. 40, en relación con la Ley 19.300). Contra la resolución que resuelve, procede la vía judicial ambiental ante los **Tribunales Ambientales** (asesoría legal recomendada).",
+          "fuente": "D.S. 40/2012 MMA (RSEIA), arts. 78, 90 y 94–96 (bcn.cl/leychile) · https://www.sea.gob.cl · Ficha ChileAtiende N° 17976",
+          "nivel_verificacion": ["documento", "institucional"],
+          "advertencia": null
+        }
+      ],
+      "advertencias": [
+        "**El derecho existe, el canal puede no estar implementado:** la Ley 20.500 obliga a cada órgano a dictar sus modalidades de participación (art. 70), pero en la práctica muchos servicios y municipios las tienen incompletas o desactualizadas. Antes de planificar, verifica el sitio web del órgano; si no hay nada publicado, eso mismo es reclamable (guías 01 y 03).",
+        "**Escazú no es un trámite, es un piso de derechos:** el Acuerdo (vigente para Chile desde septiembre de 2022; COP4 realizada en Bahamas en abril de 2026 con 19 Estados Partes) no crea ventanillas nuevas, pero obliga a interpretar los procedimientos ambientales con estándares reforzados de información, participación temprana y justicia. Implementación en marcha vía el compromiso 9 del 6° Plan de Estado Abierto (PIPE) y el sitio escazu.mma.gob.cl. [Documento oficial + plataforma institucional, verificado 19-10-2026]",
+        "**Juntas de vecinos:** la personalidad jurídica se obtiene por el solo depósito del acta, pero para operar (cuentas bancarias, fondos concursables) te pedirán el certificado de vigencia definitivo del Registro Civil y un **directorio definitivo elegido en asamblea entre los 30 y 60 días** siguientes a la obtención de la personalidad (art. 9°, Ley 19.418). No dejes pasar ese plazo interno.",
+        "**Plebiscito comunal:** revisa el calendario electoral antes de juntar firmas (ventanas prohibidas del art. 102); el esfuerzo de reunir el 10% de los sufragantes es alto y caduca con el contexto electoral.",
+        "**Participación SEA en DIA:** si no se abre la PAC (porque nadie la pidió en 10 días o no hay cargas ambientales), no hay segunda oportunidad administrativa: solo queda la vía judicial posterior.",
+        "**Presupuestos participativos municipales:** no hay regulación nacional uniforme (cada comuna lo diseña distinto): quedan fuera del alcance de esta guía."
+      ]
+    },
+    "denunciar": {
+      "resumen_general": "Si presencias un delito, puedes denunciarlo penalmente ante la Fiscalía (presencial o en línea) o de forma **100% anónima** por Denuncia Seguro (*4242). Si la irregularidad la comete un funcionario o un órgano público (mal uso de fondos, faltas a la probidad, corrupción administrativa), la vía es la **Contraloría General de la República (CGR)**, que administra el Canal de Denuncias de la Ley 21.592 con protección legal al denunciante y reserva de identidad. Los funcionarios públicos tienen además protecciones especiales contra represalias desde 2007 (Ley 20.205). Y si detectas audiencias de lobby no registradas o conflictos de interés, puedes verificar los registros públicos (InfoLobby, InfoProbidad) y denunciar la infracción al órgano que corresponda según quién la cometa.",
+      "instituciones": [
+        {
+          "nombre": "Ministerio Público (Fiscalía)",
+          "rol": "Dirige la investigación de los delitos; recibe denuncias penales presenciales y en línea.",
+          "urls": ["https://www.fiscaliadechile.cl"],
+          "nodo_grafo": null
+        },
+        {
+          "nombre": "Contraloría General de la República (CGR)",
+          "rol": "Fiscaliza la legalidad y probidad de la Administración; administra el Canal de Denuncias (Ley 21.592); atiende represalias.",
+          "urls": ["https://www.contraloria.cl"],
+          "nodo_grafo": "inst-cgr"
+        },
+        {
+          "nombre": "Subsecretaría de Prevención del Delito",
+          "rol": "Opera Denuncia Seguro, el canal 100% anónimo (*4242 / web).",
+          "urls": ["https://www.denunciaseguro.cl"],
+          "nodo_grafo": null
+        },
+        {
+          "nombre": "Consejo para la Transparencia (CPLT)",
+          "rol": "Publica registros de lobby (InfoLobby) y declaraciones de intereses y patrimonio (InfoProbidad).",
+          "urls": ["https://www.infolobby.cl", "https://www.infoprobidad.cl"],
+          "nodo_grafo": "inst-cplt"
+        }
+      ],
+      "obligaciones": [
+        "**Deber de denuncia de funcionarios:** los funcionarios públicos deben denunciar con prontitud los delitos e irregularidades de que tomen conocimiento en el ejercicio de sus funciones (art. 61 k) Ley 18.834 y art. 58 k) Ley 18.883, según Ley 20.205; art. 8, Ley 21.592).",
+        "**Registros públicos de lobby:** las autoridades deben registrar y publicar mensualmente audiencias, viajes y donativos (Ley 20.730); la nómina sistematizada está en **infolobby.cl**.",
+        "**Declaraciones de Intereses y Patrimonio (DIP) públicas:** las autoridades y altos cargos deben declarar al asumir (30 días), cada marzo y al cesar (30 días); se consultan en **infoprobidad.cl** (Ley 20.880).",
+        "**Protección al denunciante:** la Ley 21.592 prohíbe las represalias contra quien denuncia hechos de corrupción o irregularidades en la Administración y permite pedir medidas de protección a la CGR."
+      ],
+      "nivel_obligaciones": ["documento", "institucional"],
+      "ambito_obligados": [
+        "**Vía penal (Fiscalía / Denuncia Seguro):** cualquier delito (robos, tráfico, delitos económicos, corrupción como cohecho o malversación). No hay plazo para denunciar (salvo la prescripción del propio delito).",
+        "**Vía administrativa (CGR):** irregularidades, faltas a la probidad o mal uso de recursos de **órganos de la Administración del Estado y sus funcionarios**. El Canal de Denuncias (Ley 21.592) exige identificarse con ClaveÚnica: **no admite anónimas**, pero permite pedir **reserva de identidad**.",
+        "**Denuncia Seguro:** anónima total; no sirve para emergencias (llama al 133 Carabineros / 134 PDI) ni como canal de reclamos vecinales.",
+        "**Lobby y conflictos de interés:** la denuncia se dirige a órganos distintos según quién comete la infracción (ver procedimiento E5)."
+      ],
+      "ambito_excepciones": [
+        "Queda fuera: delitos laborales (Dirección del Trabajo), de consumo (SERNAC), tributarios (SII) u otros tienen canales propios no cubiertos aquí."
+      ],
+      "procedimientos": [
+        {
+          "id": "E1",
+          "nombre": "Denuncia penal ante la Fiscalía (Ministerio Público)",
+          "cuando_usar": "Cuando fuiste víctima o testigo de un delito y quieres que se investigue penalmente (incluidos delitos de corrupción: cohecho, malversación, fraude al fisco).",
+          "pasos": [
+            "**Presencial:** acude a cualquier agencia de la Fiscalía, o a una unidad de Carabineros (tel. 133 en flagrancia) o de la PDI (tel. 134), que están obligadas a recibir la denuncia.",
+            "**En línea:** entra a **www.fiscaliadechile.cl → \"Denuncia en Línea\"** (agenda.minpublico.cl/denuncia) e identifícate con **ClaveÚnica** o pasaporte; describe los hechos con fecha, lugar y personas involucradas.",
+            "Haz **seguimiento** de tu causa en \"Mi Fiscalía en Línea\" o por el Call Center **600 333 0000** (consultas, no recibe denuncias)."
+          ],
+          "plazo": "La ley no fija plazo para denunciar ni para la primera respuesta de la Fiscalía; hazlo lo antes posible (la prueba se pierde y los delitos prescriben).",
+          "costo": "Gratis.",
+          "si_no": "Si no avanza la investigación: puedes solicitar reunión con el fiscal a cargo, pedir información por los canales de la Fiscalía y, como víctima, ejercer derechos del Estatuto de la Víctima (ser informada, pedir medidas de protección). La revisión de la actuación de fiscales corresponde internamente al Fiscal Regional/Nacional.",
+          "fuente": "https://www.fiscaliadechile.cl (sección Denuncia en Línea y Mi Fiscalía en Línea) · Ficha ChileAtiende N° 1795 (PDI)",
+          "nivel_verificacion": ["institucional"],
+          "advertencia": null
+        },
+        {
+          "id": "E2",
+          "nombre": "Denuncia 100% anónima — Denuncia Seguro (*4242)",
+          "cuando_usar": "Cuando tienes información sobre un delito (microtráfico, robos, armas, trata, delitos sexuales, prófugos, entre otros) pero **no quieres identificarte** ni comparecer personalmente.",
+          "pasos": [
+            "Llama al ***4242** (desde celular es gratis; desde teléfono fijo, costo de llamada local) — atención **24/7, todo el año**.",
+            "O entra a **www.denunciaseguro.cl** y completa el formulario web.",
+            "Entrega datos concretos: qué ocurre, dónde (comuna, dirección, referencias), quiénes (nombres, apodos, descripciones), horarios y modus operandi. Si la información es suficiente, el programa formaliza la denuncia ante el Ministerio Público y las policías.",
+            "**Garantías:** no piden tus datos, no registran tu número ni tu IP y las llamadas no se graban (operado por la Subsecretaría de Prevención del Delito, independiente de las policías)."
+          ],
+          "plazo": "No hay plazo; el servicio es continuo.",
+          "costo": "Gratis desde celulares.",
+          "si_no": "Límites: no recibe emergencias en curso (usa 133/134/131); si entregas información incompleta, se archiva a la espera de nuevos antecedentes; no recibirás seguimiento individualizado de la causa (es el precio del anonimato total).",
+          "fuente": "https://www.denunciaseguro.cl · https://subprevenciondeldelito.gob.cl · Ficha ChileAtiende N° 22611",
+          "nivel_verificacion": ["institucional"],
+          "advertencia": null
+        },
+        {
+          "id": "E3",
+          "nombre": "Denuncia ante la Contraloría — Canal de Denuncias (Ley 21.592)",
+          "cuando_usar": "Para denunciar irregularidades, faltas a la probidad, corrupción administrativa o mal uso de recursos en órganos públicos; también para **pedir medidas de protección** y **denunciar represalias** si eres denunciante.",
+          "pasos": [
+            "Entra a **www.contraloria.cl** y accede al portal **\"Trámites Personales\"** (Ventanilla Única) con tu **ClaveÚnica** (recibirás un código de validación en tu correo).",
+            "Selecciona **\"Iniciar nuevo trámite\" → pestaña \"Denuncia\"**.",
+            "Completa el contenido mínimo legal (D.S. 5/2024 MINSEGPRES): tu identificación, un **correo electrónico** para notificaciones, **narración circunstanciada** de los hechos, **individualización** de los involucrados y testigos, y la **manifestación expresa de reserva de identidad** si la quieres. Adjunta antecedentes.",
+            "Recibirás un folio para hacer seguimiento en línea; la CGR te notificará por correo el estado del proceso."
+          ],
+          "plazo": "La CGR evalúa admisibilidad conforme al reglamento (D.S. 5/2024) y las instrucciones del Dictamen E55350/2024; **plazo específico de respuesta al denunciante: por verificar** en cada caso (depende de la tramitación y de si deriva a sumario o fiscalización).",
+          "costo": "Gratis.",
+          "si_no": "Si la declaran inadmisible o si sufres represalias: si tu denuncia se declara inadmisible, puedes **reclamar ante la propia CGR**. Si sufres represalias (despido, traslado, hostigamiento) por haber denunciado, debes concurrir a la CGR **dentro de 30 días hábiles** desde la notificación del acto reclamado (Ley 21.592).",
+          "fuente": "Ley 21.592 (bcn.cl/leychile) · D.S. 5/2024 MINSEGPRES · https://www.contraloria.cl · Ficha ChileAtiende N° 30736",
+          "nivel_verificacion": ["documento", "institucional"],
+          "advertencia": null
+        },
+        {
+          "id": "E4",
+          "nombre": "Canal y protecciones para funcionarios públicos denunciantes (Ley 20.205)",
+          "cuando_usar": "Si eres **funcionario público** (de la Administración del Estado o municipal) y denuncias delitos ante el Ministerio Público/policías o irregularidades ante la autoridad competente (jefatura, alcalde, CGR), la ley te protege contra represalias.",
+          "pasos": [
+            "Formula la denuncia **por escrito y firmada** (si no puedes firmar, firma un tercero a tu ruego), con: tu identificación y domicilio, narración circunstanciada de los hechos, individualización de responsables y testigos, y los antecedentes que tengas (art. 90 B Ley 18.834; art. 88 B Ley 18.883).",
+            "Puedes pedir que se mantenga en **secreto tu identidad** y los antecedentes entregados: la autoridad queda prohibida de divulgarlos.",
+            "La autoridad que la recibe tiene **3 días hábiles** para tenerla por presentada (si no se pronuncia, se tiene por presentada); si no es competente, debe remitirla en **24 horas**.",
+            "**Protecciones activas** (arts. 90 A y 88 A): desde la recepción de la denuncia y hasta 90 días después de terminada la investigación no puedes ser **suspendido ni destituido**, ni **trasladado** de localidad o función sin tu autorización escrita, ni **precalificado** si el denunciado es tu superior jerárquico (salvo que lo solicites)."
+          ],
+          "plazo": "Tenida por presentada: 3 días hábiles; remisión por incompetencia: 24 horas.",
+          "costo": "Gratis.",
+          "si_no": "Si sufres represalias pese a la protección: agrégale el canal de la Ley 21.592 (procedimiento E3): las represalias se denuncian a la CGR en **30 días hábiles**. **Advertencia:** denuncias maliciosas o notoriamente falsas son falta grave a la probidad para el propio denunciante (art. 125 d) Ley 18.834).",
+          "fuente": "Ley 20.205 (bcn.cl/leychile)",
+          "nivel_verificacion": ["documento"],
+          "advertencia": null
+        },
+        {
+          "id": "E5",
+          "nombre": "Denuncia por infracciones a la Ley de Lobby y conflictos de interés",
+          "cuando_usar": "Cuando una autoridad o funcionario sostiene audiencias de lobby **sin registrarlas**, omite viajes o donativos en la agenda pública, o cuando detectas conflictos de interés contrastando las **Declaraciones de Intereses y Patrimonio**.",
+          "pasos": [
+            "**Verifica primero en los registros públicos:** agenda y audiencias en **www.infolobby.cl**; declaraciones de patrimonio e intereses en **www.infoprobidad.cl** (públicas para autoridades y altos cargos; el resto puede pedirse por solicitud de acceso — guía 01).",
+            "Reúne los antecedentes (fecha, materia, ausencia de registro).",
+            "**Presenta la denuncia ante el órgano que corresponda** (infolobby.cl/Denuncias): si el infractor es de la **Administración del Estado** → ante la **CGR** (formulario en contraloria.cl, ver procedimiento E3); si es el **Contralor General** → ante la **Cámara de Diputados**; si es del **Congreso** → ante la **Comisión de Ética y Transparencia** de la Cámara o el Senado; si es del **Banco Central** → ante su Consejo; si es del **Ministerio Público** → ante el **Fiscal Nacional**; si es de la Corporación Administrativa del **Poder Judicial** → ante su Consejo Superior.",
+            "**Sanciones posibles:** para el sujeto pasivo que no registra o no informa, la CGR propone al jefe de servicio multa de **10 a 30 UTM** (si es omisión inexcusable o información falsa a sabiendas: **20 a 50 UTM**); el solicitante de audiencia que falsea información: multa de **10 a 50 UTM** (arts. 8°, 26 y 27, Ley 20.730). Las sanciones se publican un mes en el sitio del órgano."
+          ],
+          "plazo": "La ley no fija plazo para que el ciudadano denuncie; la autoridad obligada tiene plazos internos (la CGR requiere informar en 20 días hábiles; período probatorio de 8 días hábiles).",
+          "costo": "Gratis.",
+          "si_no": "Si el órgano no actúa: la resolución sancionatoria es reclamable por el afectado ante la Corte de Apelaciones dentro de quinto día (art. 24, Reglamento Ley 20.730); para el denunciante, el incumplimiento del deber de investigar es denunciable ante la CGR como irregularidad administrativa (procedimiento E3).",
+          "fuente": "Ley 20.730 (bcn.cl/leychile) · https://www.infolobby.cl/Denuncias · https://www.infoprobidad.cl",
+          "nivel_verificacion": ["documento", "institucional"],
+          "advertencia": null
+        }
+      ],
+      "advertencias": [
+        "**\"Anónima\" tiene matices:** Denuncia Seguro es anónima total (sin identificación posible). El Canal de Denuncias de la CGR **no** admite anónimas: exige ClaveÚnica, pero ofrece **reserva de identidad** frente al órgano denunciado. La denuncia reservada de ChileCompra (guía 04) protege la identidad salvo requerimiento judicial. Elige el canal según el nivel de protección que necesitas.",
+        "**Ley 21.592 en plena implementación:** sus títulos I a V rigen desde el **23-10-2024**; el reglamento (D.S. 5/2024) y el Dictamen CGR E55350/2024 detallan la operación. Revisa el portal de la CGR por actualizaciones del formulario. [Documento oficial, verificado 19-10-2026]",
+        "**Ley 21.595 (delitos económicos):** vigencia escalonada desde el 29-09-2025; amplía tipos y sanciones de corrupción y delitos de cuello y corbata. LeyChile registra una anotación de \"fin de vigencia 24-02-2027\" (posible efecto del nuevo Código Penal): **estado por verificar** antes de citarla en un caso concreto. No cambia los canales de denuncia (siguen siendo los de esta guía).",
+        "**Fiscalía:** el canal en línea exige ClaveÚnica o pasaporte; no existe denuncia telefónica (el Call Center 600 333 0000 es solo para consultas de causas).",
+        "**Denuncias de lobby:** verifica siempre primero en infolobby.cl si la audiencia está registrada; gran parte de las sospechas se resuelven con el registro público.",
+        "**DIP:** solo son públicas en InfoProbidad las declaraciones de autoridades y altos cargos (art. 4° N°s 1–4, Ley 20.880 y reglamento); las del resto de funcionarios obligados se solicitan vía acceso a la información."
+      ]
+    },
+    "contratar": {
+      "resumen_general": "Para vender bienes o servicios al Estado (ministerios, hospitales, municipios, Fuerzas Armadas y más de 850 organismos) debes inscribirte gratis en la plataforma **Mercado Público** y mantenerte \"hábil\" en el Registro de Proveedores. Todas las oportunidades —licitaciones, convenios marco y compras ágiles— se publican ahí. Si detectas irregularidades en un proceso, tienes una escalera de reclamos: primero el reclamo/reclamación administrativa ante el propio organismo comprador (con plazos cortos), luego la **denuncia reservada** ante ChileCompra (que protege tu identidad) y, como instancia judicial especializada, la demanda ante el **Tribunal de Contratación Pública**, que puede declarar la nulidad de actos ilegales y retrotraer el proceso.",
+      "instituciones": [
+        {
+          "nombre": "Dirección de Compras y Contratación Pública (ChileCompra)",
+          "rol": "Administra Mercado Público y el Registro de Proveedores; Observatorio de Compras Públicas (denuncias reservadas); capacitación gratuita.",
+          "urls": ["https://www.chilecompra.cl", "https://www.mercadopublico.cl"],
+          "nodo_grafo": "inst-chilecompra"
+        },
+        {
+          "nombre": "Tribunal de Contratación Pública (TCP)",
+          "rol": "Tribunal especializado que conoce demandas de ilegalidad/arbitrariedad en contratación pública y acciones de nulidad de contratos.",
+          "urls": ["https://tribunaldecontratacionpublica.cl"],
+          "nodo_grafo": null
+        },
+        {
+          "nombre": "Organismos compradores (cada servicio, municipalidad, ministerio)",
+          "rol": "Dictan los actos del procedimiento de compra y responden las reclamaciones administrativas.",
+          "urls": [],
+          "nota_url": "Sitio de cada organismo en Mercado Público",
+          "nodo_grafo": null
+        },
+        {
+          "nombre": "Contraloría (CGR) / Ministerio Público / FNE / UAF",
+          "rol": "Reciben las derivaciones de ChileCompra cuando hay indicios de infracción, delito, colusión o lavado (ver guía 03).",
+          "urls": [],
+          "nodo_grafo": "inst-cgr"
+        }
+      ],
+      "obligaciones": [
+        "**Publicación obligatoria:** los procedimientos de contratación de los organismos públicos deben realizarse y publicarse en Mercado Público (Ley 19.886; D.S. 661/2024 MINHACIENDA, nuevo reglamento vigente desde el 11-12-2024 que derogó el D.S. 250/2004).",
+        "**Igualdad de trato:** las bases deben ser objetivas y no favorizar a un oferente; los criterios de evaluación deben estar definidos de antemano (principios de la Ley 19.886).",
+        "**Registro de Proveedores:** desde diciembre de 2024 es **obligatorio estar inscrito y en estado \"hábil\"** en el Registro para participar en licitaciones y otros procesos de compra (art. 92 del reglamento; instructivos ChileCompra).",
+        "**Probidad reforzada (Ley 21.634):** canal de denuncia reservada legal (art. 35 sexies), nuevas inhabilidades del Registro (condenas por cohecho, lavado, delitos tributarios, incumplimientos contractuales), declaraciones de ausencia de conflicto de interés de evaluadores, y facultad de la CGR de ordenar sumarios por infracciones a la ley de compras.",
+        "**Declaraciones de patrimonio en compras:** jefes de servicio y personas obligadas por la ley de compras deben mantener su DIP al día (actualizan en marzo **y septiembre**), consultables según su categoría en infoprobidad.cl (guía 03)."
+      ],
+      "nivel_obligaciones": ["documento", "institucional"],
+      "ambito_obligados": [
+        "**Obligados:** los órganos de la Administración del Estado que compran con fondos públicos conforme a la Ley 19.886 y su reglamento (ministerios, servicios, gobiernos regionales, municipalidades, FF.AA. y de Orden para sus compras civiles, entre otros; art. 2°, D.S. 661).",
+        "**Proveedores:** cualquier persona natural con inicio de actividades en el SII, persona jurídica constituida en Chile o proveedor extranjero (con documentación apostillada/legalizada).",
+        "**Compra Ágil:** la primera convocatoria está reservada a **Empresas de Menor Tamaño (EMT)**; solo si no hay cotizaciones EMT se abre a todos."
+      ],
+      "ambito_excepciones": [
+        "**Reglas especiales:** existen modalidades sin licitación pública (trato directo por montos menores, contratación excepcional por urgencia u otros supuestos tasados); algunas requieren publicidad previa en Mercado Público con posibilidad de que otros proveedores pidan otro procedimiento (5 días hábiles, para montos sobre 1.000 UTM). [Documento oficial — Ley 21.634, verificado 19-10-2026]"
+      ],
+      "procedimientos": [
+        {
+          "id": "E1",
+          "nombre": "Inscribirse como proveedor del Estado (Mercado Público + Registro de Proveedores)",
+          "cuando_usar": "Es el paso previo indispensable para ofertar en cualquier proceso de compra pública.",
+          "pasos": [
+            "Ten a mano: **inicio de actividades en el SII** (persona natural) o empresa constituida con **Clave Tributaria** (persona jurídica), y tu **ClaveÚnica**.",
+            "Entra a **www.mercadopublico.cl → \"Regístrate\"** y autentícate con ClaveÚnica (natural) o Clave Tributaria (empresa).",
+            "Completa la ficha: razón social, datos de contacto, **rubros y productos** que ofreces (usa el código ONU/UNSPSC en ungm.org para recibir las oportunidades correctas). Empresas: declara socios, accionistas y administradores (declaración jurada en línea).",
+            "Valida el correo de confirmación: tu cuenta queda activa.",
+            "**Habilitación en el Registro de Proveedores (ChileProveedores):** sube los antecedentes legales, tributarios y laborales (certificado de vigencia, carpeta tributaria, certificados de deudas previsionales y laborales). El sistema valida y te declara \"hábil\". **Desde diciembre de 2024, estar hábil es obligatorio para participar** en procesos de compra."
+          ],
+          "plazo": "La inscripción en línea toma minutos; la validación de antecedentes para quedar \"hábil\" puede tomar varios días hábiles según los documentos (**plazo exacto por verificar** en la práctica).",
+          "costo": "La inscripción en Mercado Público y el registro básico son **gratuitos**. La **acreditación de habilidad** tiene una membresía con costo según el tamaño de la empresa (desde $0 para microempresas), con planes semestrales o anuales; el monto se informa al finalizar el trámite.",
+          "si_no": "Si quedas \"no hábil\": revisa el motivo en tu ficha (documento vencido o rechazado), corrígelo y vuelve a cargarlo. **Ojo:** si tu estado pasa a \"no hábil\" durante una licitación, puedes quedar descalificado; configura alertas de vencimiento. Si ChileCompra adopta medidas contra tu inscripción, sus acciones son impugnables ante el **Tribunal de Contratación Pública** (art. 24, Ley 19.886 — ver procedimiento E5).",
+          "fuente": "https://www.mercadopublico.cl · https://www.chilecompra.cl/como-vender-al-estado/ · Ficha ChileAtiende N° 547 · D.S. 661/2024 (arts. 92 y ss.)",
+          "nivel_verificacion": ["documento", "institucional"],
+          "advertencia": null
+        },
+        {
+          "id": "E2",
+          "nombre": "Encontrar licitaciones y oportunidades (incluidos convenios marco y Compra Ágil)",
+          "cuando_usar": "Para detectar a tiempo los procesos en los que puedes ofertar.",
+          "pasos": [
+            "En **mercadopublico.cl** usa el buscador de licitaciones filtrando por rubro, región, organismo y monto; revisa también las **tiendas de Convenio Marco** (ChileCompra Express), donde los organismos compran directo a proveedores ya licitados.",
+            "Configura tu ficha con los rubros correctos para **recibir notificaciones** automáticas de nuevas oportunidades.",
+            "Evalúa la **Compra Ágil**: compras de hasta **100 UTM** (aprox. $6,7 millones) con cotización simplificada; primera convocatoria solo para EMT.",
+            "Capacítate gratis en **capacitacion.chilecompra.cl** (cursos sobre la plataforma y cómo ofertar).",
+            "Para postular a convenios marco, sigue los llamados periódicos publicados en el sitio de ChileCompra."
+          ],
+          "plazo": "Cada licitación fija en sus bases el plazo de cierre (revisa la fecha y hora exactas en la ficha del proceso).",
+          "costo": "Gratis (buscar, recibir alertas y capacitarse).",
+          "si_no": "Si encuentras bases con requisitos que parecen \"dirigidos\" a un oferente: puedes reclamar dentro del proceso (procedimiento E3) y/o denunciar en forma reservada (procedimiento E4).",
+          "fuente": "https://www.mercadopublico.cl · https://www.chilecompra.cl",
+          "nivel_verificacion": ["institucional"],
+          "advertencia": null
+        },
+        {
+          "id": "E3",
+          "nombre": "Reclamar dentro de un proceso de compra (reclamación administrativa, art. 30 bis)",
+          "cuando_usar": "Cuando el organismo comprador comete acciones u omisiones **ilegales** durante el procedimiento o en la ejecución del contrato (bases ambiguas, evaluación sin fundamento, adjudicación irregular). Es la primera instancia formal y **interrumpe el plazo** para demandar ante el Tribunal.",
+          "pasos": [
+            "Ingresa la reclamación **por la plataforma Mercado Público** (Centro de Ayuda / reclamos del proceso), dirigida al **organismo que dictó el acto**.",
+            "Describe con precisión el acto u omisión ilegal y adjunta antecedentes.",
+            "El organismo debe responder **por la misma plataforma dentro de 5 días hábiles** desde el ingreso del reclamo.",
+            "ChileCompra monitorea estos reclamos; si detecta indicios de ilegalidad o faltas a la probidad, remite los antecedentes a la **CGR en 5 días**; si hay posibles delitos o infracciones a la libre competencia, al **Ministerio Público o a la FNE en 3 días hábiles** (arts. 30 bis y 30 ter, Ley 19.886)."
+          ],
+          "plazo": "**5 días hábiles** desde la notificación del acto impugnado o desde que conociste (o debiste conocer) la ilegalidad (art. 30 bis).",
+          "costo": "Gratis.",
+          "si_no": "Si la respuesta no te satisface o no responden en plazo: demanda ante el **Tribunal de Contratación Pública** (procedimiento E5); presentada la reclamación, el plazo judicial se cuenta desde la notificación de la respuesta o desde la certificación de que no fue resuelta en plazo.",
+          "fuente": "Ley 19.886, arts. 30 bis y 30 ter (texto según Ley 21.634; bcn.cl/leychile)",
+          "nivel_verificacion": ["documento"],
+          "advertencia": null
+        },
+        {
+          "id": "E4",
+          "nombre": "Denuncia reservada ante ChileCompra (Observatorio de Compras Públicas)",
+          "cuando_usar": "Para informar irregularidades sin exponerte: faltas a la Ley de Compras, cohecho o negociación incompatible, corrupción en la entidad licitante, conflictos de interés, lavado de activos o prácticas contra la libre competencia. Recomendada cuando agotaste los reclamos al organismo o temes represalias.",
+          "pasos": [
+            "Entra al Centro de Ayuda de Mercado Público: **ayuda.mercadopublico.cl/iniciodenunciareservada/** con tu **ClaveÚnica**.",
+            "Completa el contenido legal (art. 19, D.S. 661): tu identificación (queda reservada), un correo para notificaciones, narración circunstanciada de los hechos, individualización de involucrados y testigos, y los documentos que la fundamenten. **No incluyas datos accesorios que permitan deducir tu identidad.**",
+            "El **Observatorio ChileCompra** analiza los antecedentes, puede pedir información al organismo y elabora un informe.",
+            "Si hay indicios, deriva al organismo competente: **Ministerio Público** (delitos), **FNE** (libre competencia), **CGR** (probidad/legalidad), **UAF** (lavado) o aplica medidas del Registro de Proveedores."
+          ],
+          "plazo": "El Observatorio informa un plazo de gestión de **10 días hábiles**, que puede prolongarse si se piden antecedentes a otros organismos; el resultado se comunica al denunciante por correo.",
+          "costo": "Gratis.",
+          "si_no": "**Reserva protegida:** tu identidad no se entrega al organismo denunciado ni a terceros, **salvo requerimiento judicial (Ministerio Público/FNE) o administrativo formal de la CGR** (arts. 18 y 19, D.S. 661; art. 35 sexies, Ley 19.886). Si sufres represalias siendo funcionario, aplica la Ley 21.592 (guía 03).",
+          "fuente": "D.S. 661/2024, arts. 18–19 · Ley 19.886, art. 35 sexies · https://www.chilecompra.cl/denuncias-reservadas/ · Ficha ChileAtiende N° 95734",
+          "nivel_verificacion": ["documento", "institucional"],
+          "advertencia": null
+        },
+        {
+          "id": "E5",
+          "nombre": "Demanda ante el Tribunal de Contratación Pública (TCP)",
+          "cuando_usar": "Es la vía judicial especializada para impugnar ilegalidades o arbitrariedades en cualquier fase de la contratación (procedimiento, adjudicación, ejecución del contrato), impugnar acciones de ChileCompra sobre el Registro de Proveedores y pedir la **nulidad de contratos** celebrados con infracción a la probidad (art. 24, Ley 19.886, según Ley 21.634). El TCP puede declarar la nulidad, retrotraer el procedimiento y dejar expedita la indemnización de perjuicios.",
+          "pasos": [
+            "Reúne los antecedentes del proceso (ID de licitación, bases, actos, respuestas a reclamos) y considera presentar antes la **reclamación administrativa (procedimiento E3)**, que interrumpe el plazo judicial.",
+            "La demanda se presenta por el **sistema de tramitación electrónica** del tribunal (carpeta electrónica; art. 24 bis) — sitio **tribunaldecontratacionpublica.cl**; en casos excepcionales puede presentarse en papel por delegaciones presidenciales.",
+            "La demanda debe exponer claramente: hechos, ilegalidades/arbitrariedades o vicios, normas infringidas y peticiones concretas (art. 24 ter). En la acción de nulidad se demanda también al tercero beneficiado.",
+            "Si la demanda tiene omisiones, el tribunal da **5 días hábiles** para subsanar (sin alterar la fecha de presentación).",
+            "Admitida la demanda, el organismo demandado informa en **10 días hábiles** (prorrogable una vez por 5 días, art. 25)."
+          ],
+          "plazo": "**10 días hábiles (plazo fatal)** desde que conociste o debiste conocer la ilegalidad, arbitrariedad o vicio. Si dedujiste reclamación administrativa (30 bis) o recurso administrativo previo contra el mismo acto, se cuenta desde la notificación del acto que la resuelve o desde la certificación de que no fue resuelta en plazo. La **acción de nulidad** no puede ejercerse después de **2 años** desde el vicio (art. 24 ter).",
+          "costo": "Por la vía electrónica no se informa arancel de ingreso (**por verificar** costos específicos de patrocinio; la representación por abogado es lo habitual en la práctica).",
+          "si_no": "Si pierdes: **apelación** ante la **Corte de Apelaciones de Santiago** dentro de **10 días hábiles** desde la notificación de la sentencia (solo efecto devolutivo; art. 26 quinquies). Con sentencia firme que acoge la demanda, puedes pedir **indemnización de perjuicios** ante el tribunal ordinario (juicio sumario) dentro de **6 meses** (art. 26 septies).",
+          "fuente": "Ley 19.886, arts. 24–26 septies (texto Ley 21.634) · https://tribunaldecontratacionpublica.cl",
+          "nivel_verificacion": ["documento", "institucional"],
+          "advertencia": "Estado al 19-10-2026: el TCP está operando y en expansión de 3 a 6 jueces titulares más 2 suplentes (nombramientos en curso, septiembre de 2026)."
+        }
+      ],
+      "advertencias": [
+        "**Nuevo reglamento (D.S. 661/2024):** reemplazó al D.S. 250/2004; las normas generales rigen desde el 11-12-2024 y algunas innovaciones (compras de innovación, economía circular) desde el 11-06-2025. Verifica que los instructivos y manuales que consultes citen el reglamento nuevo. [Documento oficial, verificado 19-10-2026]",
+        "**\"Hábil\" con costo:** aunque la inscripción es gratis, la acreditación de habilidad (obligatoria para participar desde diciembre de 2024) tiene membresía según tamaño de empresa; mantén los certificados vigentes para no caer en \"no hábil\" a mitad de un proceso.",
+        "**El plazo de 5 días hábiles del art. 30 bis vuela:** desde que se notifica el acto (por ejemplo, la adjudicación) el cómputo corre de inmediato en la plataforma; no esperes al fin de semana para reaccionar.",
+        "**Reclamo ≠ denuncia reservada ≠ demanda:** son tres vías distintas y compatibles en escalera: reclama al organismo (30 bis), denuncia con reserva ante ChileCompra si hay irregularidad sistémica, y demanda ante el TCP dentro del plazo fatal de 10 días hábiles. La reclamación administrativa es la única que **interrumpe** el plazo judicial.",
+        "**TCP en transición de escala:** la ampliación a 6 jueces titulares (Ley 21.634) está en implementación al 19-10-2026; el Capítulo V (nuevas competencias) aplica a causas iniciadas tras su entrada en vigencia. Verifica en tribunaldecontratacionpublica.cl el estado de tramitación electrónica antes de presentar.",
+        "**Compra Ágil:** el monto de 100 UTM varía mensualmente con la UTM; confirma el valor del mes antes de cotizar.",
+        "**Esta guía cubre la Ley 19.886 general:** las compras de defensa (FF.AA.), salud con reglas especiales y concesiones de obras públicas (MOP) tienen regímenes propios no desarrollados aquí."
+      ]
+    }
+  }
+}

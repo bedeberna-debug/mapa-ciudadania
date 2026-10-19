@@ -398,3 +398,76 @@ body {
 }
 .sn-doc-np-titulo { margin: 0 0 .6rem; font-size: .94rem; line-height: 1.5; }
 .sn-doc-np .btn-tecnico { margin-top: 0; margin-right: .5rem; margin-bottom: .4rem; }
+
+/* --- guías de procedimientos "Resolver algo" (Beta 0.7) ---
+   Clases con prefijo rg- para no colisionar con el resto de la app. */
+.rg-corte {
+  font-size: .88rem; color: var(--tenue); font-weight: 600;
+  margin: 0 0 1rem;
+}
+.rg-guia a { color: var(--acento); }
+.rg-bloque {
+  border-top: 1px solid var(--linea); margin-top: 1.3rem; padding-top: .4rem;
+}
+.rg-bloque h3 { font-size: 1.12rem; margin: .5rem 0 .6rem; }
+.rg-bloque p, .rg-bloque li { font-size: .96rem; line-height: 1.6; }
+.rg-bloque ul { padding-left: 1.2rem; }
+.rg-bloque li { margin-bottom: .45rem; }
+.rg-bloque-cab { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; }
+.rg-bloque-cab h3 { margin: .5rem 0 .6rem; flex: 1; min-width: 12rem; }
+.rg-subtitulo { font-weight: 600; margin: .8rem 0 .3rem; }
+.rg-sellos { display: inline-flex; gap: .35rem; flex-wrap: wrap; }
+
+/* instituciones */
+.rg-insts { display: grid; gap: .7rem; }
+@media (min-width: 700px) { .rg-insts { grid-template-columns: 1fr 1fr; } }
+.rg-inst {
+  background: var(--panel); border: 1px solid var(--linea);
+  border-left: 5px solid var(--c-institucion); border-radius: var(--radio);
+  padding: .8rem 1rem;
+}
+.rg-inst-nombre { font-weight: 600; line-height: 1.35; }
+.rg-inst-rol { font-size: .9rem; color: var(--tenue); margin: .35rem 0 .5rem; }
+.rg-inst-links { display: flex; flex-wrap: wrap; gap: .25rem .9rem; font-size: .88rem; align-items: center; }
+.rg-inst-links .rg-mapa { font-weight: 600; }
+
+/* procedimientos (acordeón sobre .desplegable) */
+.rg-proc summary { flex-wrap: wrap; gap: .3rem .6rem; }
+.rg-proc .rg-proc-nombre { flex: 1; min-width: 14rem; }
+.rg-proc ol.rg-pasos { padding-left: 1.3rem; }
+.rg-proc ol.rg-pasos li { margin-bottom: .45rem; line-height: 1.55; }
+.rg-plazo {
+  background: var(--acento-suave); border-radius: var(--radio);
+  padding: .6rem .9rem; margin: .7rem 0;
+}
+.rg-sino {
+  border-left: 4px solid var(--c-nivel); background: var(--fondo);
+  border-radius: 0 8px 8px 0; padding: .6rem .9rem; margin: .7rem 0;
+}
+.rg-sino p { margin: .3rem 0 0; }
+.rg-adv-proc {
+  border-left: 4px solid var(--alerta); background: #fbeaea;
+  border-radius: 0 8px 8px 0; padding: .6rem .9rem; margin: .7rem 0;
+}
+.rg-fuente { font-size: .85rem; color: var(--tenue); margin-top: .8rem; }
+.rg-fuente .rg-sellos { margin-left: .4rem; }
+
+/* advertencias (sección F) y disclaimer */
+.rg-advertencias {
+  background: #fbeaea; border: 1px solid var(--alerta); border-radius: var(--radio);
+  padding: .9rem 1.1rem; margin-top: 1.4rem;
+}
+.rg-advertencias h3 { margin: 0 0 .5rem; font-size: 1.05rem; color: var(--alerta); }
+.rg-advertencias ul { margin: 0; padding-left: 1.2rem; }
+.rg-advertencias li { font-size: .93rem; line-height: 1.55; margin-bottom: .5rem; }
+.rg-disclaimer {
+  border-top: 1px dashed var(--linea); margin-top: 1.4rem; padding-top: .7rem;
+  font-size: .85rem; color: var(--tenue); font-style: italic;
+}
+.rg-pv { color: var(--alerta); font-weight: 700; }
+
+/* sección de normas que se mantiene debajo de la guía */
+.rg-normas {
+  border-top: 2px solid var(--linea); margin-top: 1.8rem; padding-top: .6rem;
+}
+.rg-normas-titulo { font-size: 1.12rem; margin: .5rem 0 .3rem; }

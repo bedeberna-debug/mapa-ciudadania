@@ -3,6 +3,36 @@
 Versión para público general del [Mapa del Sistema](https://github.com/bedeberna-debug/mapa-del-sistema).
 Numeración alineada con la app hermana; cada versión consume la misma data compilada.
 
+## Beta 0.7 — Guías de procedimientos en "Resolver algo" (19-10-2026)
+- **La vista "Resolver algo" pasa de curaduría de normas a guías de procedimientos:**
+  cada una de las 4 rutas (pedir información, participar, denunciar, contratar con el
+  Estado) ahora muestra qué hacer, ante quién, en qué plazo y qué sigue si te dicen que
+  no, construida exclusivamente desde el dossier `plataforma/data-guias/` con fecha de
+  corte **19-10-2026** (visible en cada guía: "Procedimientos verificados al 19-10-2026").
+- **20 procedimientos ciudadanos** (5 por ruta), cada uno en acordeón con: cuándo usarlo,
+  pasos numerados, plazo destacado, costo, bloque "Si te dicen que no / no responden" con
+  la instancia siguiente, fuente y **sello de verificación** (documento oficial /
+  plataforma institucional / ⚠️ por verificar, reutilizando las clases `sello-verif`).
+- Estructura por guía: síntesis → instituciones clave (con enlaces oficiales y "Ver en el
+  mapa →" cuando el nodo existe en el grafo: CPLT, CGR, ChileCompra, Registro Civil,
+  Escazú) → obligaciones de la ley → a quiénes alcanza → procedimientos →
+  **advertencias y datos vivos** (transición Ley 21.719/Agencia de Protección de Datos,
+  práctica real de 120 días en reclamos CPLT, TCP en expansión, etc.) → disclaimer
+  obligatorio ("guía informativa, no asesoría legal").
+- **Referencias cruzadas entre guías** ("guía 01", "guía 03"…) convertidas en enlaces
+  internos `#/resolver/<ruta>`; los "por verificar" se muestran resaltados, nunca como
+  hechos.
+- **Se mantiene intacta** la sección de pasos-norma al final de cada guía ("las normas
+  que te protegen, en el orden en que conviene conocerlas") con su enlace "Ver estas
+  piezas en el mapa": la guía encima, las normas debajo.
+- Datos en módulo nuevo `data/guias.json` (no se modificó `data/grafo.json`); plan de
+  trabajo en `PLAN-guias.md`; estilos nuevos solo con prefijo `rg-`.
+- ⚠️ marcados "por verificar" en la UI (tal cual el dossier): plazo exacto de habilitación
+  del Registro de Proveedores, plazo de respuesta del Canal de Denuncias CGR, aranceles
+  notariales (junta de vecinos y plebiscito), plazos de audiencias municipales según
+  ordenanza, vía específica si el alcalde no convoca plebiscito, estado de la anotación
+  "fin de vigencia 24-02-2027" de la Ley 21.595, costos de patrocinio ante el TCP.
+
 ## Beta 0.6 — Instituciones subnacionales en el grafo + ajustes de presentación (19-10-2026)
 - **Las 6 instituciones subnacionales y sus planes entran al grafo** (12 nodos nuevos:
   86 → **98 nodos**, 290 → **310 aristas**): Peñalolén, Maipú, San Joaquín, Renca,

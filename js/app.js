@@ -3,7 +3,7 @@
    (grafo, meta, nodos, abrirNodo, etiquetaArista, nombreCorto, badgeAlerta…)
    para que los componentes reutilizados funcionen sin cambios funcionales. */
 const App = {
-  grafo: null, meta: null, nodos: new Map(), vista: null,
+  grafo: null, meta: null, guias: null, nodos: new Map(), vista: null,
 
   /* Re-etiquetado en lenguaje claro de los 6 tipos de arista.
      meta.json (dato generado) NO se modifica: la traducción vive aquí. */
@@ -26,11 +26,12 @@ const App = {
   },
 
   async iniciar() {
-    const [grafo, meta] = await Promise.all([
+    const [grafo, meta, guias] = await Promise.all([
       fetch('data/grafo.json').then(r => r.json()),
       fetch('data/meta.json').then(r => r.json()),
+      fetch('data/guias.json').then(r => r.json()),
     ]);
-    this.grafo = grafo; this.meta = meta;
+    this.grafo = grafo; this.meta = meta; this.guias = guias;
     grafo.nodos.forEach(n => this.nodos.set(n.id, n));
     document.getElementById('pie-stats').textContent =
       `${grafo.total_nodos} elementos · ${grafo.total_aristas} relaciones verificadas contra las fichas del acervo`;
