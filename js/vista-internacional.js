@@ -24,6 +24,16 @@ const VistaInternacional = {
         competitividad: asume costos que otros no asumen. El tratado resuelve eso haciendo
         la limitación <strong>recíproca y verificable</strong>: todos se limitan a la vez y
         el costo se reparte entre todos.</p>
+        <p>Hay otra forma de mirar la misma idea: la integración también es una oportunidad.
+        Los países con gobiernos más abiertos y democráticos —donde la ciudadanía participa
+        de verdad y las reglas se cumplen— están mejor preparados para acordar normas
+        ambientales que funcionen, para impulsar formas de producción que cuiden la
+        naturaleza y los recursos que las próximas generaciones van a necesitar, y para ser
+        socios confiables de la cooperación internacional. La transparencia y la participación
+        no solo evitan costos que todos terminamos pagando: también producen beneficios
+        compartidos —aire más limpio, agua segura, ciudades habitables, economías preparadas
+        para el futuro—, que es, en el fondo, lo que promete un desarrollo sostenible hecho
+        en serio.</p>
         <p>Y Chile no solo adhiere: <strong>también propone</strong>. Fue país fundador de la
         Alianza para el Gobierno Abierto (OGP) con su Carta de Intención de septiembre de 2011,
         y su 6° Plan incluye el Compromiso 10 sobre transparencia pesquera (estándar FiTI),

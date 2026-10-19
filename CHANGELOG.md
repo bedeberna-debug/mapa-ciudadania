@@ -3,6 +3,36 @@
 Versión para público general del [Mapa del Sistema](https://github.com/bedeberna-debug/mapa-del-sistema).
 Numeración alineada con la app hermana; cada versión consume la misma data compilada.
 
+## Beta 0.6 — Instituciones subnacionales en el grafo + ajustes de presentación (19-10-2026)
+- **Las 6 instituciones subnacionales y sus planes entran al grafo** (12 nodos nuevos:
+  86 → **98 nodos**, 290 → **310 aristas**): Peñalolén, Maipú, San Joaquín, Renca,
+  GORE Metropolitano de Santiago (nivel regional) y Concepción, con sus 6 planes de
+  acción (2019 Renca; 2021 Peñalolén; 2023 Maipú y San Joaquín; 2026 Santiago/GORE y
+  Concepción) como nodos de rango *soft law*, grupo nuevo **SN**. Las 14 aristas curadas
+  citan texto literal de las fichas del dossier `plataforma/data-subnacional/` (regla
+  dura de evidencia idéntica a la del acervo); se reutilizan los tipos de arista
+  existentes (`se_aplica_a`, `responsable_de`, `opera`), sin tipos nuevos. El nodo
+  "nivel regional" ya existía desde la fase 1 (hermano de nacional y municipal): se
+  conecta al GORE, no se duplicó. Temas y Tiempo se alimentan solos de los campos
+  `temas`/`anio` (entradas 2019–2026); "Territorio" (tipo nivel) sigue oculto por
+  defecto en el mapa. La versión Estudio recibe la misma data sin tocar su interfaz
+  (copias locales de `grafo.json`/`meta.json` idénticas, verificadas por hash).
+- **Botón "Ver ficha"** en el panel de detalle de las instituciones subnacionales:
+  navega a su ficha de la sección "Tu comuna" (campo nuevo `ficha_url`).
+- **Vista Orden**: bloque nuevo "Gobierno abierto subnacional" con selector de las 6
+  instituciones que navega a su ficha (aditivo; la pirámide no se reestructura).
+- **Mapa (grafo)**: vista inicial más alejada (escala inicial 0.70; el zoom 0.12–4 y
+  el arrastre siguen intactos) y mayor dispersión (repulsión many-body −520 → −650,
+  distancia de enlace 130 → 150).
+- Vista **Internacional**: párrafo nuevo sobre la integración como oportunidad y los
+  beneficios compartidos de la transparencia y la participación (aditivo; la
+  perspectiva de "costos socializados" se mantiene intacta).
+- Se elimina el acceso cruzado a la versión académica desde la landing; autoría con
+  nombre completo (Bernardo Alfredo Silva Quezada).
+- ⚠️ marcados "por verificar": segundo plan de Maipú; número exacto de compromisos del
+  plan 2023 de San Joaquín (CEPAL 4 / carta OGP 3); URL de la Plataforma de Rendición
+  del GORE; tramitación CPLT/MNEA, PDF y vigencia formal del plan de Concepción.
+
 ## Beta 0.5 — Nueva sección "Gobierno abierto en tu comuna y región" (15-10-2026)
 - Sección aditiva (entrada **"Tu comuna"** en la navegación, sin cambios en grafo, línea de
   tiempo, pirámide, modos ni selector): el gobierno abierto subnacional chileno con datos

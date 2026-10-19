@@ -100,6 +100,22 @@
   {
    "nodo": "ley-20880",
    "alerta": "Modificada por Ley 21.735/2025 con vigencia diferida al 01-03-2027 — por verificar antes de publicar"
+  },
+  {
+   "nodo": "plan-maipu-2023",
+   "alerta": "Segundo plan no presentado: la ficha OGP al 15-10-2026 aún muestra el plan 2023–2024 como en implementación — por verificar"
+  },
+  {
+   "nodo": "plan-san-joaquin-2023",
+   "alerta": "Número exacto de compromisos por verificar: CEPAL/ILPES menciona 4 y la carta OGP lista 3"
+  },
+  {
+   "nodo": "plan-santiago-2026",
+   "alerta": "URL pública de la Plataforma de Rendición de Cuentas (entregable del Compromiso 2) por verificar"
+  },
+  {
+   "nodo": "plan-concepcion-2026",
+   "alerta": "Plan autodeclarado: sin evidencia de tramitación ante el CPLT ni la MNEA; PDF del plan no localizado; vigencia formal por verificar"
   }
  ]
 }

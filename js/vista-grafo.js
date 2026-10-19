@@ -5,7 +5,9 @@
    oculto de inicio, ocultación de aristas asociadas). La funcionalidad está
    INTACTA respecto de Estudio; solo cambian los textos visibles a lenguaje
    claro. Las etiquetas técnicas de meta.json no se tocan: la traducción pasa
-   por app.etiquetaArista() / app.etiquetaTipoNodo(). */
+   por app.etiquetaArista() / app.etiquetaTipoNodo().
+   Beta 0.6: vista inicial alejada (escala 0.55) y mayor dispersión
+   (repulsión -650, distancia de enlace 150). */
 const VistaGrafo = {
   render(cont, arg, app) {
     // Texto de acompañamiento: qué estoy viendo y para qué me sirve
@@ -62,7 +64,14 @@ const VistaGrafo = {
     const radio = { norma: 9, institucion: 8, horizonte: 6, nivel: 7 };
 
     const g = svg.append('g');
-    svg.call(d3.zoom().scaleExtent([0.12, 4]).on('zoom', ev => g.attr('transform', ev.transform)));
+    // Vista inicial alejada (escala 0.55): casi todo el grafo cabe en el recuadro
+    // (extensión estabilizada ~2655×1591 → 1460×875 px a escala 0.55).
+    // El zoom/drag sigue intacto: el usuario acerca con rueda o pinza (0.12–4).
+    const zoom = d3.zoom().scaleExtent([0.12, 4]).on('zoom', ev => g.attr('transform', ev.transform));
+    svg.call(zoom);
+    const ESCALA_INICIAL = 0.55;
+    svg.call(zoom.transform,
+      d3.zoomIdentity.translate(width / 2, height / 2).scale(ESCALA_INICIAL).translate(-width / 2, -height / 2));
 
     svg.append('defs').selectAll('marker').data(app.meta.tipos_arista).join('marker')
       .attr('id', d => `flecha-${d.id}`).attr('viewBox', '0 -5 10 10')
@@ -88,8 +97,8 @@ const VistaGrafo = {
     nodos.forEach(n => n._comp = comp[n.id]);
 
     const sim = d3.forceSimulation(nodos)
-      .force('link', d3.forceLink(aristas).id(d => d.id).distance(130))
-      .force('charge', d3.forceManyBody().strength(-520))
+      .force('link', d3.forceLink(aristas).id(d => d.id).distance(150))
+      .force('charge', d3.forceManyBody().strength(-650))
       .force('center', d3.forceCenter(width / 2, height / 2))
       .force('colision', d3.forceCollide(26))
       .force('sat-x', d3.forceX(width / 2).strength(d => d._comp === compPrincipal ? 0 : 0.06))

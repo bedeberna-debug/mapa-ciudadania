@@ -45,8 +45,6 @@ const Landing = {
         <p class="intro" style="margin-top:1.2rem">Versión para público general del
         <em>Mapa del Sistema</em>: ${app.grafo.total_nodos} elementos del marco normativo de
         Gobierno Abierto, todos verificados contra sus fichas documentales.</p>
-        <a class="enlace-estudio" href="../mapa-del-sistema/" title="Versión con fichas técnicas y citas completas">
-          ¿Buscas el detalle técnico? Ir a la versión académica →</a>
       </section>`;
   },
 };

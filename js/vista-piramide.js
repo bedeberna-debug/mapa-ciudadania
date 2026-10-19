@@ -42,6 +42,32 @@ const VistaPiramide = {
       div.appendChild(grid);
       cont.appendChild(div);
     }
+    cont.appendChild(this.bloqueSubnacional(app));
+  },
+
+  /* Bloque aditivo (Beta 0.6): acceso a las fichas de gobierno abierto
+     subnacional de la sección "Tu comuna". No reestructura la pirámide. */
+  bloqueSubnacional(app) {
+    const instituciones = app.grafo.nodos
+      .filter(n => n.tipo === 'institucion' && n.ficha_url)
+      .sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'));
+    const div = document.createElement('div');
+    div.className = 'capa';
+    div.innerHTML = `<div class="capa-titulo">Gobierno abierto subnacional</div>
+      <p class="capa-glosa">Los planes de tu comuna o región no son normas, pero son parte
+      del sistema: elige una institución para ver su ficha con compromisos, plataformas y
+      estado de avance verificado.</p>`;
+    if (!instituciones.length) return div;
+    const fila = document.createElement('p');
+    fila.className = 'capa-glosa';
+    const sel = document.createElement('select');
+    sel.setAttribute('aria-label', 'Elegir institución subnacional');
+    sel.innerHTML = `<option value="">Elige una municipalidad o gobierno regional…</option>` +
+      instituciones.map(n => `<option value="${n.ficha_url}">${n.nombre}</option>`).join('');
+    sel.onchange = () => { if (sel.value) location.hash = sel.value; };
+    fila.appendChild(sel);
+    div.appendChild(fila);
+    return div;
   },
 
   tarjeta(n, app) {

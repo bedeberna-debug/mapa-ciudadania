@@ -56,6 +56,16 @@ const Panel = {
       div.appendChild(btnPdf);
     }
 
+    // Botón "Ver ficha": solo nodos con ficha_url (p. ej. instituciones
+    // subnacionales → ruta interna de la sección "Tu comuna").
+    if (nodo.ficha_url) {
+      const btnFicha = document.createElement('a');
+      btnFicha.className = 'btn-pdf';
+      btnFicha.href = nodo.ficha_url;
+      btnFicha.textContent = 'Ver ficha';
+      div.appendChild(btnFicha);
+    }
+
     // Botón discreto "Ver detalle técnico": solo normas con ficha compilada
     if (nodo.tipo === 'norma' && nodo.ficha_html) {
       const btn = document.createElement('button');

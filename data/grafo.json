@@ -1,7 +1,7 @@
 {
  "generado": "mapa-del-sistema fase 1",
- "total_nodos": 86,
- "total_aristas": 290,
+ "total_nodos": 98,
+ "total_aristas": 310,
  "nodos": [
   {
    "id": "cpr",
@@ -903,6 +903,145 @@
    "ficha_html": "fichas/ficha-40-ds295-2025-reglamento-ciberseguridad.html"
   },
   {
+   "id": "plan-renca-2019",
+   "tipo": "norma",
+   "nombre": "Primer Plan de Acción Comunal de Gobierno Abierto de Renca 2019–2021",
+   "ficha": 104,
+   "anio": 2019,
+   "rango": "soft law",
+   "grupo": "SN",
+   "nivel": "municipal",
+   "estado": "histórico (2019–2021; primer plan comunal de gobierno abierto de Chile)",
+   "temas": [
+    "participacion",
+    "transparencia"
+   ],
+   "fuente": null,
+   "descripcion": "- Nombre exacto: Ilustre Municipalidad de Renca - Región: Metropolitana de Santiago (comuna de Renca) - Alcalde (2016–2024 y referente del proceso): Claudio Castro [Prensa + documento OGP].",
+   "fuente_descripcion": "Ficha subnacional 04-renca.md, sección 1",
+   "pdf": null,
+   "fuente_pdf": null,
+   "alerta": null,
+   "nota": "Elaborado con Fundación Tribu siguiendo estándares OGP sin ser miembro; Renca ingresó a OGP Local en 2024 (consorcio con el GORE de Santiago)",
+   "ficha_html": null
+  },
+  {
+   "id": "plan-penalolen-2021",
+   "tipo": "norma",
+   "nombre": "I Plan de Acción de Gobierno Abierto de Peñalolén 2021–2024",
+   "ficha": 101,
+   "anio": 2021,
+   "rango": "soft law",
+   "grupo": "SN",
+   "nivel": "municipal",
+   "estado": "implementado (19 de 21 hitos a ene-2025); II Plan en cocreación",
+   "temas": [
+    "participacion",
+    "transparencia"
+   ],
+   "fuente": null,
+   "descripcion": "- Nombre exacto: Ilustre Municipalidad de Peñalolén - Región: Metropolitana de Santiago (comuna de Peñalolén) - Alcalde (2024–2028): Miguel Concha Mansilla [Plataforma institucional, 15-10-2026] - Unidad responsable: Dirección de Control y Gobierno Abierto (Directora: María Cecilia Jiménez, según respaldo del plan GORE Santiago 2026–2028) [Documento oficial OGP, 15-10-2026]",
+   "fuente_descripcion": "Ficha subnacional 01-penalolen.md, sección 1",
+   "pdf": null,
+   "fuente_pdf": null,
+   "alerta": null,
+   "nota": null,
+   "ficha_html": null
+  },
+  {
+   "id": "plan-maipu-2023",
+   "tipo": "norma",
+   "nombre": "Plan de Acción de Gobierno Abierto de Maipú 2023–2024",
+   "ficha": 102,
+   "anio": 2023,
+   "rango": "soft law",
+   "grupo": "SN",
+   "nivel": "municipal",
+   "estado": "período formal terminado (oct-2024)",
+   "temas": [
+    "participacion",
+    "transparencia"
+   ],
+   "fuente": null,
+   "descripcion": "- Nombre exacto: Ilustre Municipalidad de Maipú - Región: Metropolitana de Santiago (comuna de Maipú) - Unidad responsable: Secretaría Comunal de Planificación (SECPLA) en coordinación con DIDECO; Centro de Gobierno apoya implementación. POC ante OGP: Natalia González (Jefa de Centro de Gobierno) y Catalina González (Asesora de Proyectos Estratégicos) [Ficha OGP, 15-10-2026].",
+   "fuente_descripcion": "Ficha subnacional 02-maipu.md, sección 1",
+   "pdf": null,
+   "fuente_pdf": null,
+   "alerta": "Segundo plan no presentado: la ficha OGP al 15-10-2026 aún muestra el plan 2023–2024 como en implementación — por verificar",
+   "nota": null,
+   "ficha_html": null
+  },
+  {
+   "id": "plan-san-joaquin-2023",
+   "tipo": "norma",
+   "nombre": "Primer Plan de Gobierno Abierto de San Joaquín 2023 (implementación 2024)",
+   "ficha": 103,
+   "anio": 2023,
+   "rango": "soft law",
+   "grupo": "SN",
+   "nivel": "municipal",
+   "estado": "implementado 2024; plan OGP en cocreación al 15-10-2026",
+   "temas": [
+    "participacion",
+    "transparencia"
+   ],
+   "fuente": null,
+   "descripcion": "- Nombre exacto: Ilustre Municipalidad de San Joaquín - Región: Metropolitana de Santiago (comuna de San Joaquín) - Programa responsable: Programa Comunal de Gobierno Abierto (unidad de Administración Municipal, con Coordinador/a de Gobierno Abierto y presupuesto propio) [Documento oficial — Letters of Support OGP 2024].",
+   "fuente_descripcion": "Ficha subnacional 03-san-joaquin.md, sección 1",
+   "pdf": null,
+   "fuente_pdf": null,
+   "alerta": "Número exacto de compromisos por verificar: CEPAL/ILPES menciona 4 y la carta OGP lista 3",
+   "nota": null,
+   "ficha_html": null
+  },
+  {
+   "id": "plan-santiago-2026",
+   "tipo": "norma",
+   "nombre": "I Plan de Acción de Gobierno Abierto Santiago 2026–2028 (consorcio GORE Santiago + Renca)",
+   "ficha": 105,
+   "anio": 2026,
+   "rango": "soft law",
+   "grupo": "SN",
+   "nivel": "regional",
+   "estado": "vigente 2026–2028 (presentado a OGP el 03-08-2026)",
+   "temas": [
+    "participacion",
+    "transparencia",
+    "datos"
+   ],
+   "fuente": null,
+   "descripcion": "- Nombre exacto: Gobierno Regional Metropolitano de Santiago (GORE Santiago / Gobierno de Santiago) - Región: Metropolitana de Santiago - Gobernador regional: Claudio Orrego Larraín [Plataforma institucional gobiernosantiago.cl, 15-10-2026] - Unidad líder del plan: Departamento de Modernización, Planificación Estratégica y Control de Gestión, en co-liderazgo con la Ilustre Municipalidad de Renca [Documento oficial OGP — Plan de Acción 2026–2028, 15-10-2026]",
+   "fuente_descripcion": "Ficha subnacional 05-gore-metropolitano-santiago.md, sección 1",
+   "pdf": null,
+   "fuente_pdf": null,
+   "alerta": "URL pública de la Plataforma de Rendición de Cuentas (entregable del Compromiso 2) por verificar",
+   "nota": null,
+   "ficha_html": null
+  },
+  {
+   "id": "plan-concepcion-2026",
+   "tipo": "norma",
+   "nombre": "I Plan de Acción de Gobierno Abierto de Concepción 2026",
+   "ficha": 106,
+   "anio": 2026,
+   "rango": "soft law",
+   "grupo": "SN",
+   "nivel": "municipal",
+   "estado": "lanzado en mayo-2026; vigencia formal por verificar",
+   "temas": [
+    "participacion",
+    "transparencia"
+   ],
+   "fuente": null,
+   "descripcion": "- Nombre exacto: Ilustre Municipalidad de Concepción - Región: Biobío (comuna de Concepción) - Alcalde: Héctor Muñoz Uribe [Plataforma institucional concepcion.cl, 15-10-2026] - Administrador municipal: Boris Negrete Canales [Plataforma institucional concepcion.cl, 15-10-2026]",
+   "fuente_descripcion": "Ficha subnacional 06-concepcion.md, sección 1",
+   "pdf": null,
+   "fuente_pdf": null,
+   "alerta": "Plan autodeclarado: sin evidencia de tramitación ante el CPLT ni la MNEA; PDF del plan no localizado; vigencia formal por verificar",
+   "nota": null,
+   "ficha_html": null
+  },
+  {
    "id": "inst-cplt",
    "tipo": "institucion",
    "nombre": "Consejo para la Transparencia (CPLT)",
@@ -911,6 +1050,7 @@
    "pdf": null,
    "fuente_pdf": null,
    "temas": [],
+   "ficha_url": null,
    "alerta": null,
    "nota": null
   },
@@ -923,6 +1063,7 @@
    "pdf": null,
    "fuente_pdf": null,
    "temas": [],
+   "ficha_url": null,
    "alerta": null,
    "nota": null
   },
@@ -935,6 +1076,7 @@
    "pdf": null,
    "fuente_pdf": null,
    "temas": [],
+   "ficha_url": null,
    "alerta": null,
    "nota": null
   },
@@ -947,6 +1089,7 @@
    "pdf": null,
    "fuente_pdf": null,
    "temas": [],
+   "ficha_url": null,
    "alerta": null,
    "nota": null
   },
@@ -959,6 +1102,7 @@
    "pdf": null,
    "fuente_pdf": null,
    "temas": [],
+   "ficha_url": null,
    "alerta": null,
    "nota": null
   },
@@ -971,6 +1115,7 @@
    "pdf": null,
    "fuente_pdf": null,
    "temas": [],
+   "ficha_url": null,
    "alerta": null,
    "nota": null
   },
@@ -983,6 +1128,7 @@
    "pdf": null,
    "fuente_pdf": null,
    "temas": [],
+   "ficha_url": null,
    "alerta": null,
    "nota": null
   },
@@ -995,6 +1141,7 @@
    "pdf": null,
    "fuente_pdf": null,
    "temas": [],
+   "ficha_url": null,
    "alerta": null,
    "nota": null
   },
@@ -1007,6 +1154,7 @@
    "pdf": null,
    "fuente_pdf": null,
    "temas": [],
+   "ficha_url": null,
    "alerta": null,
    "nota": null
   },
@@ -1019,6 +1167,7 @@
    "pdf": null,
    "fuente_pdf": null,
    "temas": [],
+   "ficha_url": null,
    "alerta": null,
    "nota": null
   },
@@ -1031,6 +1180,7 @@
    "pdf": null,
    "fuente_pdf": null,
    "temas": [],
+   "ficha_url": null,
    "alerta": null,
    "nota": null
   },
@@ -1043,6 +1193,7 @@
    "pdf": null,
    "fuente_pdf": null,
    "temas": [],
+   "ficha_url": null,
    "alerta": null,
    "nota": null
   },
@@ -1055,6 +1206,7 @@
    "pdf": null,
    "fuente_pdf": null,
    "temas": [],
+   "ficha_url": null,
    "alerta": null,
    "nota": null
   },
@@ -1067,6 +1219,104 @@
    "pdf": null,
    "fuente_pdf": null,
    "temas": [],
+   "ficha_url": null,
+   "alerta": null,
+   "nota": null
+  },
+  {
+   "id": "penalolen",
+   "tipo": "institucion",
+   "nombre": "Ilustre Municipalidad de Peñalolén",
+   "descripcion": "Miembro de OGP Local desde la cohorte 2020 — el primer gobierno local de Chile en ingresar. Su I Plan de Acción 2021–2024 se cocreó en 8 diálogos ciudadanos y consulta ciudadana (1.101 votos); a enero de 2025 reportó 19 de 21 hitos terminados y el II Plan está en cocreación (mandato del PLADECO 2026–2030).",
+   "fuente_descripcion": "Ficha subnacional 01-penalolen (verificada 15-10-2026)",
+   "pdf": null,
+   "fuente_pdf": null,
+   "temas": [
+    "participacion",
+    "transparencia"
+   ],
+   "ficha_url": "#/tu-comuna/inst-penalolen",
+   "alerta": null,
+   "nota": null
+  },
+  {
+   "id": "maipu",
+   "tipo": "institucion",
+   "nombre": "Ilustre Municipalidad de Maipú",
+   "descripcion": "Miembro de OGP Local desde la cohorte 2022 (segundo municipio chileno en ingresar). Su Plan de Acción 2023–2024 tiene 4 compromisos cocreados con votación ciudadana; al 15-10-2026 el segundo plan no ha sido presentado (por verificar).",
+   "fuente_descripcion": "Ficha subnacional 02-maipu (verificada 15-10-2026)",
+   "pdf": null,
+   "fuente_pdf": null,
+   "temas": [
+    "participacion",
+    "transparencia"
+   ],
+   "ficha_url": "#/tu-comuna/inst-maipu",
+   "alerta": null,
+   "nota": null
+  },
+  {
+   "id": "san-joaquin",
+   "tipo": "institucion",
+   "nombre": "Ilustre Municipalidad de San Joaquín",
+   "descripcion": "Miembro de OGP Local desde la cohorte 2024. Ya tenía un plan comunal propio (cocreado en 2023, implementado en 2024) antes de ingresar; al 15-10-2026 su plan OGP está en cocreación. Cuenta con un Programa Comunal de Gobierno Abierto con presupuesto propio.",
+   "fuente_descripcion": "Ficha subnacional 03-san-joaquin (verificada 15-10-2026)",
+   "pdf": null,
+   "fuente_pdf": null,
+   "temas": [
+    "participacion",
+    "transparencia"
+   ],
+   "ficha_url": "#/tu-comuna/inst-san-joaquin",
+   "alerta": null,
+   "nota": null
+  },
+  {
+   "id": "renca",
+   "tipo": "institucion",
+   "nombre": "Ilustre Municipalidad de Renca",
+   "descripcion": "Elaboró el primer plan comunal de gobierno abierto de Chile (2019–2021) siguiendo estándares OGP sin ser miembro; en abril de 2024 ingresó a OGP Local en consorcio con el GORE de Santiago e integra el Plan de Acción 2026–2028 del consorcio como institución líder de implementación.",
+   "fuente_descripcion": "Ficha subnacional 04-renca (verificada 15-10-2026)",
+   "pdf": null,
+   "fuente_pdf": null,
+   "temas": [
+    "participacion",
+    "transparencia"
+   ],
+   "ficha_url": "#/tu-comuna/inst-renca",
+   "alerta": null,
+   "nota": null
+  },
+  {
+   "id": "gore-santiago",
+   "tipo": "institucion",
+   "nombre": "Gobierno Regional Metropolitano de Santiago",
+   "descripcion": "Primer —y al 15-10-2026 único— gobierno regional de Chile miembro de OGP Local (cohorte 2024, en consorcio con la Municipalidad de Renca). Su I Plan de Acción 2026–2028, presentado a OGP el 03-08-2026, tiene 3 compromisos: red de oficiales municipales de gobierno abierto, política de datos abiertos con plataforma de rendición de cuentas y participación ciudadana vinculante.",
+   "fuente_descripcion": "Ficha subnacional 05-gore-metropolitano-santiago (verificada 15-10-2026)",
+   "pdf": null,
+   "fuente_pdf": null,
+   "temas": [
+    "participacion",
+    "transparencia",
+    "datos"
+   ],
+   "ficha_url": "#/tu-comuna/inst-gore-santiago",
+   "alerta": null,
+   "nota": null
+  },
+  {
+   "id": "concepcion",
+   "tipo": "institucion",
+   "nombre": "Ilustre Municipalidad de Concepción",
+   "descripcion": "Lanzó su I Plan de Acción de Gobierno Abierto en mayo de 2026 (15 acciones cocreadas tras recorrer 12 territorios), sin membresía OGP: la primera comuna fuera de la Región Metropolitana con un plan de este tipo. Reconocimiento autodeclarado — tramitación ante CPLT/MNEA por verificar.",
+   "fuente_descripcion": "Ficha subnacional 06-concepcion (verificada 15-10-2026)",
+   "pdf": null,
+   "fuente_pdf": null,
+   "temas": [
+    "participacion",
+    "transparencia"
+   ],
+   "ficha_url": "#/tu-comuna/inst-concepcion",
    "alerta": null,
    "nota": null
   },
@@ -2906,6 +3156,118 @@
    "verificada": true
   },
   {
+   "origen": "nivel-municipal",
+   "destino": "penalolen",
+   "tipo": "se_aplica_a",
+   "evidencia": "Región: Metropolitana de Santiago (comuna de Peñalolén)",
+   "ficha_evidencia": 101,
+   "verificada": true
+  },
+  {
+   "origen": "nivel-municipal",
+   "destino": "maipu",
+   "tipo": "se_aplica_a",
+   "evidencia": "Región: Metropolitana de Santiago (comuna de Maipú)",
+   "ficha_evidencia": 102,
+   "verificada": true
+  },
+  {
+   "origen": "nivel-municipal",
+   "destino": "san-joaquin",
+   "tipo": "se_aplica_a",
+   "evidencia": "Región: Metropolitana de Santiago (comuna de San Joaquín)",
+   "ficha_evidencia": 103,
+   "verificada": true
+  },
+  {
+   "origen": "nivel-municipal",
+   "destino": "renca",
+   "tipo": "se_aplica_a",
+   "evidencia": "Región: Metropolitana de Santiago (comuna de Renca)",
+   "ficha_evidencia": 104,
+   "verificada": true
+  },
+  {
+   "origen": "nivel-municipal",
+   "destino": "concepcion",
+   "tipo": "se_aplica_a",
+   "evidencia": "Región: Biobío (comuna de Concepción)",
+   "ficha_evidencia": 106,
+   "verificada": true
+  },
+  {
+   "origen": "nivel-regional",
+   "destino": "gore-santiago",
+   "tipo": "se_aplica_a",
+   "evidencia": "Región: Metropolitana de Santiago",
+   "ficha_evidencia": 105,
+   "verificada": true
+  },
+  {
+   "origen": "penalolen",
+   "destino": "plan-penalolen-2021",
+   "tipo": "responsable_de",
+   "evidencia": "I Plan de Acción de Gobierno Abierto, Municipalidad de Peñalolén 2021–2024",
+   "ficha_evidencia": 101,
+   "verificada": true
+  },
+  {
+   "origen": "maipu",
+   "destino": "plan-maipu-2023",
+   "tipo": "responsable_de",
+   "evidencia": "Plan de Acción – Maipú, Chile, 2023–2024",
+   "ficha_evidencia": 102,
+   "verificada": true
+  },
+  {
+   "origen": "san-joaquin",
+   "destino": "plan-san-joaquin-2023",
+   "tipo": "responsable_de",
+   "evidencia": "Primer Plan de Gobierno Abierto de San Joaquín (2023, implementación 2024)",
+   "ficha_evidencia": 103,
+   "verificada": true
+  },
+  {
+   "origen": "renca",
+   "destino": "plan-renca-2019",
+   "tipo": "responsable_de",
+   "evidencia": "Primer Plan de Acción Comunal de Gobierno Abierto de Chile (2019–2021)",
+   "ficha_evidencia": 104,
+   "verificada": true
+  },
+  {
+   "origen": "gore-santiago",
+   "destino": "plan-santiago-2026",
+   "tipo": "responsable_de",
+   "evidencia": "I Plan de Acción de Gobierno Abierto Santiago 2026–2028",
+   "ficha_evidencia": 105,
+   "verificada": true
+  },
+  {
+   "origen": "concepcion",
+   "destino": "plan-concepcion-2026",
+   "tipo": "responsable_de",
+   "evidencia": "I Plan de Acción de Gobierno Abierto de Concepción (2026)",
+   "ficha_evidencia": 106,
+   "verificada": true
+  },
+  {
+   "origen": "plan-santiago-2026",
+   "destino": "renca",
+   "tipo": "opera",
+   "evidencia": "en co-liderazgo con la Ilustre Municipalidad de Renca",
+   "ficha_evidencia": 105,
+   "verificada": true
+  },
+  {
+   "origen": "plan-santiago-2026",
+   "destino": "gore-santiago",
+   "tipo": "opera",
+   "evidencia": "liderados por el Departamento de Modernización, Planificación Estratégica y Control de Gestión del GORE junto a la I. Municipalidad de Renca",
+   "ficha_evidencia": 105,
+   "verificada": true
+  },
+  {
    "origen": "inst-minciencia",
    "destino": "comp-01",
    "tipo": "responsable_de",
@@ -3313,6 +3675,60 @@
   {
    "origen": "ds-295-2025",
    "destino": "nivel-nacional",
+   "tipo": "se_aplica_a",
+   "evidencia": "Atributo nivel del nodo (regla mecánica)",
+   "ficha_evidencia": null,
+   "mecanica": true,
+   "verificada": true
+  },
+  {
+   "origen": "plan-renca-2019",
+   "destino": "nivel-municipal",
+   "tipo": "se_aplica_a",
+   "evidencia": "Atributo nivel del nodo (regla mecánica)",
+   "ficha_evidencia": null,
+   "mecanica": true,
+   "verificada": true
+  },
+  {
+   "origen": "plan-penalolen-2021",
+   "destino": "nivel-municipal",
+   "tipo": "se_aplica_a",
+   "evidencia": "Atributo nivel del nodo (regla mecánica)",
+   "ficha_evidencia": null,
+   "mecanica": true,
+   "verificada": true
+  },
+  {
+   "origen": "plan-maipu-2023",
+   "destino": "nivel-municipal",
+   "tipo": "se_aplica_a",
+   "evidencia": "Atributo nivel del nodo (regla mecánica)",
+   "ficha_evidencia": null,
+   "mecanica": true,
+   "verificada": true
+  },
+  {
+   "origen": "plan-san-joaquin-2023",
+   "destino": "nivel-municipal",
+   "tipo": "se_aplica_a",
+   "evidencia": "Atributo nivel del nodo (regla mecánica)",
+   "ficha_evidencia": null,
+   "mecanica": true,
+   "verificada": true
+  },
+  {
+   "origen": "plan-santiago-2026",
+   "destino": "nivel-regional",
+   "tipo": "se_aplica_a",
+   "evidencia": "Atributo nivel del nodo (regla mecánica)",
+   "ficha_evidencia": null,
+   "mecanica": true,
+   "verificada": true
+  },
+  {
+   "origen": "plan-concepcion-2026",
+   "destino": "nivel-municipal",
    "tipo": "se_aplica_a",
    "evidencia": "Atributo nivel del nodo (regla mecánica)",
    "ficha_evidencia": null,
