@@ -3,6 +3,33 @@
 Versión para público general del [Mapa del Sistema](https://github.com/bedeberna-debug/mapa-del-sistema).
 Numeración alineada con la app hermana; cada versión consume la misma data compilada.
 
+## Beta 0.5 — Nueva sección "Gobierno abierto en tu comuna y región" (15-10-2026)
+- Sección aditiva (entrada **"Tu comuna"** en la navegación, sin cambios en grafo, línea de
+  tiempo, pirámide, modos ni selector): el gobierno abierto subnacional chileno con datos
+  verificados al **15-10-2026**, construida exclusivamente desde el dossier
+  `plataforma/data-subnacional/` (resumen 00 + fichas 01–07).
+- **Mapa esquemático SVG de Chile** con sus 16 regiones: solo **Metropolitana** (5
+  instituciones) y **Biobío** (1 institución) activas y clicables; las otras 14 en gris con
+  leyenda "Sin plan de gobierno abierto declarado (dato al 15-10-2026)".
+- **Vista regional** con tarjetas de institución (tipo, sello de categoría con ayuda
+  emergente, estado del plan y botón "Ver ficha") y textos guía T4 (categorías) y T5
+  (cómo leer cada ficha) desplegables.
+- **Fichas de las 6 instituciones** (Peñalolén, Maipú, San Joaquín, Renca, GORE
+  Metropolitano de Santiago y Concepción): compromisos, plataformas, mecanismos de
+  seguimiento y fechas clave, cada bloque con **sello de verificación** (documento oficial /
+  plataforma institucional / prensa / ⚠️ por verificar) y los datos dudosos marcados en
+  línea, nunca presentados como hechos.
+- **Botón de documento con 3 estados**: PDF local (carpeta nueva `docs-subnacional/` con
+  8 PDF y 1 respaldo HTML), enlace externo al sitio oficial (Maipú y GORE Santiago →
+  páginas OGP vivas) o aviso "Documento completo no publicado por la institución" + mejor
+  evidencia oficial (Renca y Concepción).
+- **Conexión consorcio**: las fichas de Renca y del GORE Metropolitano de Santiago llevan
+  el indicador "🤝 Plan compartido 2026–2028" con la nota T6 y enlace mutuo.
+- **Categoría C** (transparencia municipal CPLT, 300+ de 345 municipios) solo como bloque
+  explicativo, sin tarjetas interactivas; **T7** (antecedentes 2012–2026) cierra la portada.
+- Datos de la sección en módulo propio `data/subnacional.json` (no se modificó
+  `data/grafo.json`); plan de trabajo en `PLAN-subnacional.md`.
+
 ## Beta 0.4 — Compromisos internacionales + PDFs + footer (09-10-2026)
 - Nueva categoría **"Compromisos internacionales"** (posición 3 del menú, entre "Resolver
   algo" y "Orden"): página explicativa sin links directos a documentos — apertura con el

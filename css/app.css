@@ -270,3 +270,131 @@ body {
 .ficha hr { border: 0; border-top: 1px solid var(--linea); margin: 1rem 0 .5rem; }
 .ficha em { font-size: .76rem; color: var(--tenue); }
 .ficha code { font-size: .8rem; }
+
+/* --- sección subnacional: "Gobierno abierto en tu comuna y región" (Beta 0.5) ---
+   Clases con prefijo sn- para no colisionar con el resto de la app. */
+.sn .sn-bajada { font-size: var(--fs-grande); line-height: 1.55; margin: 0 0 1rem; }
+.sn .sn-prosa { font-size: 1rem; line-height: 1.6; }
+.sn .sn-prosa li, .sn .cuerpo-des li { margin-bottom: .45rem; line-height: 1.55; }
+.sn h3 { font-size: 1.15rem; margin: 1.5rem 0 .5rem; }
+
+/* mapa esquemático de Chile */
+.sn-mapa-grid { display: grid; gap: 1.2rem; margin: 1.2rem 0 1.6rem; }
+@media (min-width: 900px) {
+  .sn-mapa-grid { grid-template-columns: minmax(0, 1fr) minmax(300px, 400px); align-items: start; }
+}
+.sn-mapa-texto h3 { margin-top: .2rem; }
+.sn-mapa-pista { font-size: .92rem; color: var(--acento); font-weight: 600; }
+.sn-mapa-fig { margin: 0; }
+.sn-mapa-svg { width: 100%; height: auto; display: block; }
+.sn-reg rect { transition: filter .15s ease; }
+.sn-reg.inactiva rect { fill: #e7e2d6; pointer-events: none; }
+.sn-reg.inactiva .sn-reg-nombre { fill: var(--tenue); font-size: 11.5px; }
+.sn-reg.activa rect { fill: var(--acento); }
+.sn-reg.activa .sn-reg-nombre { fill: var(--acento); font-size: 12px; font-weight: 700; }
+.sn-reg.activa .sn-reg-conteo { fill: var(--tenue); font-size: 11px; }
+.sn-reg.activa:hover rect, .sn-reg.activa:focus rect { filter: brightness(1.15); }
+.sn-reg.activa:focus { outline: none; }
+.sn-reg.activa:focus rect { stroke: var(--tinta); stroke-width: 2; }
+.sn-mapa-leyenda { display: grid; gap: .3rem; margin-top: .5rem; font-size: .82rem; color: var(--tenue); }
+.sn-ley-item { display: flex; align-items: center; gap: .45rem; }
+.sn-ley-muestra { width: 22px; height: 12px; border-radius: 3px; display: inline-block; flex: none; }
+.sn-ley-muestra.activa { background: var(--acento); }
+.sn-ley-muestra.inactiva { background: #e7e2d6; }
+.sn-ley-nota { font-size: .76rem; font-style: italic; }
+
+/* bloque Categoría C (referencia comparativa, sin tarjetas interactivas) */
+.sn-catc {
+  background: var(--fondo); border: 1px solid var(--linea); border-left: 5px solid var(--tenue);
+  border-radius: var(--radio); padding: .9rem 1.1rem; margin: 1.4rem 0;
+}
+.sn-catc h3 { margin-top: .2rem; }
+.sn-catc p { font-size: .95rem; line-height: 1.6; }
+
+/* antecedentes T7 */
+.sn-t7-lista { padding-left: 1.2rem; }
+.sn-t7-lista li { margin-bottom: .4rem; line-height: 1.55; font-size: .96rem; }
+
+/* fecha de corte */
+.sn-corte { border-top: 1px dashed var(--linea); padding-top: .6rem; margin-top: 1.4rem; }
+
+/* tarjetas de institución (vista regional) */
+.sn-tarjetas { display: grid; gap: .9rem; margin-top: 1rem; }
+@media (min-width: 700px) { .sn-tarjetas { grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); } }
+.sn-tarjeta { display: flex; flex-direction: column; align-items: flex-start; }
+.sn-tarjeta .sn-estado { font-size: .92rem; color: var(--tenue); line-height: 1.5; margin: .55rem 0 .2rem; }
+.sn-tarjeta .btn-pdf { margin-top: auto; }
+.sn-estado-plan .afecta p { margin: .3rem 0; }
+
+/* sellos de categoría (A/B/C) con ayuda emergente */
+.sn-sello {
+  display: inline-flex; align-items: center; gap: .25rem;
+  font-size: .72rem; font-weight: 700; color: #fff;
+  border: 0; border-radius: 999px; padding: .2rem .7rem; margin-right: .3rem;
+  cursor: pointer; min-height: 30px;
+}
+.sn-sello.cat-a { background: var(--c-institucion); }
+.sn-sello.cat-b { background: var(--c-nivel); }
+.sn-sello.cat-c { background: var(--tenue); }
+.sn-sello:hover { filter: brightness(1.12); }
+.sn-ayuda-cat {
+  background: var(--acento-suave); border-radius: var(--radio);
+  padding: .65rem .9rem; margin: .5rem 0; font-size: .9rem; line-height: 1.55;
+}
+.sn-chip-consorcio { text-decoration: none; color: var(--tinta); }
+.sn-chip-consorcio:hover { border-color: var(--acento); }
+.sn-cat-detalle { font-size: .92rem; color: var(--tenue); line-height: 1.5; }
+
+/* sellos de verificación por bloque de datos (mapeo de 🟢🟡🟠⚪ a la paleta) */
+.sello-verif {
+  display: inline-flex; align-items: center; gap: .35rem;
+  font-size: .72rem; font-weight: 600; white-space: nowrap;
+  border: 1px solid; border-radius: 999px; padding: .14rem .6rem;
+}
+.sello-verif::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+.sello-verif.documento { color: var(--c-horizonte); border-color: var(--c-horizonte); background: #e9f7f0; }
+.sello-verif.institucional { color: var(--acento); border-color: var(--acento); background: var(--acento-suave); }
+.sello-verif.prensa { color: var(--c-nivel); border-color: var(--c-nivel); background: #faf3e3; }
+.sello-verif.por_verificar { color: var(--alerta); border-color: var(--alerta); background: #fbeaea; }
+.sn-sellos-guia li { margin-bottom: .5rem; line-height: 1.5; }
+
+/* bloques de la ficha */
+.sn-bloque { border-top: 1px solid var(--linea); margin-top: 1.3rem; padding-top: .4rem; }
+.sn-bloque-cab { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; }
+.sn-bloque-cab h3 { margin: .5rem 0 .3rem; flex: 1; min-width: 12rem; }
+.sn-bloque-intro { font-size: .94rem; color: var(--tenue); line-height: 1.55; }
+.sn-bloque ul { padding-left: 1.2rem; }
+.sn-bloque li { margin-bottom: .45rem; font-size: .96rem; line-height: 1.55; }
+.sn-bloque a { color: var(--acento); }
+.sn-bloque-nota { font-size: .86rem; color: var(--tenue); line-height: 1.5; margin-top: .4rem; }
+.sn-inline-pv { color: var(--alerta); font-size: .85rem; }
+
+/* aviso de datos por verificar */
+.sn-porverificar {
+  background: #fbeaea; border: 1px solid var(--alerta); border-radius: var(--radio);
+  padding: .8rem 1.1rem; margin-top: 1.4rem;
+}
+.sn-porverificar h3 { margin: 0 0 .4rem; font-size: 1rem; color: var(--alerta); }
+.sn-porverificar ul { margin: 0; padding-left: 1.2rem; }
+.sn-porverificar li { font-size: .92rem; line-height: 1.5; margin-bottom: .3rem; }
+
+/* consorcio Santiago + Renca (T6) */
+.sn-consorcio {
+  background: var(--acento-suave); border: 1px solid var(--acento); border-radius: var(--radio);
+  padding: .9rem 1.1rem; margin: 1.2rem 0;
+}
+.sn-consorcio-titulo { margin: 0 0 .5rem; font-weight: 700; color: var(--acento); }
+.sn-consorcio p { font-size: .94rem; line-height: 1.6; }
+.sn-consorcio-rol { font-weight: 600; }
+.sn-consorcio .btn-tecnico { background: var(--panel); }
+
+/* documentos oficiales (3 estados) */
+.sn-docs h3 { margin-bottom: .7rem; }
+.sn-doc { margin-bottom: 1rem; }
+.sn-doc .meta { display: block; margin-top: .3rem; font-size: .82rem; }
+.sn-doc-np {
+  background: var(--fondo); border: 1px dashed var(--alerta); border-radius: var(--radio);
+  padding: .8rem 1.1rem;
+}
+.sn-doc-np-titulo { margin: 0 0 .6rem; font-size: .94rem; line-height: 1.5; }
+.sn-doc-np .btn-tecnico { margin-top: 0; margin-right: .5rem; margin-bottom: .4rem; }

@@ -58,6 +58,7 @@ const App = {
       relaciones: VistaGrafo,
       temas: VistaTematica,
       tiempo: VistaTemporal,
+      'tu-comuna': VistaSubnacional,
     };
     (vistas[vista] || Landing).render(cont, arg, this);
     if (arg) this.abrirNodo(arg);

@@ -1,0 +1,390 @@
+{
+  "fecha_corte": "15-10-2026",
+  "nota_verificacion": "Datos verificados al 15-10-2026. Construido exclusivamente desde el dossier plataforma/data-subnacional/ (resumen 00 y fichas 01–07). Niveles de verificación por bloque: documento = documento oficial; institucional = plataforma institucional; prensa = medios de comunicación; por_verificar = sin fuente pública que lo confirme.",
+  "regiones_mapa": [
+    { "id": "arica-parinacota", "nombre": "Arica y Parinacota", "activa": false },
+    { "id": "tarapaca", "nombre": "Tarapacá", "activa": false },
+    { "id": "antofagasta", "nombre": "Antofagasta", "activa": false },
+    { "id": "atacama", "nombre": "Atacama", "activa": false },
+    { "id": "coquimbo", "nombre": "Coquimbo", "activa": false },
+    { "id": "valparaiso", "nombre": "Valparaíso", "activa": false },
+    { "id": "metropolitana", "nombre": "Metropolitana", "nombre_largo": "Región Metropolitana de Santiago", "activa": true, "instituciones": ["penalolen", "maipu", "san-joaquin", "renca", "gore-santiago"] },
+    { "id": "ohiggins", "nombre": "O'Higgins", "activa": false },
+    { "id": "maule", "nombre": "Maule", "activa": false },
+    { "id": "nuble", "nombre": "Ñuble", "activa": false },
+    { "id": "biobio", "nombre": "Biobío", "nombre_largo": "Región del Biobío", "activa": true, "instituciones": ["concepcion"] },
+    { "id": "araucania", "nombre": "La Araucanía", "activa": false },
+    { "id": "los-rios", "nombre": "Los Ríos", "activa": false },
+    { "id": "los-lagos", "nombre": "Los Lagos", "activa": false },
+    { "id": "aysen", "nombre": "Aysén", "activa": false },
+    { "id": "magallanes", "nombre": "Magallanes", "activa": false }
+  ],
+  "categorias": {
+    "A": { "nombre": "Miembro de OGP Local", "ayuda": "OGP (Open Government Partnership) es la alianza internacional de gobierno abierto. Ser miembro de su rama local significa que el municipio o gobierno regional asumió un compromiso formal ante observadores internacionales: cocrear su plan con la ciudadanía, publicarlo, implementarlo y rendir cuentas de hito en hito. Es la categoría con exigencias más altas y con seguimiento externo." },
+    "B": { "nombre": "Plan propio declarado", "ayuda": "Algunos municipios diseñan y lanzan su propio plan de acción de gobierno abierto sin ser miembros de OGP. Es un esfuerzo valioso —el primer plan de este tipo en Chile, el de Renca en 2019, nació así—, pero el estándar de verificación es distinto: el seguimiento depende del propio municipio y no de un ente internacional." },
+    "C": { "nombre": "Solo transparencia municipal", "ayuda": "La gran mayoría de los municipios chilenos (más de 300 de 345) participa en programas de transparencia del Consejo para la Transparencia: publican información exigida por la ley y atienden solicitudes de acceso a la información. Eso es importante, pero no es gobierno abierto: no incluye compromisos cocreados con la ciudadanía ni foros donde la gente participe en las decisiones. Por eso esta categoría aparece solo como referencia comparativa, no como plan." }
+  },
+  "categoria_c": {
+    "titulo": "¿Y los demás municipios? Solo transparencia (referencia comparativa)",
+    "parrafos": [
+      "Más de 300 de los 345 municipios de Chile participan en el Modelo de Gestión en Transparencia Municipal (MGTM) del Consejo para la Transparencia, lanzado como piloto en 2012: publican la información que exige la Ley 20.285 y atienden solicitudes de acceso a la información. Eso es transparencia, no gobierno abierto: no incluye compromisos cocreados con la ciudadanía ni foros multiactor.",
+      "El antecedente directo de los planes locales vino del 3er Plan de Acción Nacional de OGP (2016–2018): una comisión trabajó planes locales de gobierno abierto con 7 comunas piloto (Cerro Navia, Peñalolén, Providencia, Recoleta, Santo Domingo, Talagante y Vitacura), continuado en el 4to Plan. En 2020 otros 6 municipios (Arica, Quillota, Independencia, Padre las Casas, Los Lagos y Frutillar) firmaron carta de compromiso con el Modelo GAM del CPLT, pero el programa se suspendió por la pandemia y no consta que hayan elaborado planes de acción: una carta de adhesión no es un plan declarado.",
+      "A nivel nacional, el foro multiactor vigente es la Mesa Nacional de Estado Abierto (MNEA), creada en mayo de 2023. El 6to Plan de Estado Abierto 2023–2027 menciona como iniciativas locales solo a Peñalolén, Renca y Maipú."
+    ],
+    "fuente": "Ficha 07 del dossier (CPLT/MGTM), con verificación al 15-10-2026.",
+    "enlace": { "nombre": "Consejo para la Transparencia", "url": "https://www.consejotransparencia.cl/" }
+  },
+  "instituciones": [
+    {
+      "id": "penalolen",
+      "nombre": "Ilustre Municipalidad de Peñalolén",
+      "nombre_corto": "Peñalolén",
+      "tipo": "Municipalidad",
+      "region": "metropolitana",
+      "categoria": "A",
+      "categoria_detalle": "Miembro de OGP Local desde la cohorte 2020: la primera comuna de Chile en ingresar.",
+      "estado_plan": "I Plan 2021–2024 implementado (19 de 21 hitos terminados a enero de 2025; los 2 restantes con cierre estimado a julio de 2025). II Plan en cocreación, previsto desde inicios de 2026.",
+      "bloques": {
+        "compromisos": {
+          "sello": "documento",
+          "intro": "Cocreados en 8 diálogos ciudadanos y priorizados por consulta ciudadana (1.101 votos).",
+          "items": [
+            "\"Conectados todo es más fácil\": sistema integral unificado de gestión de requerimientos ciudadanos (gestión municipal eficiente).",
+            "\"Por un Peñalolén más verde\": medidas de sustentabilidad y normativa ambiental local, con programa de participación ambiental.",
+            "Gestión amigable e inclusiva con personas en situación de discapacidad y sus cuidadores."
+          ]
+        },
+        "plataformas": {
+          "sello": "institucional",
+          "items": [
+            { "nombre": "Sitio del proceso OGP Local (con sección Mesa de Gobierno Abierto)", "url": "https://gobiernoabierto.penalolen.cl/" },
+            { "nombre": "Micrositio de consulta ciudadana", "url": "https://participa.penalolen.cl/" },
+            { "nombre": "Correo centralizado: gobiernoabierto@penalolen.cl", "url": "mailto:gobiernoabierto@penalolen.cl" }
+          ]
+        },
+        "mecanismos": {
+          "sello": "documento",
+          "items": [
+            "Mesa de Gobierno Abierto (foro multiactor): CEPAL, PNUD Chile, Chile Transparente, académicos de la Universidad de Chile, Universidad Adolfo Ibáñez y Universidad Academia de Humanismo Cristiano, y organizaciones sociales locales.",
+            "Ente de monitoreo independiente: Dr. José Hernández Bonivento (Universidad Austral de Chile), evaluador del proceso de cocreación.",
+            "Rendición de cuentas: informe final publicado en marzo de 2025 (19 de 21 hitos terminados a enero de 2025).",
+            "Herramienta de monitoreo desarrollada con la Facultad de Gobierno de la Universidad de Chile (asesoría estudiantil, dic. 2024)."
+          ]
+        },
+        "fechas": {
+          "sello": "documento",
+          "items": [
+            "2018: primera postulación a OGP Local (excluida por el umbral de población).",
+            "Oct. 2020: ingreso a OGP Local (primera comuna de Chile).",
+            "14-12-2021: lanzamiento oficial del I Plan (Semana de Gobierno Abierto).",
+            "2021–2024: implementación del I Plan. Ene-2025: 19 de 21 hitos cumplidos. Mar-2025: informe de rendición.",
+            "Jun-2025: el alcalde anuncia la cocreación del II Plan, previsto para inicios de 2026.",
+            "Dic-2025: el PLADECO 2026–2030 incluye el mandato de cocrear el II Plan con la comunidad."
+          ]
+        }
+      },
+      "por_verificar": [
+        "Publicación del II Plan: al 15-10-2026 la ficha OGP aún muestra el plan 2021–2024 como plan en implementación; el II Plan está en cocreación."
+      ],
+      "documentos": [
+        { "titulo": "Informe de Rendición del Primer Plan (2025)", "estado": "local", "archivo": "docs-subnacional/penalolen-rendicion-primer-plan-2025.pdf" },
+        { "titulo": "Informe de Inicio / evaluación inicial (2022)", "estado": "local", "archivo": "docs-subnacional/penalolen-evaluacion-inicial-2022.pdf" },
+        { "titulo": "Ejercicio Final de Aprendizaje (2025)", "estado": "local", "archivo": "docs-subnacional/penalolen-final-learning-exercise-2025.pdf" },
+        { "titulo": "Documento del proceso de cocreación (Municipalidad / Tribu / CEPAL, 2021)", "estado": "local", "archivo": "docs-subnacional/penalolen-cocreacion-cepal-2021.pdf" },
+        { "titulo": "PLADECO 2026–2030 (incluye mandato del II Plan)", "estado": "local", "archivo": "docs-subnacional/penalolen-pladeco-2026-2030.pdf" },
+        { "titulo": "Plan de Acción 2021–2024 (página del documento en OGP)", "estado": "externo", "url": "https://www.opengovpartnership.org/es/documents/action-plan-penalolen-chile-2021-2024/" }
+      ],
+      "verificacion_general": "Documento oficial OGP + plataforma institucional (verificación 15-10-2026)."
+    },
+    {
+      "id": "maipu",
+      "nombre": "Ilustre Municipalidad de Maipú",
+      "nombre_corto": "Maipú",
+      "tipo": "Municipalidad",
+      "region": "metropolitana",
+      "categoria": "A",
+      "categoria_detalle": "Miembro de OGP Local desde la cohorte 2022: el segundo municipio chileno en ingresar.",
+      "estado_plan": "I Plan 2023–2024 (4 compromisos). Al 15-10-2026 OGP aún lo lista en implementación; el segundo plan no ha sido presentado.",
+      "bloques": {
+        "compromisos": {
+          "sello": "documento",
+          "intro": "Votación ciudadana del 3 al 13-12-2022; cocreación en 3 foros presenciales + consulta en línea. Más de 2.000 vecinos participaron (dato de prensa: CIPER, 31-07-2025).",
+          "items": [
+            "Planes de Barrio: participación comunitaria y toma de decisiones (1.385 votos) — diagnóstico y priorización participativa, un proyecto por barrio con perspectiva de género.",
+            "Maipú, una comuna de niños, niñas y adolescentes (1.213 votos) — mesa de niñez y adolescencia para gobernanza del espacio público.",
+            "Más y mejor despliegue de seguridad pública — flota de seguridad municipal, estrategia de patrullaje.",
+            "Gestión de residuos y microbasurales / reciclaje comunal — mesa participativa de control de microbasurales, capacitación comunitaria."
+          ],
+          "nota": "Direcciones líderes: SECPLA, DAOGA (aseo y ornato), DIPRESEC (seguridad) y DIDECO."
+        },
+        "plataformas": {
+          "sello": "institucional",
+          "items": [
+            { "nombre": "Sitio del proceso (\"¿Qué es un gobierno abierto?\", plan de acción, procesos participativos, resultados de la votación)", "url": "https://gobiernoabierto.municipalidadmaipu.cl/" },
+            { "nombre": "Actualización periódica comprometida vía web OGP-Maipú y redes sociales municipales", "url": null }
+          ]
+        },
+        "mecanismos": {
+          "sello": "documento",
+          "items": [
+            "Grupo motor / Grupo impulsor: unos 20 líderes vecinales capacitados en gobierno abierto que facilitan instancias de participación y liderazgo compartido.",
+            "Coordinación: SECPLA diseña instrumentos de planificación y seguimiento; reuniones periódicas entre direcciones responsables; documentos de verificación de hitos.",
+            "Rendición: reuniones de avance al menos trimestrales + sesiones intermedias del Grupo Impulsor.",
+            "Sociedad civil de referencia: Fundación Tribu (punto de contacto de sociedad civil en la ficha OGP)."
+          ]
+        },
+        "fechas": {
+          "sello": "documento",
+          "items": [
+            "2022: ingreso a OGP Local (cohorte 2022).",
+            "Dic. 2022: votación ciudadana de compromisos (3 al 13-12-2022).",
+            "31-01-2023: presentación del Plan de Acción 2023–2024 a OGP.",
+            "Oct. 2024: fin formal del período del plan.",
+            "Dic. 2024: cambio de administración municipal."
+          ]
+        }
+      },
+      "por_verificar": [
+        "Estado del segundo plan de acción: no presentado; al 15-10-2026 la ficha OGP aún indica que se está implementando el plan 2023–2024."
+      ],
+      "documentos": [
+        { "titulo": "Plan de Acción Maipú 2023–2024 (página OGP, en línea)", "estado": "externo", "url": "https://www.opengovpartnership.org/es/documents/action-plan-maipu-chile-2023-2024/" },
+        { "titulo": "Informe Inicial del plan (página OGP, en línea)", "estado": "externo", "url": "https://www.opengovpartnership.org/es/documents/inception-report-action-plan-maipu-chile-2023-2024/" },
+        { "titulo": "Copia de respaldo local del plan (snapshot web del 07-10-2025)", "estado": "local", "archivo": "docs-subnacional/maipu-plan-2023-2024-archivo-web.html", "nota": "Respaldo local; la fuente viva es la página OGP enlazada arriba." }
+      ],
+      "verificacion_general": "Documento oficial OGP + plataforma institucional (verificación 15-10-2026)."
+    },
+    {
+      "id": "san-joaquin",
+      "nombre": "Ilustre Municipalidad de San Joaquín",
+      "nombre_corto": "San Joaquín",
+      "tipo": "Municipalidad",
+      "region": "metropolitana",
+      "categoria": "A",
+      "categoria_detalle": "Miembro de OGP Local desde la cohorte 2024 (seleccionada entre 138 postulaciones; una de los 55 gobiernos admitidos, anunciados el 16-04-2024). Ya tenía un plan comunal propio cocreado en 2023, antes de ingresar.",
+      "estado_plan": "Plan comunal propio 2023 (implementado en 2024). Plan OGP de la cohorte 2024: en proceso de cocreación al 15-10-2026, aún no publicado.",
+      "bloques": {
+        "compromisos": {
+          "sello": "documento",
+          "intro": "Proceso mayo–diciembre 2023: más de 50 organizaciones comunales y casi 1.000 vecinos en la consulta \"Compromisos por un Municipio Abierto\" (dic. 2023). Propuestas priorizadas del Primer Plan comunal 2023:",
+          "items": [
+            "Promover la red primaria de salud (sitio web único con programas y servicios de salud comunales).",
+            "Promover la seguridad comunitaria.",
+            "Promover el bienestar de las mujeres."
+          ],
+          "nota": "⚠️ Por verificar: la reseña de CEPAL/ILPES menciona cuatro compromisos y la carta de apoyo OGP lista tres propuestas priorizadas; el número exacto se confirmará con el documento del plan."
+        },
+        "plataformas": {
+          "sello": "institucional",
+          "items": [
+            { "nombre": "Sitio \"Programa en Línea\" (rendición del programa de gobierno)", "url": "https://sanjoaquin.cl/programa-en-linea/" },
+            { "nombre": "Ficha del plan comunal 2023 en el Observatorio Regional de Planificación de la CEPAL", "url": "https://observatorioplanificacion.cepal.org/es/planes-programas-e-instrumentos/?id=46417" }
+          ]
+        },
+        "mecanismos": {
+          "sello": "documento",
+          "items": [
+            "COSOC (Consejo de la Sociedad Civil) como espacio representativo que definió temáticas; trabajo con juntas de vecinos, comités de seguridad, consejos de salud y mujeres emprendedoras.",
+            "Mandato formal: el Concejo Municipal aprobó un Plan de Acción Municipal para diseñar colaborativamente una política de participación y transparencia (2023).",
+            "Acompañamiento externo: CEPAL, Fundación Tribu y los municipios OGP de Maipú y Peñalolén.",
+            "Rendición: la Cuenta Pública 2025–2026 (abr. 2026) informa la implementación de los compromisos cocreados."
+          ]
+        },
+        "fechas": {
+          "sello": "documento",
+          "items": [
+            "May.–dic. 2023: cocreación del primer plan comunal; dic. 2023: consulta ciudadana.",
+            "2024: implementación del plan comunal.",
+            "16-04-2024: ingreso a OGP Local (cohorte 2024).",
+            "2025–2026: proceso de cocreación del plan OGP en marcha."
+          ]
+        }
+      },
+      "por_verificar": [
+        "Número exacto de compromisos del plan comunal 2023 (discrepancia CEPAL: 4 vs. carta OGP: 3)."
+      ],
+      "documentos": [
+        { "titulo": "Primer Plan de Gobierno Abierto de San Joaquín (2023)", "estado": "local", "archivo": "docs-subnacional/san-joaquin-plan-2023.pdf", "nota": "Rescatado vía Wayback Machine: el original en CEPAL responde 404 al 15-10-2026." },
+        { "titulo": "Letters of Support OGP (2024)", "estado": "local", "archivo": "docs-subnacional/san-joaquin-cartas-apoyo-2024.pdf" },
+        { "titulo": "Cuenta Pública 2025–2026", "estado": "local", "archivo": "docs-subnacional/san-joaquin-cuenta-publica-2025-2026.pdf" }
+      ],
+      "verificacion_general": "Documento oficial OGP/CEPAL + plataforma institucional (verificación 15-10-2026)."
+    },
+    {
+      "id": "renca",
+      "nombre": "Ilustre Municipalidad de Renca",
+      "nombre_corto": "Renca",
+      "tipo": "Municipalidad",
+      "region": "metropolitana",
+      "categoria": "A",
+      "categoria_detalle": "Miembro de OGP Local desde la cohorte 2024, en consorcio con el Gobierno Regional Metropolitano de Santiago. Antes, elaboró el primer plan comunal de gobierno abierto de Chile (2019–2021) siguiendo estándares OGP sin ser miembro.",
+      "estado_plan": "Plan comunal propio 2019–2021 (histórico, el primero de Chile). Hoy integra el Plan de Acción 2026–2028 del consorcio con el GORE de Santiago, como institución líder de la implementación.",
+      "consorcio": { "con": "gore-santiago", "rol": "Institución líder de la implementación del Plan 2026–2028 del consorcio." },
+      "bloques": {
+        "compromisos": {
+          "sello": "documento",
+          "intro": "Plan comunal 2019–2021 (histórico), elaborado junto a Fundación Tribu con apoyo de la Fundación Konrad Adenauer y observación de CEPAL/ILPES:",
+          "items": [
+            "Fortalecimiento del COSOC con estándares de foro de gobierno abierto.",
+            "Planes de desarrollo barrial.",
+            "Consejo Ciudadano de Seguridad Comunitaria.",
+            "Instancia de diálogo con pueblos originarios.",
+            "Concejo Municipal Abierto."
+          ],
+          "nota": "Desde 2024 integra el Plan 2026–2028 del consorcio: la Red de Oficiales Municipales de Gobierno Abierto (compromiso de alcance metropolitano) se lidera con Renca — ver ficha del GORE de Santiago."
+        },
+        "plataformas": {
+          "sello": "institucional",
+          "items": [
+            { "nombre": "Página \"Municipio Abierto\" (FAQ del proceso de gobierno abierto comunal)", "url": "https://renca.cl/municipioabierto/" },
+            { "nombre": "Fundación Tribu — programa \"Municipios Abiertos\" (sociedad civil implementadora)", "url": "https://tribu.ong/municipiosabiertos" }
+          ]
+        },
+        "mecanismos": {
+          "sello": "documento",
+          "items": [
+            "2019–2021: Foro Regular Multiactor de Gobierno Abierto; conformación del COSOC de Renca con estándares OGP; CEPAL/ILPES como observador del proceso.",
+            "Desde 2024 (consorcio): integra el Foro Multiactor del GORE de Santiago (sesiones 13-11-2025 presencial y 28-11-2025 virtual).",
+            "Camilo Brennet (asesor municipal de Renca) figura entre los respaldos no gubernamentales del plan 2026–2028."
+          ]
+        },
+        "fechas": {
+          "sello": "documento",
+          "items": [
+            "Nov. 2018: inicio del trabajo con Fundación Tribu.",
+            "12-03-2019: presentación pública de los lineamientos del primer plan comunal de gobierno abierto de Chile (en CEPAL, Open Government Week 2019).",
+            "2019–2021: implementación del plan comunal.",
+            "2023: postulación a la convocatoria OGP Local (138 postulaciones; seleccionada).",
+            "16-04-2024: ingreso a OGP Local en consorcio con el GORE de Santiago.",
+            "03-08-2026: presentación del Plan de Acción 2026–2028 del consorcio."
+          ]
+        }
+      },
+      "por_verificar": [],
+      "documentos": [
+        { "titulo": "Plan comunal de Gobierno Abierto 2019–2021", "estado": "no-publicado", "aviso": "Documento completo no publicado por la institución (PDF no localizado públicamente al 15-10-2026).", "evidencia": [
+          { "nombre": "Mejor evidencia oficial: micrositio \"Municipio Abierto\"", "url": "https://renca.cl/municipioabierto/" }
+        ] },
+        { "titulo": "Libro \"Voces de Gobierno Abierto en Chile 2011–2021\" (ogp.gob.cl, 2022; describe el proceso de Renca)", "estado": "local", "archivo": "docs-subnacional/contexto-voces-gobierno-abierto-chile-2022.pdf" },
+        { "titulo": "Plan de Acción Santiago 2026–2028 del consorcio (página OGP, en línea)", "estado": "externo", "url": "https://www.opengovpartnership.org/documents/action-plan-santiago-chile-2026-2028/" }
+      ],
+      "verificacion_general": "Documento oficial OGP + plataforma institucional (verificación 15-10-2026)."
+    },
+    {
+      "id": "gore-santiago",
+      "nombre": "Gobierno Regional Metropolitano de Santiago",
+      "nombre_corto": "GORE Metropolitano de Santiago",
+      "tipo": "Gobierno regional (GORE)",
+      "region": "metropolitana",
+      "categoria": "A",
+      "categoria_detalle": "Miembro de OGP Local desde la cohorte 2024, integrando el consorcio \"Santiago + Renca\". Es el primer —y al 15-10-2026 único— gobierno regional de Chile en OGP Local (ingresó a la alianza en febrero de 2024).",
+      "estado_plan": "I Plan de Acción de Gobierno Abierto Santiago 2026–2028, presentado a OGP el 03-08-2026 y en implementación (3 compromisos).",
+      "consorcio": { "con": "renca", "rol": "Ente principal del consorcio; unidad líder: Departamento de Modernización, Planificación Estratégica y Control de Gestión, en co-liderazgo con la I. Municipalidad de Renca." },
+      "bloques": {
+        "compromisos": {
+          "sello": "documento",
+          "intro": "Tres compromisos del I Plan 2026–2028, liderados por el Departamento de Modernización, Planificación Estratégica y Control de Gestión del GORE junto a la I. Municipalidad de Renca:",
+          "items": [
+            "Red de Oficiales Municipales de Gobierno Abierto: crear una red de funcionarios/as municipales responsables de gobierno abierto en las comunas de la región, para institucionalizar la agenda a escala metropolitana.",
+            "Política de Datos Abiertos y Plataforma de Rendición de Cuentas: adoptar una política regional de datos abiertos y habilitar una plataforma pública de rendición del propio GORE.",
+            "Fomento de la participación ciudadana vinculante: fortalecer mecanismos de participación con efectos vinculantes en la gestión regional."
+          ],
+          "nota": "Antecedentes internos que sustentan el plan: Comité de Modernización (2022); plan interno de modernización 2022–2024; Política de Integridad (2024); programa \"RS Ciudadano\" (2025)."
+        },
+        "plataformas": {
+          "sello": "institucional",
+          "items": [
+            { "nombre": "Sitio institucional del GORE (noticia oficial de la consulta ciudadana del plan, 18-02-2026)", "url": "https://www.gobiernosantiago.cl/" },
+            { "nombre": "Ficha de miembro OGP (consorcio Santiago + Renca)", "url": "https://www.opengovpartnership.org/es/members/santiago-consortium-chile/" },
+            { "nombre": "Plataforma de Rendición de Cuentas del GORE (entregable anunciado del Compromiso 2)", "url": null, "por_verificar": "URL pública específica por verificar: el plan la define como producto a desarrollar." }
+          ]
+        },
+        "mecanismos": {
+          "sello": "documento",
+          "items": [
+            "Foro Multiactor: instancia deliberativa del proceso de cocreación; sesiones el 13-11-2025 (presencial) y 28-11-2025 (virtual).",
+            "Consulta pública ciudadana del 18-02 al 06-04-2026, con 179 respuestas.",
+            "Ente de monitoreo: Facultad de Gobierno de la Universidad de Chile.",
+            "Respaldo institucional y de sociedad civil (firmantes de cartas de apoyo): Gerardo Vergara; Ricardo Mena (IDEA Internacional); Alisson Silva (COSOC regional); Daniel Oyarzún (Fundación Multitudes); Álvaro Ramírez Alujas; Michel Figueroa (Chile Transparente); Cristóbal Tello (Pontificia Universidad Católica de Chile); Camilo Brennet (Municipalidad de Renca); María Cecilia Jiménez (Municipalidad de Peñalolén); Fernanda Román (Municipalidad de Santiago); Iván Cordova y Vladimir Pizarro (Fundación Chile)."
+          ]
+        },
+        "fechas": {
+          "sello": "documento",
+          "items": [
+            "Feb. 2024: el GORE se convierte en el primer gobierno regional de Chile miembro de OGP (dato de prensa + ficha OGP).",
+            "16-04-2024: OGP anuncia oficialmente el ingreso del consorcio Santiago + Renca (cohorte 2024).",
+            "13-11-2025 y 28-11-2025: sesiones del Foro Multiactor (presencial y virtual).",
+            "18-02-2026 a 06-04-2026: consulta pública ciudadana (179 respuestas).",
+            "03-08-2026: presentación oficial del Plan de Acción 2026–2028 a OGP.",
+            "Vigencia: 2026–2028 (término dic./oct. 2028 según la página del documento OGP)."
+          ]
+        }
+      },
+      "por_verificar": [
+        "URL pública de la Plataforma de Rendición de Cuentas (anunciada como entregable del Compromiso 2)."
+      ],
+      "documentos": [
+        { "titulo": "I Plan de Acción de Gobierno Abierto Santiago 2026–2028 (página del documento OGP, en línea)", "estado": "externo", "url": "https://www.opengovpartnership.org/documents/action-plan-santiago-chile-2026-2028/", "nota": "La página OGP no ofrece PDF directo y bloquea la descarga automatizada; el contenido del plan fue verificado en la página el 15-10-2026." }
+      ],
+      "verificacion_general": "Documento oficial OGP + plataforma institucional GORE (verificación 15-10-2026)."
+    },
+    {
+      "id": "concepcion",
+      "nombre": "Ilustre Municipalidad de Concepción",
+      "nombre_corto": "Concepción",
+      "tipo": "Municipalidad",
+      "region": "biobio",
+      "categoria": "B",
+      "categoria_detalle": "Plan propio declarado, sin membresía OGP. Se presenta como la primera comuna fuera de la Región Metropolitana en lanzar un plan de este tipo, afirmación consistente con el barrido de la investigación. Reconocimiento autodeclarado.",
+      "estado_plan": "I Plan de Acción de Gobierno Abierto, lanzado el 07-05-2026 en el marco de la Open Gov Week (15 acciones cocreadas).",
+      "bloques": {
+        "compromisos": {
+          "sello": "institucional",
+          "intro": "15 acciones cocreadas con la comunidad, organizadas bajo los pilares de transparencia, rendición de cuentas, participación ciudadana y colaboración.",
+          "items": [
+            "Iniciativas ejemplares citadas por el municipio: talleres digitales para personas mayores, boletines informativos de proyectos, mesas barriales y concurso de ideas ciudadanas."
+          ],
+          "nota": "Alcance comunal (municipal); primero de su tipo fuera de la Región Metropolitana."
+        },
+        "plataformas": {
+          "sello": "institucional",
+          "items": [
+            { "nombre": "Sitio municipal", "url": "https://www.concepcion.cl/" },
+            { "nombre": "Consulta pública digital del proceso de cocreación", "url": null, "por_verificar": "URL específica por verificar (plataforma digital de consulta, según noticia municipal)." },
+            { "nombre": "Sitio o micrositio permanente del plan", "url": null, "por_verificar": "No localizado al 15-10-2026." }
+          ]
+        },
+        "mecanismos": {
+          "sello": "institucional",
+          "items": [
+            "Creación de un Foro Multisectorial como instancia de seguimiento del plan (anunciado en el lanzamiento; composición y reglamento por verificar).",
+            "Proceso de cocreación previo: recorrido por 12 territorios de la comuna durante 2025 + consulta pública digital."
+          ],
+          "nota": "⚠️ Por verificar: ente evaluador independiente (no declarado en las fuentes disponibles)."
+        },
+        "fechas": {
+          "sello": "institucional",
+          "items": [
+            "2025: cocreación territorial (12 territorios recorridos) y consulta pública digital.",
+            "07-05-2026: lanzamiento del I Plan en el marco de la Open Gov Week.",
+            "28-05-2026: publicación de la noticia oficial municipal."
+          ],
+          "nota": "⚠️ Por verificar: vigencia formal del plan (no declarada en las fuentes disponibles)."
+        }
+      },
+      "por_verificar": [
+        "Tramitación ante el Consejo para la Transparencia o la Mesa Nacional de Estado Abierto: plan autodeclarado, sin evidencia encontrada al 15-10-2026.",
+        "URL de la consulta pública digital y micrositio permanente del plan.",
+        "Composición y reglamento del Foro Multisectorial anunciado.",
+        "Ente evaluador independiente y vigencia formal del plan."
+      ],
+      "documentos": [
+        { "titulo": "I Plan de Acción de Gobierno Abierto de Concepción (2026)", "estado": "no-publicado", "aviso": "Documento completo no publicado por la institución (el municipio publicó noticia y afiches, no el documento completo).", "evidencia": [
+          { "nombre": "Mejor evidencia oficial: noticia de lanzamiento (concepcion.cl, 28-05-2026)", "url": "https://www.concepcion.cl/municipio-presento-su-primer-plan-de-accion-de-gobierno-abierto/" },
+          { "nombre": "Registro del evento de lanzamiento con afiches (Open Gov Week, 07-05-2026)", "url": "https://opengovweek.org/es/event/lanzamiento-primer-plan-de-accion-de-gobierno-abierto-municipalidad-de-concepcion-chile/" }
+        ] }
+      ],
+      "verificacion_general": "Plataforma institucional municipal + registro de evento OGP, sin documento PDF del plan localizado (verificación 15-10-2026)."
+    }
+  ]
+}
