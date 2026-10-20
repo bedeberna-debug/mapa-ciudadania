@@ -178,7 +178,7 @@ body {
 .atenuado { opacity: .12; }
 
 /* --- página Compromisos internacionales --- */
-.seccion-int { max-width: 780px; }
+.seccion-int { max-width: 880px; margin: 0 auto; }
 .seccion-int h3 { font-size: 1.15rem; margin: 1.5rem 0 .5rem; }
 .seccion-int > p { font-size: 1rem; line-height: 1.6; }
 .vias { display: grid; gap: .6rem; margin: .8rem 0; }
