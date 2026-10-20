@@ -3,11 +3,21 @@
    Datos: data/subnacional.json (construido solo desde el dossier plataforma/data-subnacional/).
    Textos T1–T7: verbatim de plataforma/data-subnacional/textos-seccion.md
    (solo se ajusta el formato: ** → <strong>, saltos de línea → párrafos).
-   Rutas: #/tu-comuna (portada) · #/tu-comuna/region-<id> (regional) · #/tu-comuna/inst-<id> (ficha). */
+   Rutas: #/tu-comuna (portada) · #/tu-comuna/region-<id> (regional) · #/tu-comuna/inst-<id> (ficha).
+
+   Beta 0.8 (aditivo): selector de modos D6 — "Planes de gobierno abierto" (actual, sin
+   cambios) / "Portales de transparencia" (nuevo). Modo portales: data/portales-municipios.json
+   (copia de plataforma/data-portales/10-municipios.json); las 16 regiones quedan activas.
+   Textos D6–D8: verbatim de plataforma/data-portales/textos-directorio.md.
+   Rutas nuevas: #/tu-comuna/portales · #/tu-comuna/portales-region-<id>. */
 const VistaSubnacional = {
 
   datos: null,
   _promesa: null,
+
+  /* --- Beta 0.8: datos del modo portales (carga perezosa, igual que subnacional.json) --- */
+  portales: null,
+  _promesaPortales: null,
 
   /* --- Textos verbatim de la sección (T1–T7) --- */
   T1_BAJADA: `El gobierno abierto no vive solo en Santiago. También —aunque todavía poquito— vive en
@@ -99,6 +109,52 @@ const VistaSubnacional = {
     que hace al GORE de Santiago el primer —y hasta ahora único— gobierno regional del país en OGP.@@
     <strong>2026:</strong> Concepción lanza el primer plan comunal fuera de la Región Metropolitana.`,
 
+  /* --- Beta 0.8, modo portales: textos D6–D8 verbatim (textos-directorio.md) --- */
+  D6_PLANES: 'Planes de gobierno abierto',
+  D6_PORTALES: 'Portales de transparencia',
+
+  D7_CABECERA: 'Portales de transparencia',
+  D7_TEXTO: `Aquí el mapa se enciende completo: la transparencia activa es obligación de
+    <strong>todas</strong> las municipalidades (recuerda: transparencia ≠ gobierno abierto — la primera te
+    informa; el segundo también te deja participar). Elige tu región y busca tu comuna: verás
+    dónde revisa lo que debe publicar y dónde presentar solicitudes. Ojo con los estados: un
+    enlace que no respondió al chequeo también te lo decimos.`,
+
+  /* Estados de verificación del directorio (D4 mapeado a la paleta Ciudadanía) */
+  ESTADOS_PORTAL: {
+    verificado_ok:    { etiqueta: 'Verificado', clase: 'ok' },
+    por_verificar:    { etiqueta: 'Por verificar', clase: 'pv' },
+    verificado_caido: { etiqueta: 'No respondió al chequeo', clase: 'caido' },
+  },
+
+  /* Nombre de región en portales-municipios.json → id de banda del mapa
+     (los nombres difieren de subnacional.json: la tabla hace de puente) */
+  REG_PORTAL_ID: {
+    'Arica y Parinacota': 'arica-parinacota',
+    'Tarapacá': 'tarapaca',
+    'Antofagasta': 'antofagasta',
+    'Atacama': 'atacama',
+    'Coquimbo': 'coquimbo',
+    'Valparaíso': 'valparaiso',
+    'Metropolitana de Santiago': 'metropolitana',
+    "Libertador General Bernardo O'Higgins": 'ohiggins',
+    'Maule': 'maule',
+    'Ñuble': 'nuble',
+    'Biobío': 'biobio',
+    'La Araucanía': 'araucania',
+    'Los Ríos': 'los-rios',
+    'Los Lagos': 'los-lagos',
+    'Aysén del General Carlos Ibáñez del Campo': 'aysen',
+    'Magallanes y de la Antártica Chilena': 'magallanes',
+  },
+  /* Nombre largo para la cabecera D8 ("Región de [nombre]") */
+  REG_PORTAL_LARGO: {
+    'Metropolitana de Santiago': 'Región Metropolitana de Santiago',
+    "Libertador General Bernardo O'Higgins": "Región del Libertador General Bernardo O'Higgins",
+    'Maule': 'Región del Maule',
+    'Biobío': 'Región del Biobío',
+  },
+
   SELLOS: {
     documento: { etiqueta: 'Documento oficial' },
     institucional: { etiqueta: 'Plataforma institucional' },
@@ -137,6 +193,10 @@ const VistaSubnacional = {
   },
 
   _pintar(cont, arg) {
+    /* Beta 0.8: rutas del modo portales (aditivas; las rutas previas no cambian) */
+    if (arg === 'portales') return this._entrarPortales(cont, null, arg);
+    const mPRegion = arg && arg.match(/^portales-region-(.+)$/);
+    if (mPRegion) return this._entrarPortales(cont, mPRegion[1], arg);
     if (!arg) return this._portada(cont);
     const mRegion = arg.match(/^region-(.+)$/);
     if (mRegion) {
@@ -175,6 +235,7 @@ const VistaSubnacional = {
       <section class="seccion-int sn">
         <h2 class="titulo-vista">Gobierno abierto en tu comuna y región</h2>
         <p class="sn-bajada">${this.T1_BAJADA}</p>
+        ${this._selectorModos('planes')}
         ${this._parrafos(this.T2, 'sn-prosa')}
 
         <div class="sn-mapa-grid">
@@ -428,6 +489,180 @@ const VistaSubnacional = {
         ${doc.evidencia.map(ev => `
           <a class="btn-tecnico" href="${ev.url}" target="_blank" rel="noopener">${ev.nombre} ↗</a>`).join('')}
       </div>`;
+  },
+
+  /* ============================================================
+     Beta 0.8: modo "Portales de transparencia" (D6–D8, aditivo)
+     ============================================================ */
+  /* Selector de modos D6: visible en la portada de ambos modos */
+  _selectorModos(activo) {
+    return `
+      <nav class="sn-modos" aria-label="Modo de la sección">
+        <a class="sn-modo ${activo === 'planes' ? 'activo' : ''}" href="#/tu-comuna">${this.D6_PLANES}</a>
+        <a class="sn-modo ${activo === 'portales' ? 'activo' : ''}" href="#/tu-comuna/portales">${this.D6_PORTALES}</a>
+      </nav>`;
+  },
+
+  /* Entrada del modo portales: carga perezosa de portales-municipios.json */
+  _entrarPortales(cont, regionId, arg) {
+    if (this.portales) {
+      return regionId ? this._regionPortales(cont, regionId) : this._portadaPortales(cont);
+    }
+    cont.innerHTML = '<p class="intro">Cargando los portales de transparencia…</p>';
+    if (!this._promesaPortales) {
+      this._promesaPortales = fetch('data/portales-municipios.json').then(r => {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      });
+    }
+    this._promesaPortales.then(d => {
+      this.portales = d;
+      if (location.hash.replace(/^#\/?/, '').split('/')[0] === 'tu-comuna') {
+        this._pintar(cont, arg);
+      }
+    }).catch(() => {
+      cont.innerHTML = '<p class="alerta">⚠️ No se pudo cargar el directorio de portales. ' +
+        'Si abriste el archivo directamente, prueba con un servidor local (npm run dev).</p>';
+    });
+  },
+
+  _comunasPorRegion() {
+    if (this._comunasCache) return this._comunasCache;
+    const mapa = new Map();
+    this.portales.municipios.forEach(m => {
+      const id = this.REG_PORTAL_ID[m.region];
+      if (!id) return;
+      if (!mapa.has(id)) mapa.set(id, []);
+      mapa.get(id).push(m);
+    });
+    this._comunasCache = mapa;
+    return mapa;
+  },
+
+  _fechaCorta(iso) {
+    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || '');
+    return m ? `${m[3]}-${m[2]}-${m[1]}` : (iso || 'por verificar');
+  },
+
+  _nombreLargoRegion(nombre) {
+    return this.REG_PORTAL_LARGO[nombre] || 'Región de ' + nombre;
+  },
+
+  /* Portada del modo portales: selector + D7 + mapa con las 16 regiones activas */
+  _portadaPortales(cont) {
+    const comunas = this._comunasPorRegion();
+    const total = this.portales.municipios.length;
+    const fecha = this._fechaCorta(this.portales.municipios[0].fecha_verificacion);
+    cont.innerHTML = `
+      <section class="seccion-int sn">
+        <h2 class="titulo-vista">${this.D7_CABECERA}</h2>
+        ${this._selectorModos('portales')}
+
+        <div class="sn-mapa-grid">
+          <div class="sn-mapa-texto">
+            <p class="sn-prosa">${this.D7_TEXTO}</p>
+            <p class="sn-mapa-pista">Toca tu región para buscar tu comuna.</p>
+          </div>
+          <figure class="sn-mapa-fig">
+            ${this._svgMapaPortales(comunas)}
+            <figcaption class="sn-mapa-leyenda">
+              <span class="sn-ley-item"><span class="sn-ley-muestra activa"></span> ${total} municipalidades — las 16 regiones activas</span>
+              <span class="sn-ley-nota">Mapa esquemático: no representa la geografía a escala.</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <p class="meta sn-corte">Datos verificados el ${fecha}.</p>
+      </section>`;
+  },
+
+  /* Mapa del modo portales: misma geometría, pero las 16 bandas activas
+     y con el conteo de comunas calculado desde los datos */
+  _svgMapaPortales(comunas) {
+    const regiones = this.datos.regiones_mapa;
+    const h = this._MAPA_Y0 * 2 + regiones.length * (this._BANDA_H + this._BANDA_GAP) - this._BANDA_GAP;
+    let bandas = '';
+    regiones.forEach((r, i) => {
+      const [x, w] = this._GEO[i];
+      const y = this._MAPA_Y0 + i * (this._BANDA_H + this._BANDA_GAP);
+      const yTexto = y + this._BANDA_H / 2;
+      const n = (comunas.get(r.id) || []).length;
+      bandas += `
+        <a href="#/tu-comuna/portales-region-${r.id}" class="sn-reg activa" data-region="${r.id}">
+          <title>${r.nombre} — ${n} ${n === 1 ? 'comuna' : 'comunas'}</title>
+          <rect x="${x}" y="${y}" width="${w}" height="${this._BANDA_H}" rx="9"></rect>
+          <text class="sn-reg-nombre" x="${x + w + 10}" y="${yTexto - 3}">${r.nombre}</text>
+          <text class="sn-reg-conteo" x="${x + w + 10}" y="${yTexto + 13}">${n} ${n === 1 ? 'comuna' : 'comunas'}</text>
+        </a>`;
+    });
+    return `
+      <svg class="sn-mapa-svg" viewBox="0 0 340 ${h}" role="img"
+           aria-label="Mapa esquemático de Chile: las 16 regiones están activas; elige una para ver los portales de transparencia de sus comunas">
+        ${bandas}
+      </svg>`;
+  },
+
+  /* Vista regional D8: cabecera + conteos calculados + buscador + tarjetas */
+  _regionPortales(cont, regionId) {
+    const region = this.datos.regiones_mapa.find(r => r.id === regionId);
+    const comunas = this._comunasPorRegion().get(regionId) || [];
+    if (!region || !comunas.length) return this._portadaPortales(cont);
+    const nombre = comunas[0].region;
+    const n = comunas.length;
+    const propio = comunas.filter(m => m.urls.activa !== m.urls.ptransparencia).length;
+    const viaPortal = n - propio;
+    const fecha = this._fechaCorta(comunas[0].fecha_verificacion);
+    cont.innerHTML = `
+      <section class="seccion-int sn">
+        <p><a class="volver" href="#/tu-comuna/portales">← Volver al mapa de portales</a></p>
+        <h2 class="titulo-vista">${this.D7_CABECERA} — ${this._nombreLargoRegion(nombre)}</h2>
+        <p class="ayuda">${n} ${n === 1 ? 'comuna' : 'comunas'}. ${propio} ${propio === 1 ? 'tiene' : 'tienen'}
+          portal propio; ${viaPortal} ${viaPortal === 1 ? 'publica' : 'publican'} vía Portal del Estado.
+          Datos verificados el ${fecha}.</p>
+
+        <input type="search" class="sn-buscar" id="sn-buscar-portal"
+               placeholder="Buscar tu comuna…" aria-label="Buscar comuna por nombre" autocomplete="off">
+        <p class="sn-contador" id="sn-contador-portal" role="status"></p>
+        <div class="sn-tarjetas" id="sn-lista-portal"></div>
+
+        <p class="meta sn-corte">Datos verificados el ${fecha}.</p>
+      </section>`;
+
+    const norm = s => (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    const listar = texto => {
+      const lista = comunas.filter(m => !texto || norm(m.nombre).includes(texto));
+      document.getElementById('sn-contador-portal').textContent =
+        `${lista.length} de ${n} ${n === 1 ? 'comuna' : 'comunas'}`;
+      document.getElementById('sn-lista-portal').innerHTML = lista.length
+        ? lista.map(m => this._tarjetaPortal(m)).join('')
+        : '<p class="meta">Ninguna comuna coincide con la búsqueda.</p>';
+    };
+    document.getElementById('sn-buscar-portal').addEventListener('input', e => listar(norm(e.target.value)));
+    listar('');
+  },
+
+  /* Tarjeta de comuna (D8): badges de estado y tipo de portal, accesos D3, fecha */
+  _tarjetaPortal(m) {
+    const est = this.ESTADOS_PORTAL[m.estado] || { etiqueta: m.estado, clase: 'pv' };
+    const propio = m.urls.activa !== m.urls.ptransparencia;
+    return `
+      <article class="tarjeta institucion sn-tarjeta sn-tarjeta-portal">
+        <div class="nombre">Municipalidad de ${m.nombre}</div>
+        <div class="meta">
+          <span class="sn-badge ${est.clase}">${est.etiqueta}</span>
+          ${propio
+            ? '<span class="chip sn-chip-propio">Portal propio</span>'
+            : '<span class="chip">Vía Portal del Estado</span>'}
+        </div>
+        <div class="sn-accesos">
+          <a class="btn-pdf" href="${m.urls.activa}" target="_blank" rel="noopener">Transparencia activa ↗</a>
+          ${m.urls.partes === 'por_verificar'
+            ? '<span class="sn-acceso-pv" title="Sin fuente oficial con URL de su canal propio de solicitudes">Solicitudes: por verificar</span>'
+            : `<a class="btn-tecnico" href="${m.urls.partes}" target="_blank" rel="noopener">Solicitudes ↗</a>`}
+          <a class="btn-tecnico" href="${m.urls.ptransparencia}" target="_blank" rel="noopener">Ficha Portal ↗</a>
+        </div>
+        <div class="meta sn-fecha">Verificado el ${this._fechaCorta(m.fecha_verificacion)}</div>
+      </article>`;
   },
 
   /* ============================================================

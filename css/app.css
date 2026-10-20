@@ -471,3 +471,49 @@ body {
   border-top: 2px solid var(--linea); margin-top: 1.8rem; padding-top: .6rem;
 }
 .rg-normas-titulo { font-size: 1.12rem; margin: .5rem 0 .3rem; }
+
+/* --- modo "Portales de transparencia" en "Tu comuna" (Beta 0.8) ---
+   Mismo prefijo sn-; solo las clases mínimas que no existían. */
+.sn-modos { display: flex; gap: .5rem; flex-wrap: wrap; margin: 0 0 1.2rem; }
+.sn-modo {
+  display: inline-flex; align-items: center; text-decoration: none;
+  color: var(--tinta); background: var(--panel);
+  border: 1px solid var(--linea); border-radius: 999px;
+  padding: .5rem 1.05rem; min-height: var(--toque); font-size: .95rem; font-weight: 600;
+}
+.sn-modo:hover { border-color: var(--acento); }
+.sn-modo.activo { background: var(--acento); border-color: var(--acento); color: #fff; }
+
+.sn-buscar {
+  width: 100%; font: inherit; font-size: .95rem;
+  border: 1px solid var(--linea); border-radius: var(--radio);
+  background: var(--panel); color: var(--tinta);
+  padding: .6rem .9rem; min-height: var(--toque); margin: 0 0 .6rem;
+}
+.sn-buscar:focus { outline: 2px solid var(--acento); outline-offset: 1px; }
+.sn-contador { font-size: .9rem; color: var(--tenue); margin: 0 0 .8rem; }
+
+/* badges de estado de verificación del enlace (D4 mapeado a la paleta) */
+.sn-badge {
+  display: inline-flex; align-items: center; gap: .35rem;
+  font-size: .72rem; font-weight: 600; white-space: nowrap;
+  border: 1px solid; border-radius: 999px; padding: .14rem .6rem; margin-right: .3rem;
+}
+.sn-badge::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: currentColor; flex: none; }
+.sn-badge.ok    { color: var(--c-horizonte); border-color: var(--c-horizonte); background: #e9f7f0; }
+.sn-badge.pv    { color: var(--c-nivel);     border-color: var(--c-nivel);     background: #faf3e3; }
+.sn-badge.caido { color: var(--alerta);      border-color: var(--alerta);      background: #fbeaea; }
+
+.sn-chip-propio { border-color: var(--acento); color: var(--acento); background: var(--acento-suave); }
+
+.sn-tarjeta-portal { cursor: default; }
+.sn-accesos { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .6rem; }
+.sn-accesos .btn-pdf, .sn-accesos .btn-tecnico {
+  margin-top: 0; font-size: .85rem; padding: .45rem .9rem; min-height: 40px;
+}
+.sn-acceso-pv {
+  display: inline-flex; align-items: center;
+  font-size: .82rem; color: var(--alerta); font-weight: 600;
+  border: 1px dashed var(--alerta); border-radius: 999px; padding: .45rem .9rem; min-height: 40px;
+}
+.sn-fecha { margin-top: .5rem; }

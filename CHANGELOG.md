@@ -3,6 +3,35 @@
 Versión para público general del [Mapa del Sistema](https://github.com/bedeberna-debug/mapa-del-sistema).
 Numeración alineada con la app hermana; cada versión consume la misma data compilada.
 
+## Beta 0.8 — Modo "Portales de transparencia" en "Tu comuna" (20-10-2026)
+- **Selector de dos modos** en la sección "Tu comuna" (texto D6): "Planes de gobierno
+  abierto" (el modo actual, sin ningún cambio) y **"Portales de transparencia"** (nuevo).
+  Rutas nuevas `#/tu-comuna/portales` y `#/tu-comuna/portales-region-<id>`; todas las rutas
+  y vistas anteriores (0.5–0.7) quedan intactas.
+- **En el modo portales el mapa se enciende completo:** las 16 regiones quedan activas y
+  clicables (la transparencia activa es obligación de todas las municipalidades), cada una
+  con su conteo de comunas **calculado desde los datos**, y el texto D7 junto al mapa
+  (transparencia ≠ gobierno abierto).
+- **Vista regional (D8):** cabecera "Portales de transparencia — Región de [nombre]", texto
+  con conteos calculados ([N] comunas, [X] portal propio, [Y] vía Portal del Estado),
+  **buscador que filtra mientras escribes** y tarjetas por comuna con badges de estado
+  (verificado / por verificar / no respondió al chequeo) y de tipo de portal (propio vs. vía
+  Portal del Estado), los tres accesos (Transparencia activa · Solicitudes · Ficha Portal)
+  y la fecha de verificación de cada enlace.
+- Datos en módulo nuevo `data/portales-municipios.json` (copia de
+  `plataforma/data-portales/10-municipios.json`: 345 municipalidades verificadas el
+  **19-10-2026**; la app no depende de rutas externas al repo). No se modificó
+  `data/subnacional.json` ni `data/grafo.json`.
+- **App hermana nueva e independiente:** `plataforma/directorio-portales/` — el mismo
+  directorio como aplicación estática propia (345 municipalidades + 16 GOREs + 24
+  organismos nacionales, con buscador y filtros por región y estado), lista para publicarse
+  como repo propio en GitHub Pages (ver su `README.md` y `PLAN-portales.md`).
+- Estilos nuevos solo con prefijo `sn-` (selector de modos, buscador, badges de estado);
+  toda la gramática visual previa se reutiliza.
+- ⚠️ se muestran "por verificar" en la UI (tal cual los datos): los 4 municipios sin enlace
+  oficial de solicitudes (Concón, Curacaví, Puente Alto, Teodoro Schmidt) y los 19 registros
+  municipales cuyo chequeo automático fue bloqueado (posible anti-robots).
+
 ## Beta 0.7 — Guías de procedimientos en "Resolver algo" (19-10-2026)
 - **La vista "Resolver algo" pasa de curaduría de normas a guías de procedimientos:**
   cada una de las 4 rutas (pedir información, participar, denunciar, contratar con el
