@@ -14,6 +14,9 @@ Numeración alineada con la app hermana; cada versión consume la misma data com
   banda azul), en Firefox y navegadores WebKit.
 - En móvil, el borde derecho de la navegación se desvanece suavemente para señalar que hay más
   secciones disponibles a desplazar.
+- **Formulario de comentarios activado:** el enlace "Comentarios y propuestas" del pie pasa del
+  placeholder al formulario real de Google Forms (verificado: el enlace corto del autor resuelve
+  al mismo formulario).
 
 ## Beta 0.9.1 — Versionado de recursos contra caché de navegadores (20-10-2026)
 - Los `script` y `link` del `index.html` llevan ahora `?v=092` (se incrementa por versión), de
