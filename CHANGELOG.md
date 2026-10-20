@@ -3,6 +3,24 @@
 Versión para público general del [Mapa del Sistema](https://github.com/bedeberna-debug/mapa-del-sistema).
 Numeración alineada con la app hermana; cada versión consume la misma data compilada.
 
+## Beta 0.9.2 — Jerarquía de títulos y scrollbar de navegación (20-10-2026)
+- **Subtítulos de sección en cobre rojizo** (`--tv-cobre`) en todas las vistas: los apartados de
+  las guías ("En síntesis", "Ante quién: las instituciones clave", "Lo que la ley les exige",
+  "A quiénes alcanza", "Procedimientos paso a paso", "Las normas que te protegen…") y sus
+  equivalentes en "Tu comuna" e "Internacional" ahora destacan en el tono cobre del pie, con
+  tamaño ligeramente mayor. Los títulos de página (h2) se mantienen en azul para conservar la
+  jerarquía visual. Presentación pura: ningún texto factual cambió.
+- **Scrollbar de la navegación en tono cobre/rojizo** (antes gris oscuro, poco visible sobre la
+  banda azul), en Firefox y navegadores WebKit.
+- En móvil, el borde derecho de la navegación se desvanece suavemente para señalar que hay más
+  secciones disponibles a desplazar.
+
+## Beta 0.9.1 — Versionado de recursos contra caché de navegadores (20-10-2026)
+- Los `script` y `link` del `index.html` llevan ahora `?v=092` (se incrementa por versión), de
+  modo que cada publicación fuerza la descarga fresca de CSS y JS. Evita que visitantes con
+  archivos antiguos en caché vean pantallas mezcladas (caso real detectado tras la 0.9).
+- Sin cambios visibles ni de contenido.
+
 ## Beta 0.9 — Rediseño visual "Territorio Vivo" + portada nueva + reorden de navegación (20-10-2026)
 - **Cambio 100% de presentación y estructura de entrada:** ningún texto factual, ficha
   ni dato fue modificado (salvo la corrección de cifra de la tarjeta 02, ver abajo).
