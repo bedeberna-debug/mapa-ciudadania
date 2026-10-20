@@ -3,6 +3,35 @@
 Versión para público general del [Mapa del Sistema](https://github.com/bedeberna-debug/mapa-del-sistema).
 Numeración alineada con la app hermana; cada versión consume la misma data compilada.
 
+## Beta 0.9 — Rediseño visual "Territorio Vivo" + portada nueva + reorden de navegación (20-10-2026)
+- **Cambio 100% de presentación y estructura de entrada:** ningún texto factual, ficha
+  ni dato fue modificado (salvo la corrección de cifra de la tarjeta 02, ver abajo).
+- **Chrome nuevo según la propuesta de diseño aprobada** (`plataforma/diseno-propuestas/propuesta-2/`,
+  variante azul profundo + crema + cobre, pie rojizo teja/cobrizo): la barra superior pasa a
+  **banda-cabecera** con cordillera en capas, capa atenuante azul, siluetas tono sobre tono
+  (cóndor y estrella solitaria), marca "EA", título, subtítulo y chip "Versión Ciudadanía".
+  Tipografías **Atkinson Hyperlegible** (cuerpo) y **Bitter** (titulares).
+- **Portada (Inicio) nueva:** hero y grilla de 7 tarjetas numeradas 01–07 con los textos
+  TEXTUALES de `plataforma/data-guias/landing-v2.md`, cada tarjeta enlaza a su vista.
+- **Reorden de navegación** (también en la grilla de la portada): Inicio, Resolver algo,
+  Tu comuna, Mapa, Temas, Tiempo, Orden, Internacional.
+- **Pie de página nuevo:** banda rojiza con siluetas (huemul y copihue), nota de
+  verificación, créditos reales y enlaces a changelog / comentarios / issues.
+- **Cifras re-verificadas contra la data:** 98 nodos ✓, 310 conexiones ✓ (grafo.json),
+  345 municipalidades ✓ (portales-municipios.json). La tarjeta "Tu comuna" decía
+  "3 gobiernos regionales y 3 municipalidades" en el borrador; la data
+  (`subnacional.json`) registra **1 gobierno regional + 5 municipalidades** y la tarjeta
+  (y `landing-v2.md`) quedaron corregidas.
+- **Contraste AA medido:** los enlaces del pie usan `#ffc95e` en vez del `#f2b230` del
+  mockup (éste llegaba a 4,02:1 sobre el inicio del degradado, bajo AA; el tono ajustado
+  mide ≥ 4,9:1 en toda la banda). El amarillo `#f2b230` se mantiene solo en decoración.
+- **Anti-colisión CSS:** todo lo nuevo vive en `css/territorio-vivo.css` con prefijo `tv-`;
+  las clases preexistentes (`.tarjeta`, `.capa`, `.pie`, `.hero`, `sn-`, `rg-`) no se tocan.
+  Los colores semánticos del grafo y los tokens compartidos con la versión Estudio quedan intactos.
+- **Funcionalidad intacta:** grafo d3, panel de detalle, mapa SVG de "Tu comuna", guías de
+  "Resolver algo", modos de portales y regla `.seccion-int` centrada (880px). La versión
+  Ciudadanía sigue sin mostrar enlace a la versión académica.
+
 ## Beta 0.8 — Modo "Portales de transparencia" en "Tu comuna" (20-10-2026)
 - **Selector de dos modos** en la sección "Tu comuna" (texto D6): "Planes de gobierno
   abierto" (el modo actual, sin ningún cambio) y **"Portales de transparencia"** (nuevo).

@@ -1,29 +1,69 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CL">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>El Estado abierto, explicado — Marco normativo chileno de Gobierno Abierto</title>
+<meta name="description" content="Plataforma educativa que reúne, ordena y explica el marco completo del Gobierno Abierto en Chile, en lenguaje claro.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bitter:wght@600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/territorio-vivo.css">
 </head>
 <body>
-<header class="barra">
-  <div class="marca">
-    <h1>El Estado abierto, explicado</h1>
-    <p class="sub">Marco normativo chileno de Gobierno Abierto</p>
+
+<!-- ============ CABECERA: banda paisaje «Territorio Vivo» (Beta 0.9) ============ -->
+<header class="tv-cabecera">
+  <!-- Motivo decorativo: cordillera en capas -->
+  <svg class="tv-motivo" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
+    <path d="M0,300 L0,220 L120,140 L240,230 L360,120 L480,240 L600,160 L720,250 L840,130 L960,235 L1080,170 L1200,240 L1200,300 Z" fill="#25648f" opacity=".55"/>
+    <path d="M0,300 L0,255 L140,190 L300,270 L460,185 L620,275 L780,205 L940,280 L1100,215 L1200,265 L1200,300 Z" fill="#357ca8" opacity=".5"/>
+    <path d="M0,300 L0,280 L200,235 L420,290 L640,240 L860,292 L1060,250 L1200,285 L1200,300 Z" fill="#b3541e" opacity=".38"/>
+    <circle cx="1010" cy="70" r="34" fill="#f2b230" opacity=".85"/>
+  </svg>
+  <div class="tv-capa"></div>
+  <!-- Silueta atenuada: cóndor en vuelo (esquina superior derecha) -->
+  <svg class="tv-icono-silueta tv-icono-condor" viewBox="0 0 200 120" aria-hidden="true" focusable="false">
+    <path fill="currentColor" d="M100 46
+      C96 38 92 34 88 32
+      C70 22 46 20 22 28 L14 24 C16 30 18 34 22 38
+      C16 38 12 40 8 44 C16 46 24 48 32 50
+      C28 52 24 56 22 60 C32 60 42 58 50 56
+      C48 60 46 64 46 68 C56 64 64 60 70 56
+      C78 60 88 64 100 64
+      C112 64 122 60 130 56
+      C136 60 144 64 154 68 C154 64 152 60 150 56
+      C158 58 168 60 178 60 C176 56 172 52 168 50
+      C176 48 184 46 192 44 C188 40 184 38 178 38
+      C182 34 184 30 186 24 L178 28
+      C154 20 130 22 112 32
+      C108 34 104 38 100 46 Z"/>
+    <path fill="currentColor" d="M92 64 L100 84 L108 64 Z"/>
+  </svg>
+  <!-- Silueta atenuada: estrella solitaria (esquina opuesta) -->
+  <svg class="tv-icono-silueta tv-icono-estrella" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+    <polygon fill="currentColor" points="60,16 72,46 104,46 79,66 89,98 60,78 31,98 41,66 16,46 48,46"/>
+  </svg>
+  <div class="tv-contenido">
+    <div class="tv-marca">
+      <span class="tv-sol" aria-hidden="true">EA</span>
+      <h1>El Estado abierto, explicado</h1>
+      <span class="tv-chip-version">Versión Ciudadanía</span>
+      <p class="tv-sub">Marco normativo chileno de Gobierno Abierto</p>
+    </div>
+    <nav class="tv-navegacion" id="nav-vistas" aria-label="Secciones">
+      <a href="#/inicio" data-vista="inicio">Inicio</a>
+      <a href="#/resolver" data-vista="resolver">Resolver algo</a>
+      <a href="#/tu-comuna" data-vista="tu-comuna">Tu comuna</a>
+      <a href="#/relaciones" data-vista="relaciones">Mapa</a>
+      <a href="#/temas" data-vista="temas">Temas</a>
+      <a href="#/tiempo" data-vista="tiempo">Tiempo</a>
+      <a href="#/orden" data-vista="orden">Orden</a>
+      <a href="#/internacional" data-vista="internacional">Internacional</a>
+    </nav>
   </div>
-  <nav class="vistas" id="nav-vistas" aria-label="Secciones">
-    <a href="#/inicio" data-vista="inicio">Inicio</a>
-    <a href="#/resolver" data-vista="resolver">Resolver algo</a>
-    <a href="#/internacional" data-vista="internacional">Internacional</a>
-    <a href="#/orden" data-vista="orden">Orden</a>
-    <a href="#/relaciones" data-vista="relaciones">Mapa</a>
-    <a href="#/temas" data-vista="temas">Temas</a>
-    <a href="#/tiempo" data-vista="tiempo">Tiempo</a>
-    <a href="#/tu-comuna" data-vista="tu-comuna">Tu comuna</a>
-  </nav>
-  <span class="chip-version">Versión Ciudadanía</span>
 </header>
 
 <div class="layout">
@@ -36,17 +76,45 @@
   </aside>
 </div>
 
-<footer class="pie">
-  <span id="pie-stats"></span>
-  <span class="pie-nota">⚠️ = dato por verificar antes de publicar. Todo el contenido proviene del acervo documentado del proyecto.</span>
-  <span class="pie-creditos">
-    Bernardo Alfredo Silva Quezada — Estudiante de pregrado, Departamento de Administración Pública y Ciencia Política, Facultad de Ciencias Jurídicas y Sociales, Universidad de Concepción
-    <span class="pie-links">
-      <strong>Beta 0.8</strong> · <a href="https://github.com/bedeberna-debug/mapa-ciudadania/blob/main/CHANGELOG.md" target="_blank" rel="noopener">¿Qué hay de nuevo?</a>
-      · <a href="https://forms.gle/PENDIENTE" target="_blank" rel="noopener">Comentarios y propuestas</a>
-      · <a href="https://github.com/bedeberna-debug/mapa-ciudadania/issues" target="_blank" rel="noopener">GitHub Issues</a>
-    </span>
-  </span>
+<!-- ============ PIE: banda rojiza (teja/cobrizo) «Territorio Vivo» ============ -->
+<footer class="tv-pie">
+  <!-- Silueta atenuada: huemul (parte superior del pie) -->
+  <svg class="tv-icono-silueta tv-icono-huemul" viewBox="0 0 160 120" aria-hidden="true" focusable="false">
+    <g fill="currentColor">
+      <path d="M34 62 C34 50 48 44 70 44 L104 44 C120 44 130 52 130 64 C130 74 122 80 108 82 L64 82 C46 82 34 74 34 62 Z"/>
+      <path d="M40 52 C34 44 30 36 28 26 L24 22 C20 20 14 20 10 22 L14 30 C18 32 20 34 22 38 C26 46 30 52 34 58 Z"/>
+      <path d="M26 22 L30 12 L33 21 Z"/>
+      <path d="M20 20 C16 12 14 6 14 2 L17 2 C17 7 18 11 21 15 L24 8 L26 9 L23 18 Z"/>
+      <rect x="52" y="80" width="7" height="34" rx="3"/>
+      <rect x="66" y="80" width="7" height="32" rx="3"/>
+      <rect x="98" y="80" width="7" height="32" rx="3"/>
+      <rect x="112" y="80" width="7" height="34" rx="3"/>
+      <path d="M128 58 C134 60 136 64 134 68 C131 66 129 63 128 60 Z"/>
+    </g>
+  </svg>
+  <!-- Silueta atenuada: copihue (esquina inferior derecha) -->
+  <svg class="tv-icono-silueta tv-icono-copihue" viewBox="0 0 110 130" aria-hidden="true" focusable="false">
+    <path d="M55 6 C58 18 57 26 55 34" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+    <path fill="currentColor" d="M55 20 C44 18 36 22 32 30 C42 30 50 28 55 24 Z"/>
+    <path fill="currentColor" d="M55 34 C40 38 32 52 35 68 L42 63 L47 73 L55 66 L63 73 L68 63 L75 68 C78 52 70 38 55 34 Z"/>
+    <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+      <path d="M46 76 L45 92"/><path d="M55 74 L55 96"/><path d="M64 76 L65 92"/>
+    </g>
+    <g fill="currentColor">
+      <circle cx="45" cy="94" r="3.5"/><circle cx="55" cy="98" r="3.5"/><circle cx="65" cy="94" r="3.5"/>
+    </g>
+  </svg>
+  <div class="tv-contenido">
+    <p class="tv-nota">⚠️ = dato por verificar antes de publicar. Todo el contenido proviene del acervo documentado del proyecto.</p>
+    <span class="tv-stats" id="pie-stats"></span>
+    <p class="tv-creditos">
+      Bernardo Alfredo Silva Quezada — Estudiante de pregrado, Departamento de Administración Pública y Ciencia Política, Facultad de Ciencias Jurídicas y Sociales, Universidad de Concepción<br>
+      <strong>Beta 0.9</strong> ·
+      <a href="https://github.com/bedeberna-debug/mapa-ciudadania/blob/main/CHANGELOG.md" target="_blank" rel="noopener">¿Qué hay de nuevo?</a> ·
+      <a href="https://forms.gle/PENDIENTE" target="_blank" rel="noopener">Comentarios y propuestas</a> ·
+      <a href="https://github.com/bedeberna-debug/mapa-ciudadania/issues" target="_blank" rel="noopener">GitHub Issues</a>
+    </p>
+  </div>
 </footer>
 
 <script src="vendor/d3.v7.min.js"></script>

@@ -1,0 +1,231 @@
+/* ==========================================================================
+   territorio-vivo.css — Beta 0.9
+   Capa visual "Territorio Vivo" (variante azul profundo + crema + cobre,
+   pie rojizo teja/cobrizo), portada de plataforma/diseno-propuestas/propuesta-2/.
+
+   Estrategia anti-colisión: TODAS las clases nuevas llevan prefijo tv-.
+   Las clases preexistentes de app.css (.tarjeta, .capa, .pie, .hero…) quedan
+   intactas: siguen estilando las vistas internas y el grafo.
+   NO se tocan los colores semánticos del grafo (tokens.css) ni los tokens
+   compartidos con la versión Estudio.
+   ========================================================================== */
+
+:root {
+  /* --- paleta Territorio Vivo (solo chrome y portada) --- */
+  --tv-azul: #10395b;
+  --tv-azul-2: #17547d;
+  --tv-rojo: #6e2410;          /* pie: rojo teja/cobrizo */
+  --tv-rojo-2: #93361a;
+  --tv-crema: #fbf7ef;
+  --tv-cobre: #8f3a10;         /* texto/acento sobre claro: contraste AA (7,07:1) */
+  --tv-cobre-fuerte: #b3541e;  /* solo decoración y estados hover */
+  --tv-amarillo-sol: #f2b230;  /* decorativo y "sol" de la marca */
+  /* Enlace del pie: medido — #f2b230 llega a 5,82:1 sobre --tv-rojo pero solo
+     4,02:1 sobre --tv-rojo-2 (inicio del degradado). #ffc95e pasa AA en ambos
+     (≥ 4,9:1 medido); se usa SOLO para enlaces del pie. */
+  --tv-enlace-pie: #ffc95e;
+  --tv-radio: 16px;
+  --tv-ancho: 1180px;
+  --tv-ancho-texto: 880px;
+  --tv-ff-display: "Bitter", Georgia, serif;
+  --tv-ff-cuerpo: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+
+  /* Fondo de la app pasa al crema de la propuesta (override local del token;
+     tokens.css no se modifica). */
+  --fondo: #fbf7ef;
+}
+
+body {
+  font-family: var(--tv-ff-cuerpo);
+}
+
+/* Titulares en Bitter (display), como en la propuesta. Alcance: chrome y
+   contenido de vistas; no afecta a SVG del grafo ni a la ficha técnica. */
+.tv-cabecera h1, .tv-hero h2, .tv-tarjeta h3,
+.vista h2, .vista h3, .vista h4,
+.panel .detalle h2, .panel .detalle h3 {
+  font-family: var(--tv-ff-display);
+  font-weight: 600;
+}
+
+/* Foco visible uniforme (AA) en toda la app */
+a:focus-visible, button:focus-visible, summary:focus-visible,
+select:focus-visible, input:focus-visible, [tabindex]:focus-visible {
+  outline: 3px solid var(--tv-azul-2);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* --------------------------------------------------------------------------
+   CABECERA: banda paisaje (cordillera en capas) + capa atenuante azul
+   -------------------------------------------------------------------------- */
+.tv-cabecera {
+  position: relative;
+  color: #fdf9f0;
+  overflow: hidden;
+  background: var(--tv-azul);
+}
+/* motivo: cordillera en capas, dibujada en SVG (decorativa) */
+.tv-motivo {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+}
+/* capa atenuante institucional: veladura azul sobre el motivo */
+.tv-capa {
+  position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg,
+    rgba(16, 57, 91, .96) 0%, rgba(16, 57, 91, .82) 55%, rgba(23, 84, 125, .55) 100%);
+}
+.tv-cabecera .tv-contenido {
+  position: relative;
+  max-width: var(--tv-ancho);
+  margin: 0 auto;
+  padding: 1.2rem 1.25rem 0;
+}
+
+/* siluetas territoriales atenuadas: solo contorno, tono sobre tono */
+.tv-icono-silueta { position: absolute; pointer-events: none; color: #3a8ab5; }
+.tv-cabecera .tv-icono-condor { top: -4px; right: -12px; width: min(230px, 28vw); height: auto; opacity: .3; }
+.tv-cabecera .tv-icono-estrella { top: -8px; left: -10px; width: min(130px, 18vw); height: auto; opacity: .24; }
+@media (max-width: 640px) {
+  .tv-cabecera .tv-icono-condor { width: 150px; }
+  .tv-cabecera .tv-icono-estrella { width: 88px; opacity: .16; }
+}
+
+.tv-marca { display: flex; align-items: center; gap: .9rem; flex-wrap: wrap; }
+.tv-marca .tv-sol {
+  flex: none; width: 44px; height: 44px; border-radius: 50%;
+  background: var(--tv-amarillo-sol);
+  display: grid; place-items: center;
+  font-family: var(--tv-ff-display); font-weight: 600;
+  color: var(--tv-azul); font-size: 1.05rem;
+}
+.tv-marca h1 { font-size: 1.45rem; margin: 0; line-height: 1.2; }
+.tv-marca .tv-sub { margin: 0; font-size: .85rem; color: #c6d6e2; flex-basis: 100%; }
+.tv-marca .tv-chip-version {
+  margin-left: auto;
+  font-size: .74rem; font-weight: 700;
+  background: rgba(253, 249, 240, .14);
+  border: 1px solid rgba(253, 249, 240, .5);
+  border-radius: 999px; padding: .3rem .8rem; color: #fdf9f0;
+  white-space: nowrap;
+}
+@media (max-width: 640px) {
+  .tv-marca .tv-chip-version { margin-left: 0; order: 4; }
+}
+
+.tv-navegacion {
+  display: flex; gap: .4rem;
+  margin-top: 1.05rem; padding: .55rem 0 .8rem;
+  overflow-x: auto; scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+.tv-navegacion a {
+  color: #e8f0f6; text-decoration: none; white-space: nowrap; font-weight: 700;
+  padding: .55rem 1.05rem; font-size: .95rem;
+  min-height: 48px; display: inline-flex; align-items: center;
+  border-radius: 999px; border: 1.5px solid transparent;
+}
+.tv-navegacion a:hover { border-color: rgba(253, 249, 240, .5); }
+/* app.js sigue alternando la clase .activa sobre #nav-vistas a */
+.tv-navegacion a.activa { background: #fdf9f0; color: var(--tv-azul); }
+
+/* --------------------------------------------------------------------------
+   CUERPO: la vista se centra al ancho de la propuesta; el panel de detalle
+   y sus reglas (app.css) no cambian.
+   -------------------------------------------------------------------------- */
+.vista {
+  width: 100%;
+  max-width: var(--tv-ancho);
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+@media (max-width: 899px) {
+  .vista { padding: 1.4rem 1rem 2.4rem; }
+}
+
+/* --------------------------------------------------------------------------
+   PORTADA (Inicio): hero + grilla numerada 01–07, según landing-v2.md
+   -------------------------------------------------------------------------- */
+.tv-hero { max-width: var(--tv-ancho-texto); margin: 0 auto 2.5rem; }
+.tv-hero h2 {
+  font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15;
+  margin: 0 0 1.1rem; color: var(--tv-azul);
+}
+.tv-hero p { font-size: 1.14rem; line-height: 1.6; margin: 0 0 1rem; }
+.tv-hero .tv-bajada-secundaria {
+  color: var(--tenue); font-size: 1rem;
+  border-left: 5px solid var(--tv-amarillo-sol); padding-left: 1rem;
+}
+
+.tv-grilla-intro {
+  font-size: 1.08rem; font-weight: 700; margin: 0 0 1rem; color: var(--tv-azul);
+  max-width: var(--tv-ancho-texto);
+}
+.tv-grilla { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+@media (min-width: 640px) { .tv-grilla { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1024px) { .tv-grilla { grid-template-columns: repeat(3, 1fr); } }
+
+.tv-tarjeta {
+  display: flex; flex-direction: column;
+  background: var(--panel);
+  border: 1.5px solid var(--linea);
+  border-radius: var(--tv-radio);
+  padding: 1.15rem 1.25rem 1.05rem;
+  text-decoration: none; color: var(--tinta);
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.tv-tarjeta:hover {
+  border-color: var(--tv-cobre-fuerte);
+  box-shadow: 0 5px 16px rgba(143, 58, 16, .12);
+}
+.tv-tarjeta .tv-num {
+  font-family: var(--tv-ff-display); font-size: .85rem;
+  color: var(--tv-cobre); font-weight: 600;
+}
+.tv-tarjeta h3 {
+  font-size: 1.26rem; margin: .15rem 0 .45rem; color: var(--tv-azul);
+}
+.tv-tarjeta p { margin: 0 0 .9rem; font-size: .96rem; line-height: 1.55; color: var(--tenue); }
+.tv-tarjeta .tv-ir { margin-top: auto; font-size: .92rem; font-weight: 700; color: var(--tv-cobre); }
+.tv-tarjeta .tv-ir::after { content: " →"; }
+
+.tv-nota-cifras {
+  max-width: var(--tv-ancho-texto);
+  margin: 1.8rem auto 0;
+  font-size: .9rem; color: var(--tenue);
+}
+
+/* --------------------------------------------------------------------------
+   PIE: banda rojiza (teja/cobrizo) con siluetas atenuadas
+   -------------------------------------------------------------------------- */
+.tv-pie {
+  margin-top: 2rem;
+  color: #fdf9f0;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--tv-rojo-2), var(--tv-rojo) 30%);
+}
+.tv-pie .tv-contenido {
+  position: relative;
+  max-width: var(--tv-ancho);
+  margin: 0 auto;
+  padding: 2rem 1.25rem 2.2rem;
+}
+.tv-pie .tv-icono-copihue { bottom: -8px; right: -10px; width: min(175px, 24vw); height: auto; opacity: .22; color: #d97e4a; }
+.tv-pie .tv-icono-huemul { top: -2px; left: -10px; width: min(190px, 25vw); height: auto; opacity: .22; color: #d97e4a; }
+@media (max-width: 640px) {
+  .tv-pie .tv-icono-copihue { width: 120px; }
+  .tv-pie .tv-icono-huemul { width: 125px; }
+}
+.tv-pie .tv-nota {
+  font-size: .86rem; margin: 0 0 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(253, 249, 240, .25);
+}
+.tv-pie .tv-stats { display: block; font-size: .82rem; margin: 0 0 1rem; color: #f3ddcb; }
+.tv-pie .tv-creditos { font-size: .9rem; line-height: 1.75; margin: 0; }
+/* Enlaces del pie: tono ajustado por medición AA (ver :root). */
+.tv-pie a { color: var(--tv-enlace-pie); text-decoration: none; font-weight: 700; }
+.tv-pie a:hover { text-decoration: underline; }
