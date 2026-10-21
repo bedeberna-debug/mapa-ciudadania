@@ -37,6 +37,13 @@ const Panel = {
       html += `<p class="alerta">⚠️ Descripción por verificar.</p>`;
     }
 
+    // Contexto del nodo (Beta 0.10): párrafo debajo de la descripción, con
+    // su fuente en la línea de evidencia (mismo patrón que fuente_descripcion).
+    if (nodo.contexto) {
+      html += `<p class="desc">${nodo.contexto}</p>`;
+      if (nodo.fuente_contexto) html += `<span class="ev">Fuente: ${nodo.fuente_contexto}</span>`;
+    }
+
     div.innerHTML = html;
     div.appendChild(this.bloqueAfecta(nodo, app));
     div.appendChild(this.bloqueDatos(nodo, app));
@@ -64,6 +71,25 @@ const Panel = {
       btnFicha.href = nodo.ficha_url;
       btnFicha.textContent = 'Ver ficha';
       div.appendChild(btnFicha);
+    }
+
+    // Botón "Visitar portal oficial" (Beta 0.10): solo cuando el nodo tiene
+    // portal_url verificado. Los portales "por verificar" (portal_nota) se
+    // muestran como nota visible, sin botón.
+    if (nodo.portal_url) {
+      const btnPortal = document.createElement('a');
+      btnPortal.className = 'btn-tecnico';
+      btnPortal.href = nodo.portal_url;
+      btnPortal.target = '_blank';
+      btnPortal.rel = 'noopener';
+      btnPortal.textContent = 'Visitar portal oficial';
+      div.appendChild(btnPortal);
+    }
+    if (nodo.portal_nota) {
+      const notaPortal = document.createElement('p');
+      notaPortal.className = 'alerta';
+      notaPortal.textContent = `⚠️ ${nodo.portal_nota}`;
+      div.appendChild(notaPortal);
     }
 
     // Botón discreto "Ver detalle técnico": solo normas con ficha compilada

@@ -1,7 +1,7 @@
 {
  "generado": "mapa-del-sistema fase 1",
- "total_nodos": 98,
- "total_aristas": 310,
+ "total_nodos": 106,
+ "total_aristas": 326,
  "nodos": [
   {
    "id": "cpr",
@@ -1051,6 +1051,8 @@
    "fuente_pdf": null,
    "temas": [],
    "ficha_url": null,
+   "portal_url": "https://www.consejotransparencia.cl",
+   "portal_nota": null,
    "alerta": null,
    "nota": null
   },
@@ -1064,6 +1066,8 @@
    "fuente_pdf": null,
    "temas": [],
    "ficha_url": null,
+   "portal_url": "https://www.contraloria.cl",
+   "portal_nota": null,
    "alerta": null,
    "nota": null
   },
@@ -1077,6 +1081,8 @@
    "fuente_pdf": null,
    "temas": [],
    "ficha_url": null,
+   "portal_url": "https://www.chilecompra.cl",
+   "portal_nota": null,
    "alerta": null,
    "nota": null
   },
@@ -1090,6 +1096,8 @@
    "fuente_pdf": null,
    "temas": [],
    "ficha_url": null,
+   "portal_url": "https://digital.gob.cl",
+   "portal_nota": null,
    "alerta": null,
    "nota": null
   },
@@ -1103,6 +1111,8 @@
    "fuente_pdf": null,
    "temas": [],
    "ficha_url": null,
+   "portal_url": "https://www.anci.gob.cl",
+   "portal_nota": null,
    "alerta": null,
    "nota": null
   },
@@ -1116,6 +1126,8 @@
    "fuente_pdf": null,
    "temas": [],
    "ficha_url": null,
+   "portal_url": null,
+   "portal_nota": null,
    "alerta": null,
    "nota": null
   },
@@ -1129,6 +1141,8 @@
    "fuente_pdf": null,
    "temas": [],
    "ficha_url": null,
+   "portal_url": "https://www.registrocivil.cl",
+   "portal_nota": null,
    "alerta": null,
    "nota": null
   },
@@ -1142,6 +1156,8 @@
    "fuente_pdf": null,
    "temas": [],
    "ficha_url": null,
+   "portal_url": null,
+   "portal_nota": "Portal institucional del Poder Judicial (https://www.pjud.cl) por verificar — rechequeo pendiente: la URL figura como enlace oficial en la guía 01, pero no responde al 21-10-2026 (falla DNS desde el punto de chequeo).",
    "alerta": null,
    "nota": null
   },
@@ -1155,6 +1171,8 @@
    "fuente_pdf": null,
    "temas": [],
    "ficha_url": null,
+   "portal_url": "https://www.dpp.cl",
+   "portal_nota": null,
    "alerta": null,
    "nota": null
   },
@@ -1168,6 +1186,8 @@
    "fuente_pdf": null,
    "temas": [],
    "ficha_url": null,
+   "portal_url": "https://www.congreso.cl",
+   "portal_nota": null,
    "alerta": null,
    "nota": null
   },
@@ -1181,6 +1201,8 @@
    "fuente_pdf": null,
    "temas": [],
    "ficha_url": null,
+   "portal_url": "https://www.opengovpartnership.org",
+   "portal_nota": null,
    "alerta": null,
    "nota": null
   },
@@ -1194,6 +1216,8 @@
    "fuente_pdf": null,
    "temas": [],
    "ficha_url": null,
+   "portal_url": "https://www.minciencia.gob.cl",
+   "portal_nota": null,
    "alerta": null,
    "nota": null
   },
@@ -1207,6 +1231,8 @@
    "fuente_pdf": null,
    "temas": [],
    "ficha_url": null,
+   "portal_url": "https://www.energia.gob.cl",
+   "portal_nota": null,
    "alerta": null,
    "nota": null
   },
@@ -1220,6 +1246,8 @@
    "fuente_pdf": null,
    "temas": [],
    "ficha_url": null,
+   "portal_url": "https://www.subpesca.cl",
+   "portal_nota": null,
    "alerta": null,
    "nota": null
   },
@@ -1236,6 +1264,8 @@
     "transparencia"
    ],
    "ficha_url": "#/tu-comuna/inst-penalolen",
+   "portal_url": "http://transparencia.penalolen.cl/",
+   "portal_nota": null,
    "alerta": null,
    "nota": null
   },
@@ -1252,6 +1282,8 @@
     "transparencia"
    ],
    "ficha_url": "#/tu-comuna/inst-maipu",
+   "portal_url": "http://www.transparenciamaipu.cl/",
+   "portal_nota": null,
    "alerta": null,
    "nota": null
   },
@@ -1268,6 +1300,8 @@
     "transparencia"
    ],
    "ficha_url": "#/tu-comuna/inst-san-joaquin",
+   "portal_url": "http://www.sanjoaquin.cl/transparencia/",
+   "portal_nota": "El portal consta verificado en el directorio oficial CPLT (MU291, 19-10-2026); el rechequeo automático del 21-10-2026 recibió HTTP 403 (posible bloqueo anti-bots) — verificación manual recomendada.",
    "alerta": null,
    "nota": null
   },
@@ -1284,6 +1318,8 @@
     "transparencia"
    ],
    "ficha_url": "#/tu-comuna/inst-renca",
+   "portal_url": "https://www.renca.cl",
+   "portal_nota": null,
    "alerta": null,
    "nota": null
   },
@@ -1301,6 +1337,8 @@
     "datos"
    ],
    "ficha_url": "#/tu-comuna/inst-gore-santiago",
+   "portal_url": "https://gobiernosantiago.cl/",
+   "portal_nota": null,
    "alerta": null,
    "nota": null
   },
@@ -1317,7 +1355,129 @@
     "transparencia"
    ],
    "ficha_url": "#/tu-comuna/inst-concepcion",
+   "portal_url": "http://transparencia.concepcion.cl/",
+   "portal_nota": null,
    "alerta": null,
+   "nota": null
+  },
+  {
+   "id": "inst-minpublico",
+   "tipo": "institucion",
+   "nombre": "Ministerio Público (Fiscalía de Chile)",
+   "descripcion": "El Ministerio Público dirige la investigación de los delitos: si fuiste víctima o testigo de uno —incluidos delitos de corrupción como cohecho, malversación o fraude al fisco— puedes denunciar presencialmente en cualquier fiscalía, ante Carabineros o la PDI (obligadas a recibirla), o en línea con ClaveÚnica en fiscaliadechile.cl («Denuncia en Línea»). También recibe las derivaciones de ChileCompra cuando una compra pública muestra indicios de delito, y es el destinatario legal de las denuncias de funcionarios públicos. No existe denuncia telefónica: el Call Center 600 333 0000 es solo para consultas de causas.",
+   "fuente_descripcion": "Guía 03 «Denunciar» (A, D y E.1, verificada 19-10-2026) + fichas 20 y 25 del acervo + Ley 19.886, art. 30 ter (texto Ley 21.634, citado en guía 04 E.3).",
+   "pdf": null,
+   "fuente_pdf": null,
+   "temas": [],
+   "ficha_url": null,
+   "portal_url": "https://www.fiscaliadechile.cl",
+   "portal_nota": null,
+   "alerta": null,
+   "nota": null
+  },
+  {
+   "id": "inst-subprevencion",
+   "tipo": "institucion",
+   "nombre": "Subsecretaría de Prevención del Delito (Denuncia Seguro *4242)",
+   "descripcion": "Opera Denuncia Seguro, el canal 100% anónimo para aportar información sobre delitos (microtráfico, robos, armas, trata, prófugos): llamada gratuita al *4242 desde celular o formulario web en denunciaseguro.cl, 24/7 todo el año. No piden tus datos, no registran tu número ni tu IP y las llamadas no se graban; si la información es suficiente, el programa formaliza la denuncia ante el Ministerio Público y las policías. No sirve para emergencias en curso (ahí llamas al 133 o 134) ni como canal de reclamos vecinales.",
+   "fuente_descripcion": "Guía 03 «Denunciar» (E.2, verificada 19-10-2026) + 98-fuentes (denunciaseguro.cl y subprevenciondeldelito.gob.cl confirmados 19-10-2026; Ficha ChileAtiende N° 22611).",
+   "pdf": null,
+   "fuente_pdf": null,
+   "temas": [],
+   "ficha_url": null,
+   "portal_url": "https://subprevenciondeldelito.gob.cl",
+   "portal_nota": null,
+   "alerta": null,
+   "nota": null
+  },
+  {
+   "id": "inst-tcp",
+   "tipo": "institucion",
+   "nombre": "Tribunal de Contratación Pública (TCP)",
+   "descripcion": "Tribunal especializado con asiento en Santiago, creado por la Ley 19.886 (art. 22). Si eres proveedor del Estado y detectas ilegalidades o arbitrariedades en una compra pública —bases dirigidas, adjudicación irregular, ejecución viciada— puedes demandar ante el TCP dentro de un plazo fatal de 10 días hábiles; también conoce la nulidad de contratos celebrados con infracción a la probidad (hasta 2 años desde el vicio) y la impugnación de medidas de ChileCompra sobre el Registro de Proveedores. La demanda se presenta por tramitación electrónica en su sitio; sus sentencias se apelan ante la Corte de Apelaciones de Santiago.",
+   "fuente_descripcion": "Ley 19.886, arts. 22–26 septies (PDF del acervo, texto Ley 21.634) + guía 04 «Contratar con el Estado» (E.5, verificada 19-10-2026).",
+   "pdf": null,
+   "fuente_pdf": null,
+   "temas": [],
+   "ficha_url": null,
+   "portal_url": "https://tribunaldecontratacionpublica.cl",
+   "portal_nota": null,
+   "alerta": "Operando y en expansión de 3 a 6 jueces titulares más 2 suplentes (nombramientos en curso, septiembre de 2026 — atta.gov.cl, 07-09-2026). El Capítulo V (nuevas competencias) aplica a causas iniciadas tras su entrada en vigencia.",
+   "nota": null
+  },
+  {
+   "id": "inst-sea",
+   "tipo": "institucion",
+   "nombre": "Servicio de Evaluación Ambiental (SEA)",
+   "descripcion": "Es el servicio que evalúa ambientalmente los proyectos (inmobiliarios, industriales, energéticos) antes de que se aprueben. Cualquier persona u organización —sin necesidad de ser vecina del proyecto— puede presentar observaciones ciudadanas fundadas en un Estudio de Impacto Ambiental (60 días hábiles) por su Portal Ciudadano con ClaveÚnica, y la autoridad debe considerarlas y responderlas en la resolución (RCA). Si tus observaciones fueron mal respondidas, puedes reclamar ante su Director Ejecutivo dentro de 30 días. Es la puerta de entrada concreta de los derechos de participación ambiental del Acuerdo de Escazú.",
+   "fuente_descripcion": "Guía 02 «Participar» (E.5, verificada 19-10-2026; D.S. 40/2012 MMA, arts. 78, 90 y 94–96) + ficha 32 (Acuerdo de Escazú).",
+   "pdf": null,
+   "fuente_pdf": null,
+   "temas": [],
+   "ficha_url": null,
+   "portal_url": "https://www.sea.gob.cl",
+   "portal_nota": null,
+   "alerta": null,
+   "nota": null
+  },
+  {
+   "id": "inst-servel",
+   "tipo": "institucion",
+   "nombre": "Servicio Electoral (SERVEL)",
+   "descripcion": "Administra las elecciones y el registro electoral. En gobierno abierto local cumple un rol clave: si tu comunidad quiere impulsar un plebiscito comunal, debe juntar las firmas de a lo menos el 10% de quienes sufragaron en la última elección municipal, y ese porcentaje se acredita con certificación del Director Regional del SERVEL; además, el SERVEL y la municipalidad se coordinan para programar y realizar la votación. Es también el organismo que determina el número de concejales por comuna según el registro electoral.",
+   "fuente_descripcion": "Ley 18.695, arts. 100–102 (PDF del acervo) + guía 02 «Participar» (E.4, verificada 19-10-2026).",
+   "pdf": null,
+   "fuente_pdf": null,
+   "temas": [],
+   "ficha_url": null,
+   "portal_url": "https://www.servel.cl",
+   "portal_nota": null,
+   "alerta": null,
+   "nota": null
+  },
+  {
+   "id": "inst-fne",
+   "tipo": "institucion",
+   "nombre": "Fiscalía Nacional Económica (FNE)",
+   "descripcion": "Fiscaliza la libre competencia en los mercados. En compras públicas tiene una entrada directa: cuando ChileCompra detecta indicios de colusión u otras infracciones a la libre competencia en una licitación, debe remitirle los antecedentes en 3 días hábiles; también tiene acceso inmediato a la información del canal de denuncias de compras públicas. Si denuncias con reserva ante ChileCompra una práctica contra la libre competencia, tu identidad solo puede revelarse por requerimiento judicial de la FNE o del Ministerio Público.",
+   "fuente_descripcion": "D.S. 661/2024, arts. 13 y 21 (PDF del acervo) + Ley 19.886, art. 30 ter + guía 04 (E.3 y E.4, verificada 19-10-2026).",
+   "pdf": null,
+   "fuente_pdf": null,
+   "temas": [],
+   "ficha_url": null,
+   "portal_url": "https://www.fne.gob.cl",
+   "portal_nota": null,
+   "alerta": null,
+   "nota": null
+  },
+  {
+   "id": "inst-corte-apelaciones",
+   "tipo": "institucion",
+   "nombre": "Cortes de Apelaciones",
+   "descripcion": "Son la instancia de alzada común del sistema de gobierno abierto: revisan los reclamos de ilegalidad contra las resoluciones del Consejo para la Transparencia cuando te niegan información (art. 28, Ley 20.285); conocerán los reclamos contra las resoluciones de la futura Agencia de Protección de Datos Personales (art. 43, Ley 21.719, desde el 01-12-2026); y revisan en apelación las sentencias del Tribunal de Contratación Pública (art. 26 quinquies, Ley 19.886 — en ese caso, la Corte de Apelaciones de Santiago). Es a donde acudes cuando una decisión de esos órganos te perjudica y se agotó la vía administrativa.",
+   "fuente_descripcion": "Citas literales de Ley 20.285 (art. 28), Ley 21.719 (art. 43) y Ley 19.886 (art. 26 quinquies), PDFs del acervo + guías 01 (E.3) y 04 (E.5).",
+   "pdf": null,
+   "fuente_pdf": null,
+   "temas": [],
+   "ficha_url": null,
+   "portal_url": null,
+   "portal_nota": "Portal institucional del Poder Judicial (https://www.pjud.cl) por verificar — rechequeo pendiente: la URL figura como enlace oficial en la guía 01, pero no responde al 21-10-2026 (falla DNS desde el punto de chequeo).",
+   "alerta": null,
+   "nota": null
+  },
+  {
+   "id": "inst-apdp",
+   "tipo": "institucion",
+   "nombre": "Agencia de Protección de Datos Personales (APDP)",
+   "descripcion": "Corporación autónoma de derecho público, técnica y especializada, creada por la Ley 21.719 (art. 30) para fiscalizar la protección de datos personales, instruir sumarios e imponer sanciones. Cuando opere, será la autoridad ante la cual reclamar si un responsable (público o privado) no responde tus derechos de acceso, rectificación, supresión, oposición, portabilidad o bloqueo (derechos ARSOP + bloqueo) dentro de 30 días corridos; su resolución será reclamable ante la Corte de Apelaciones (art. 43).",
+   "fuente_descripcion": "Ley 21.719, arts. 11, 30, 41 y 43 (PDF del acervo) + ficha 06 + guía 01 (A y F).",
+   "pdf": null,
+   "fuente_pdf": null,
+   "temas": [],
+   "ficha_url": null,
+   "portal_url": null,
+   "portal_nota": "https://www.agenciadeprotecciondedatos.gob.cl por verificar — rechequeo pendiente: el dominio no resuelve DNS al 21-10-2026; consistente con la alerta «en implementación» (la Agencia no consta como constituida).",
+   "alerta": "En implementación — no consta como constituida al 21-10-2026; operará desde la entrada en vigencia de la Ley 21.719 (01-12-2026). Fuente: Boletín 18.623-07 (senado.cl). Precisión del acervo (guía 01, F, verificada 19-10-2026): el Senado rechazó la terna de consejeros en mayo de 2026 y el proyecto Boletín 18.623-07, con suma urgencia (urgencia renovada 06-10-2026), postergaría la entrada en vigencia al 01-12-2027 — confirmar el estado del proyecto antes de publicar.",
    "nota": null
   },
   {
@@ -1327,6 +1487,8 @@
    "nombre": "Compromiso 1 — Plan para el acceso a información científica y tecnológica sobre cambio climático en Chile",
    "alerta": null,
    "descripcion": "Busca facilitar decisiones informadas y políticas públicas efectivas frente al cambio climático, mediante una plataforma única con datos científicos (publicaciones, investigadores, instituciones) para uso ciudadano y de tomadores de decisiones.",
+   "contexto": "En concreto: una plataforma única donde cualquier persona —un municipio que prepara su plan comunal, una junta de vecinos, un equipo de gobierno— podrá encontrar la evidencia científica disponible sobre cambio climático en Chile (publicaciones, investigadores, instituciones), sin pedirla oficina por oficina. Está en el mapa porque es el compromiso del 6° Plan que conecta la ciencia abierta con la acción climática (ODS 13), y lo lidera el Ministerio de Ciencia (inst-minciencia). Su estado de cumplimiento individual no fue evaluado por el IRM en el acervo: está por verificar.",
+   "fuente_contexto": "Ficha 17 + 6° Plan de Estado Abierto 2023-2027, Actualización de Medio Término 2026 (texto oficial, `pdfs/6to-plan-2023-2027-actualizacion-2026.pdf`); conexión ODS 13 según arista verificada del grafo (ficha 17).",
    "responsable": "Ministerio de Ciencia, Tecnología, Conocimiento e Innovación",
    "estado_avance": "Sin evaluación individual en la ficha IRM del acervo — por verificar",
    "avance_2026": null,
@@ -1343,6 +1505,8 @@
    "nombre": "Compromiso 2 — Datos abiertos para más transparencia en las compras públicas",
    "alerta": null,
    "descripcion": "Busca ampliar el sitio de datos abiertos de ChileCompra para incluir nueva información y adaptarse a la Ley N° 21.634: transparentar nuevos organismos, procedimientos de compra y políticas de inclusión para empresas de menor tamaño.",
+   "contexto": "En concreto: ampliar el sitio de datos abiertos de ChileCompra (inst-chilecompra) para que cualquiera pueda descargar y revisar cómo gasta el Estado —qué organismos compran, por qué vía y a quién— incluyendo los cambios que trajo la Ley 21.634 (más organismos obligados, más procedimientos publicados, inclusión de empresas de menor tamaño). Está en el mapa porque se implementa directamente sobre la Ley 19.886 y su reglamento D.S. 661/2024. La revisión IRM 2025 lo destacó como uno de los tres compromisos con potencial sustancial del plan.",
+   "fuente_contexto": "Fichas 17, 18, 19, 23 y 39 + 6° Plan, Actualización 2026 (texto oficial); aristas verificadas del grafo (ley-19886, ley-20393 y ds-661-2024 → comp-02).",
    "responsable": "Dirección de Compras y Contratación Pública del Estado de Chile (ChileCompra)",
    "estado_avance": "IRM 2025 (evaluación de diseño, anterior a la Actualización 2026): uno de los tres compromisos con potencial sustancial",
    "avance_2026": null,
@@ -1359,6 +1523,8 @@
    "nombre": "Compromiso 3 — Lenguaje claro para sitio y reportes de la iniciativa DATOSABIERTOS.CGR",
    "alerta": null,
    "descripcion": "Mejorar la accesibilidad y usabilidad de los datos del portal datosabiertos.cgr, para aumentar la confianza, la transparencia y la cooperación con la ciudadanía sobre el quehacer de la institución.",
+   "contexto": "En concreto: que los datos que la Contraloría (inst-cgr) publica sobre su fiscalización se entiendan sin ser experto —sitio y reportes reescritos en lenguaje ciudadano. Está en el mapa porque la CGR es la gran fiscalizadora de la legalidad y probidad del Estado (administra también el Canal de Denuncias de la Ley 21.592): abrir sus datos en claro cierra el ciclo de rendición de cuentas. Según la Actualización 2026, sus hitos y plazos se ajustaron tras el taller de evaluación de medio término (CEPAL-MINSEGPRES).",
+   "fuente_contexto": "Ficha 17 + 6° Plan, Actualización 2026 (texto oficial); rol de la CGR según fichas 24, 27 y 36 y aristas verificadas del grafo.",
    "responsable": "Contraloría General de la República",
    "estado_avance": "Sin evaluación individual en la ficha IRM del acervo — por verificar",
    "avance_2026": "Hitos y plazos ajustados tras el taller de evaluación de medio término (CEPAL-MINSEGPRES).",
@@ -1375,6 +1541,8 @@
    "nombre": "Compromiso 4 — Plataforma Pobreza Energética",
    "alerta": null,
    "descripcion": "Desarrollar una plataforma digital abierta y ciudadana que permita visualizar e interactuar con indicadores de pobreza energética a nivel nacional, regional y comunal, con información actualizada.",
+   "contexto": "En concreto: una plataforma digital abierta para ver —a nivel nacional, regional y comunal— cuántos hogares no pueden calefaccionar o iluminar adecuadamente su vivienda, con indicadores actualizados. Está en el mapa porque es transparencia con relevancia territorial directa: la cifra de tu comuna puede orientar programas y reclamos locales. Lo lidera el Ministerio de Energía (inst-minenergia). Según la Actualización 2026, la línea base se completó en diciembre de 2024 y ya existe una versión preliminar de la plataforma en los servidores del Ministerio (2° semestre 2025).",
+   "fuente_contexto": "Ficha 17 + 6° Plan, Actualización 2026 (texto oficial); arista verificada del grafo (inst-minenergia responsable_de comp-04).",
    "responsable": "Ministerio de Energía",
    "estado_avance": "Sin evaluación individual en la ficha IRM del acervo — por verificar",
    "avance_2026": "Línea base completada (dic-2024); fichas descriptivas de indicadores generadas; versión preliminar de la plataforma implementada en los servidores del Ministerio (2° semestre 2025).",
@@ -1391,6 +1559,8 @@
    "nombre": "Compromiso 5 — Justicia Abierta para un Estado Abierto",
    "alerta": null,
    "descripcion": "Estrategia multiactor para mejorar el acceso al servicio e información judicial mediante los pilares de transparencia, colaboración y participación ciudadana: políticas institucionales, acciones locales, lenguaje claro y modelo de «Facilitadores Judiciales». Primer compromiso con dos servicios líderes en la historia de los planes de acción de Chile.",
+   "contexto": "En concreto: que el sistema judicial se explique y se use mejor —información judicial en lenguaje claro, acciones locales y un modelo de «Facilitadores Judiciales» que ayudan a las personas a navegar la justicia. Es histórico: el primer compromiso de un plan chileno con dos servicios líderes a la vez (Corte Suprema y Defensoría Penal Pública). Está en el mapa porque abre el Poder Judicial a los estándares de gobierno abierto; el IRM 2025 le vio potencial de cambios profundos «de implementarse con mayor ambición y participación».",
+   "fuente_contexto": "Fichas 17 y 18 + 6° Plan, Actualización 2026 (texto oficial); aristas verificadas del grafo (inst-corte-suprema e inst-defensoria responsables de comp-05).",
    "responsable": "Corte Suprema – Defensoría Penal Pública",
    "estado_avance": "IRM 2025 (evaluación de diseño, anterior a la Actualización 2026): potencial de cambios profundos «de implementarse con mayor ambición y participación»",
    "avance_2026": null,
@@ -1407,6 +1577,8 @@
    "nombre": "Compromiso 6 — Plan para la transparencia y la innovación de la experiencia usuaria de instrumentos públicos CTCI («Laboratorio de Instrumentos»)",
    "alerta": null,
    "descripcion": "Diseñar e implementar una metodología cocreativa para evaluar la experiencia de las personas usuarias de los instrumentos públicos de Ciencia, Tecnología, Conocimiento e Innovación (CTCI).",
+   "contexto": "En concreto: evaluar con metodología cocreativa cómo le va a las personas que usan los instrumentos públicos de ciencia, tecnología, conocimiento e innovación —por ejemplo, quienes postulan a fondos concursables— para rediseñarlos según su experiencia real. Está en el mapa porque es gobierno abierto aplicado a la innovación: participación de usuarias y usuarios para mejorar servicios del Estado, liderado por MinCiencia (inst-minciencia). Según la Actualización 2026, la metodología se perfeccionó con el BID, hubo pilotajes en varias macrozonas del país y ya se realizó la consulta pública.",
+   "fuente_contexto": "Ficha 17 + 6° Plan, Actualización 2026 (texto oficial); arista verificada del grafo (inst-minciencia responsable_de comp-06).",
    "responsable": "Ministerio de Ciencia, Tecnología, Conocimiento e Innovación",
    "estado_avance": "Sin evaluación individual en la ficha IRM del acervo — por verificar",
    "avance_2026": "Metodología perfeccionada en conjunto con el BID y pilotajes en diversas macrozonas del país; consulta pública realizada.",
@@ -1423,6 +1595,8 @@
    "nombre": "Compromiso 7 — Formación de altas y altos directivos públicos en materia de Estado Abierto",
    "alerta": null,
    "descripcion": "Proporcionar a directivas y directivos del Sistema de Alta Dirección Pública herramientas y conocimientos para incorporar las materias de Estado Abierto en su gestión: transparencia gubernamental, participación ciudadana, rendición de cuentas, gobierno digital e innovación.",
+   "contexto": "En concreto: capacitar a las jefaturas superiores del Estado (el Sistema de Alta Dirección Pública de la Ley 20.955) en transparencia, participación ciudadana, rendición de cuentas y gobierno digital, para que el gobierno abierto dependa de la gestión y no solo de la norma. Está en el mapa porque conecta con la meta de instituciones eficaces (ODS 16.6): sin directivos formados, las obligaciones de transparencia no se ejecutan. Según la Actualización 2026, ya hay tres cursos virtualizados en el Campus del Servicio Civil (Innovación Pública; Participación Ciudadana y Rendición de Cuentas; Integridad y Ética Pública).",
+   "fuente_contexto": "Fichas 17 y 26 + 6° Plan, Actualización 2026 (texto oficial); arista verificada del grafo (ley-20955 da_soporte_a comp-07).",
    "responsable": "Dirección Nacional del Servicio Civil",
    "estado_avance": "Sin evaluación individual en la ficha IRM del acervo — por verificar",
    "avance_2026": "Actividades formativas 2024-2025 y tres cursos virtualizados en la plataforma Campus del Servicio Civil (Innovación Pública; Participación Ciudadana y Rendición de Cuentas; Integridad y Ética Pública).",
@@ -1439,6 +1613,8 @@
    "nombre": "Compromiso 8 — Mejoramiento de la atención municipal en el Registro Social de Hogares",
    "alerta": null,
    "descripcion": "Mejora continua de la atención ciudadana del Registro Social de Hogares mediante un «Plan Local de Mejora» anual en 5 componentes: organización de la atención, colaboradores, infraestructura y equipamiento, registro y retroalimentación, y procedimientos y protocolos.",
+   "contexto": "En concreto: mejorar cómo te atienden en la oficina municipal cuando pides o actualizas tu Registro Social de Hogares —la puerta de entrada a la mayoría de los beneficios sociales— mediante un «Plan Local de Mejora» anual con cinco componentes (organización, colaboradores, infraestructura, registro y retroalimentación, procedimientos). Está en el mapa porque es el compromiso más territorial del plan: opera comuna a comuna, sobre la base de la Ley 18.695 (municipalidades) y la Ley 19.418 (organizaciones vecinales). A diciembre de 2025, 13 municipios ya habían completado diagnósticos participativos en la «Etapa 1».",
+   "fuente_contexto": "Ficha 17 + 6° Plan, Actualización 2026 (texto oficial); aristas verificadas del grafo (ley-18695 y ley-19418 da_soporte_a comp-08).",
    "responsable": "Ministerio de Desarrollo Social y Familia, con municipios participantes",
    "estado_avance": "Sin evaluación individual en la ficha IRM del acervo — por verificar",
    "avance_2026": "13 municipios incorporados a la «Etapa 1», con diagnósticos participativos completados (a diciembre de 2025).",
@@ -1455,6 +1631,8 @@
    "nombre": "Compromiso 9 — Plan de Implementación Participativa del Acuerdo de Escazú (PIPE)",
    "alerta": null,
    "descripcion": "Desarrollar y poner en marcha el Plan de Implementación Participativa del Acuerdo de Escazú (PIPE) como hoja de ruta estratégica que fortalezca, desde el enfoque de gobierno abierto, los derechos de acceso a la información ambiental, la participación pública y la justicia ambiental.",
+   "contexto": "En concreto: la hoja de ruta para que Chile cumpla el Acuerdo de Escazú —que desde 2022 garantiza acceso a información ambiental, participación en decisiones y justicia ambiental— construida con participación de la propia ciudadanía. Está en el mapa porque amarra el tratado ambiental (escazu) con la ley de participación (Ley 20.500) y con trámites concretos como la participación ambiental en el SEA. Lo lidera el Ministerio del Medio Ambiente y el IRM 2025 lo destacó como uno de los tres compromisos con potencial sustancial.",
+   "fuente_contexto": "Fichas 8, 17, 18 y 32 + 6° Plan, Actualización 2026 (texto oficial); aristas verificadas del grafo (ley-20500 y escazu da_soporte_a comp-09).",
    "responsable": "Ministerio del Medio Ambiente",
    "estado_avance": "IRM 2025 (evaluación de diseño, anterior a la Actualización 2026): uno de los tres compromisos con potencial sustancial",
    "avance_2026": null,
@@ -1471,6 +1649,8 @@
    "nombre": "Compromiso 10 — Implementación del estándar FiTI para promover una mayor transparencia pesquera",
    "alerta": null,
    "descripcion": "Elevar los niveles de transparencia y participación multiactor en la gestión de los recursos marinos, adheriendo al estándar internacional FiTI, como respuesta a la necesidad histórica del sector —especialmente la pesca artesanal— de confianza en la toma de decisiones.",
+   "contexto": "En concreto: que el sector pesquero publique información clave de su gestión (permisos, cuotas, decisiones) bajo el estándar internacional FiTI, con participación de los propios actores —especialmente la pesca artesanal, que históricamente desconfía de cómo se toman las decisiones. Está en el mapa porque conecta la transparencia sectorial con el cuidado de los océanos (ODS 14) y lo lidera la Subsecretaría de Pesca (inst-subpesca). El IRM 2025 lo destacó como uno de los tres compromisos con potencial sustancial.",
+   "fuente_contexto": "Fichas 17 y 18 + 6° Plan, Actualización 2026 (texto oficial); aristas verificadas del grafo (inst-subpesca responsable_de comp-10; irm-2025 da_soporte_a ods-14).",
    "responsable": "Subsecretaría de Pesca y Acuicultura",
    "estado_avance": "IRM 2025 (evaluación de diseño, anterior a la Actualización 2026): uno de los tres compromisos con potencial sustancial",
    "avance_2026": null,
@@ -1487,6 +1667,8 @@
    "nombre": "Compromiso 11 — Fortalecimiento de la participación ciudadana en el Congreso Virtual",
    "alerta": null,
    "descripcion": "Disponer el chatbot de inteligencia artificial CAMINAR para facilitar la interacción de la ciudadanía con el proceso legislativo, de modo que sus opiniones sean consideradas como insumos por parlamentarios y equipos legislativos en la tramitación de proyectos de ley.",
+   "contexto": "En concreto: el chatbot con inteligencia artificial CAMINAR, del Congreso Virtual, para que cualquier persona pueda entender y opinar sobre proyectos de ley en tramitación, y que esas opiniones lleguen como insumo a parlamentarios y equipos legislativos. Está en el mapa porque es la primera vez que un plan chileno de Estado Abierto incluye un compromiso del Legislativo (Grupo Bicameral de Transparencia, inst-congreso). Según la Actualización 2026, el módulo de lenguaje claro ya está integrado en CAMINAR y los hitos 2 y 3 se replanificaron.",
+   "fuente_contexto": "Ficha 17 + 6° Plan, Actualización 2026 (texto oficial); arista verificada del grafo (inst-congreso responsable_de comp-11).",
    "responsable": "Grupo Bicameral de Transparencia, Congreso Nacional",
    "estado_avance": "Sin evaluación individual en la ficha IRM del acervo — por verificar",
    "avance_2026": "Hitos N° 2 y 3 modificados en la nueva planificación; el módulo de lenguaje claro ya se encuentra integrado en CAMINAR.",
@@ -1503,6 +1685,8 @@
    "nombre": "Compromiso 12 — Implementación y seguimiento de la Estrategia Nacional de Integridad Pública (ENIP)",
    "alerta": null,
    "descripcion": "Seguimiento de la Estrategia Nacional de Integridad Pública (ENIP): plan de acción con más de 200 medidas y la participación de más de 60 instituciones de distintos poderes del Estado, con fuerte componente de participación y cocreación. Compromiso nuevo, agregado en la Actualización de Medio Término 2026 a petición de representantes de la MNEA.",
+   "contexto": "En concreto: dar seguimiento a la ENIP, un plan de acción con más de 200 medidas y más de 60 instituciones de los distintos poderes del Estado para prevenir la corrupción, con participación y cocreación. Está en el mapa porque es el compromiso transversal anticorrupción del plan (ODS 16.5) y porque su historia muestra cómo funciona el modelo OGP: se agregó en la Actualización de Medio Término 2026 a petición de representantes de la Mesa Nacional de Estado Abierto (inst-mnea). Al ser nuevo, no fue evaluado por el IRM 2025.",
+   "fuente_contexto": "Ficha 17 + 6° Plan, Actualización 2026 (texto oficial); arista verificada del grafo (plan-6 complementa comp-12).",
    "responsable": "Comisión Asesora Presidencial para la Integridad Pública y Transparencia, MINSEGPRES",
    "estado_avance": "No evaluado por el IRM 2025 (agregado después, en la Actualización de Medio Término 2026)",
    "avance_2026": null,
@@ -1556,6 +1740,8 @@
    "alerta": null,
    "nota": null,
    "descripcion": "«Crear a todos los niveles instituciones eficaces y transparentes que rindan cuentas».",
+   "contexto": "En concreto: es la meta más poblada del mapa (24 normas conectadas). Significa que puedes pedir información y recibir respuesta en plazo (Ley 20.285 y su reglamento), que los trámites siguen procedimientos claros y electrónicos (Leyes 19.880, 21.180; D.S. 4/2020), que tus datos están protegidos (Leyes 19.628, 21.096 y 21.719), que hay un funcionariado profesional (Leyes 18.834 y 20.955) y que el desempeño se evalúa externamente (revisión IRM de OGP). También llega al territorio: municipalidades y gobiernos regionales (Leyes 18.695 y 19.175).",
+   "fuente_contexto": "Redacción propia a partir del grafo — aristas verificadas de fichas 1–14, 17, 18, 26, 27, 30, 33, 34, 36 y 38–40.",
    "fuente_descripcion": "Meta oficial ONU — Agenda 2030 (A/RES/70/1)",
    "pdf": "pdfs/agenda-2030-onu.pdf",
    "fuente_pdf": "ONU — Agenda 2030 (A/RES/70/1)",
@@ -1569,6 +1755,8 @@
    "alerta": null,
    "nota": null,
    "descripcion": "«Garantizar el acceso público a la información y proteger las libertades fundamentales, de conformidad con las leyes nacionales y los acuerdos internacionales».",
+   "contexto": "En concreto: la traducción chilena es directa —la Constitución garantiza el acceso a la información pública y la Ley 20.285 lo hace exigible con reclamo gratuito ante el CPLT; su reglamento (D.S. 13/2009) obliga a publicar de oficio y actualizar cada mes. La meta también cubre el otro lado de la confianza: proteger la privacidad (Leyes 19.628 y reforma constitucional 21.096). En lo ambiental, Escazú lo refuerza: información ambiental accesible como derecho.",
+   "fuente_contexto": "Redacción propia a partir del grafo — aristas verificadas de fichas 1, 2, 3, 5, 7 y 32.",
    "fuente_descripcion": "Meta oficial ONU — Agenda 2030 (A/RES/70/1)",
    "pdf": "pdfs/agenda-2030-onu.pdf",
    "fuente_pdf": "ONU — Agenda 2030 (A/RES/70/1)",
@@ -1582,6 +1770,8 @@
    "alerta": null,
    "nota": null,
    "descripcion": "Objetivo 16: «Promover sociedades pacíficas e inclusivas para el desarrollo sostenible, facilitar el acceso a la justicia para todos y construir a todos los niveles instituciones eficaces e inclusivas que rindan cuentas». El acervo también remite a la meta 16.a (fortalecer las instituciones nacionales pertinentes para prevenir la violencia y combatir el terrorismo y la delincuencia).",
+   "contexto": "En concreto: es el paraguas de este mapa —sin instituciones que rindan cuentas, ningún otro objetivo de la Agenda 2030 avanza (por eso se le llama «objetivo habilitante»). En Chile se traduce en leyes concretas que puedes usar: pedir información (Ley 20.285), exigir un Estado digital coordinado (Ley 21.658) y participar en decisiones ambientales (Acuerdo de Escazú). Chile además se comprometió internacionalmente por esta vía: la Declaración Conjunta OGP 2030 vincula gobierno abierto y Agenda 2030 con el ODS 16 como ancla.",
+   "fuente_contexto": "Redacción propia a partir del grafo — aristas verificadas de fichas 2, 11, 29 y 32.",
    "fuente_descripcion": "Meta oficial ONU — Agenda 2030 (A/RES/70/1)",
    "pdf": "pdfs/agenda-2030-onu.pdf",
    "fuente_pdf": "ONU — Agenda 2030 (A/RES/70/1)",
@@ -1595,6 +1785,8 @@
    "alerta": null,
    "nota": null,
    "descripcion": "Objetivo 9: «Construir infraestructuras resilientes, promover la industrialización inclusiva y sostenible y fomentar la innovación». En el acervo aparece como infraestructura digital del Estado y de confianza digital (fichas 10, 11, 12, 14 y 22).",
+   "contexto": "En concreto, en este mapa el ODS 9 es la infraestructura digital del Estado: la Ley 21.180 ordena la transformación digital de los trámites, la Ley 21.658 crea quien la coordina (Secretaría de Gobierno Digital), el D.S. 4/2020 la aterriza en procedimientos electrónicos, la firma electrónica (Ley 19.799) da confianza digital y la Ley Marco de Ciberseguridad (21.663) con su reglamento (D.S. 295/2025) la hace resiliente. Sin esa base no hay acceso en línea a la información ni servicios digitales confiables.",
+   "fuente_contexto": "Redacción propia a partir del grafo — aristas verificadas de fichas 4, 10, 11, 12, 14, 22 y 40.",
    "fuente_descripcion": "Meta oficial ONU — Agenda 2030 (A/RES/70/1)",
    "pdf": "pdfs/agenda-2030-onu.pdf",
    "fuente_pdf": "ONU — Agenda 2030 (A/RES/70/1)",
@@ -1608,6 +1800,8 @@
    "alerta": null,
    "nota": null,
    "descripcion": "«Garantizar la adopción en todos los niveles de decisiones inclusivas, participativas y representativas que respondan a las necesidades».",
+   "contexto": "En concreto: que las decisiones públicas no se tomen a puerta cerrada —cuentas públicas participativas, consultas ciudadanas y consejos de la sociedad civil (COSOC) obligatorios por la Ley 20.500; juntas de vecinos con personalidad jurídica (Ley 19.418); y el deber general de la Administración de permitir participación en la definición de políticas (Ley 18.575, LOCBAS). Está en el mapa porque es la base legal de la ruta «participar» de las guías ciudadanas.",
+   "fuente_contexto": "Redacción propia a partir del grafo — aristas verificadas de fichas 8, 16 y 33; guía 02 (C y E.1).",
    "fuente_descripcion": "Meta oficial ONU — Agenda 2030 (A/RES/70/1)",
    "pdf": "pdfs/agenda-2030-onu.pdf",
    "fuente_pdf": "ONU — Agenda 2030 (A/RES/70/1)",
@@ -1621,6 +1815,8 @@
    "alerta": null,
    "nota": null,
    "descripcion": "«Fomentar y promover la constitución de alianzas eficaces en las esferas pública, público-privada y de la sociedad civil, aprovechando la experiencia y las estrategias de obtención de recursos de las alianzas». Citada por la ficha-08 (COSOC de la Ley 20.500).",
+   "contexto": "En concreto: institucionalizar la colaboración —en Chile los COSOC de la Ley 20.500 son la alianza permanente entre cada órgano público y las organizaciones de la sociedad civil (ficha 8). En el mismo espíritu, la Mesa Nacional de Estado Abierto (inst-mnea) es el foro multiactor que cocreó el 6° Plan: gobierno y sociedad civil sentados en la misma mesa. Está en el mapa porque el modelo OGP completo descansa en este tipo de alianzas.",
+   "fuente_contexto": "Redacción propia a partir del grafo — arista verificada de ficha 8 (COSOC); rol de la MNEA según ficha 17 (nodo inst-mnea del grafo).",
    "fuente_descripcion": "Meta oficial ONU — Agenda 2030 (A/RES/70/1)",
    "pdf": "pdfs/agenda-2030-onu.pdf",
    "fuente_pdf": "ONU — Agenda 2030 (A/RES/70/1)",
@@ -1634,6 +1830,8 @@
    "alerta": null,
    "nota": null,
    "descripcion": "«Reducir considerablemente la corrupción y el soborno en todas sus formas».",
+   "contexto": "En concreto: el sistema chileno anticorrupción por capas —lobby registrado y público (Ley 20.730), compras públicas transparentes (Leyes 19.886 y 21.634), protección legal a quien denuncia (Leyes 21.592 y 20.205) y declaraciones públicas de intereses y patrimonio (Ley 20.880)—, más compromisos internacionales (Convención Interamericana; la carta con que Chile pidió ingresar a OGP en 2011 ya anticipaba estas metas). Está en el mapa porque cada una de esas normas es una herramienta que la ciudadanía puede activar: revisar registros, denunciar, fiscalizar.",
+   "fuente_contexto": "Redacción propia a partir del grafo — aristas verificadas de fichas 9, 19, 23, 24, 25, 31, 36 y 37.",
    "fuente_descripcion": "Meta oficial ONU — Agenda 2030 (A/RES/70/1)",
    "pdf": "pdfs/agenda-2030-onu.pdf",
    "fuente_pdf": "ONU — Agenda 2030 (A/RES/70/1)",
@@ -1647,6 +1845,8 @@
    "alerta": null,
    "nota": null,
    "descripcion": "Objetivo 10: «Reducir la desigualdad en y entre los países». El acervo lo cita a nivel de objetivo (sin meta específica): las fichas 12 y 13 lo vinculan con la protección de usuarios sin conectividad y el acompañamiento a usuarios vulnerables en la transición digital.",
+   "contexto": "En el acervo se cita solo a nivel de objetivo: aparece en las normas de transición digital del Estado —el D.S. 4/2020 protege con excepciones a quienes no tienen conectividad (pueden seguir tramitando en papel) y el DFL 1/2020 fija fases graduales para acompañar a usuarios vulnerables. Ojo: la meta específica 10.2 (inclusión social, económica y política de todas las personas) no consta en la data del proyecto y se muestra en la app como «por verificar» desde la Beta 0.4 — no hay contexto afirmativo disponible para esa meta fina.",
+   "fuente_contexto": "Redacción propia a partir del grafo — aristas verificadas de fichas 12 y 13; marca «por verificar» de la meta 10.2 según CHANGELOG del proyecto y `js/vista-internacional.js` (verificado 09-10-2026).",
    "fuente_descripcion": "Meta oficial ONU — Agenda 2030 (A/RES/70/1)",
    "pdf": "pdfs/agenda-2030-onu.pdf",
    "fuente_pdf": "ONU — Agenda 2030 (A/RES/70/1)",
@@ -1660,6 +1860,8 @@
    "alerta": null,
    "nota": null,
    "descripcion": "Objetivo 11: «Lograr que las ciudades y los asentamientos humanos sean inclusivos, seguros, resilientes y sostenibles». En el acervo: gobernanza local participativa (fichas 15 y 34) y continuidad de servicios esenciales (ficha-14).",
+   "contexto": "En concreto, en el mapa aparece por dos vías: la gobernanza local participativa —municipalidades con audiencias, COSOC y plebiscitos comunales (Ley 18.695) y gobiernos regionales con participación comunitaria y consejos electos (Ley 19.175)— y la continuidad de los servicios esenciales (agua, salud, energía) protegida por la Ley Marco de Ciberseguridad (21.663). Es el ODS que conecta el gobierno abierto con el lugar donde vives.",
+   "fuente_contexto": "Redacción propia a partir del grafo — aristas verificadas de fichas 14, 15 y 34.",
    "fuente_descripcion": "Meta oficial ONU — Agenda 2030 (A/RES/70/1)",
    "pdf": "pdfs/agenda-2030-onu.pdf",
    "fuente_pdf": "ONU — Agenda 2030 (A/RES/70/1)",
@@ -1673,6 +1875,8 @@
    "alerta": null,
    "nota": null,
    "descripcion": "«De aquí a 2030, aumentar la urbanización inclusiva y sostenible y la capacidad para la planificación y la gestión participativas, integradas y sostenibles de los asentamientos humanos en todos los países». Citada por las fichas 15 y 16 (participación en la planificación urbana y territorial).",
+   "contexto": "En concreto: la participación vecinal en la planificación del territorio tiene base legal en Chile —el concejo municipal y sus audiencias públicas (Ley 18.695) y las juntas de vecinos y organizaciones comunitarias (Ley 19.418), que cualquier grupo de personas puede constituir con requisitos mínimos y cercanía territorial. Está en el mapa porque es la meta que amarra la participación al espacio físico de la comuna.",
+   "fuente_contexto": "Redacción propia a partir del grafo — aristas verificadas de fichas 15 y 16.",
    "fuente_descripcion": "Meta oficial ONU — Agenda 2030 (A/RES/70/1)",
    "pdf": "pdfs/agenda-2030-onu.pdf",
    "fuente_pdf": "ONU — Agenda 2030 (A/RES/70/1)",
@@ -1686,6 +1890,8 @@
    "alerta": null,
    "nota": null,
    "descripcion": "Objetivo 13: «Adoptar medidas urgentes para combatir el cambio climático y sus efectos». En el acervo: compromiso 1 del 6° Plan (información científica climática) y valoración IRM de los compromisos climáticos (fichas 17 y 18).",
+   "contexto": "En concreto: el mapa lo ancla al compromiso 1 del 6° Plan —la plataforma de información científica sobre cambio climático liderada por MinCiencia— y a la mirada del IRM, que valoró los compromisos climáticos del plan (Escazú, clima y pesca). La idea de fondo: sin información abierta sobre el clima no hay políticas públicas ni decisiones locales informadas.",
+   "fuente_contexto": "Redacción propia a partir del grafo — arista verificada de ficha 17 (plan-6 da_soporte_a ods-13); valoración IRM según ficha 18.",
    "fuente_descripcion": "Meta oficial ONU — Agenda 2030 (A/RES/70/1)",
    "pdf": "pdfs/agenda-2030-onu.pdf",
    "fuente_pdf": "ONU — Agenda 2030 (A/RES/70/1)",
@@ -1699,6 +1905,8 @@
    "alerta": null,
    "nota": null,
    "descripcion": "Objetivo 5: «Lograr la igualdad entre los géneros y empoderar a todas las mujeres y las niñas». Citado por la ficha-17: perspectiva de género declarada en el proceso de cocreación del 6° Plan.",
+   "contexto": "En el acervo aparece como criterio transversal, no como norma propia: la ficha 17 registra que el proceso de cocreación del 6° Plan declaró explícitamente perspectiva de género, un patrón que la CEPAL observa en toda la región. Está en el mapa para hacer visible ese compromiso de diseño del ciclo OGP chileno; no hay en el acervo una norma chilena adicional que lo opere directamente.",
+   "fuente_contexto": "Redacción propia a partir del grafo — arista verificada de ficha 17 (plan-6 da_soporte_a ods-5).",
    "fuente_descripcion": "Meta oficial ONU — Agenda 2030 (A/RES/70/1)",
    "pdf": "pdfs/agenda-2030-onu.pdf",
    "fuente_pdf": "ONU — Agenda 2030 (A/RES/70/1)",
@@ -1712,6 +1920,8 @@
    "alerta": null,
    "nota": null,
    "descripcion": "Objetivo 14: «Conservar y utilizar en forma sostenible los océanos, los mares y los recursos marinos para el desarrollo sostenible». En el acervo: compromiso 10 (estándar FiTI de transparencia pesquera), valorado por el IRM (ficha-18).",
+   "contexto": "En concreto: el mapa lo conecta con el compromiso 10 del 6° Plan —adherir al estándar internacional FiTI para transparentar la gestión pesquera (SUBPESCA)—, una respuesta a la desconfianza histórica del sector, especialmente de la pesca artesanal. El IRM valoró estos compromisos pesqueros y climáticos en su revisión 2025. La lógica: océanos bien gobernados necesitan información pública y participación multiactor.",
+   "fuente_contexto": "Redacción propia a partir del grafo — arista verificada de ficha 18 (irm-2025 da_soporte_a ods-14); compromiso 10 según ficha 17.",
    "fuente_descripcion": "Meta oficial ONU — Agenda 2030 (A/RES/70/1)",
    "pdf": "pdfs/agenda-2030-onu.pdf",
    "fuente_pdf": "ONU — Agenda 2030 (A/RES/70/1)",
@@ -1725,6 +1935,8 @@
    "alerta": null,
    "nota": null,
    "descripcion": "Objetivo 12: «Garantizar modalidades de consumo y producción sostenibles». Citado por la ficha-19: compras públicas sustentables y economía circular.",
+   "contexto": "En concreto: el Estado es el mayor comprador del país y puede empujar mercados sostenibles —la ficha 19 registra que la Ley 19.886 incorpora compras públicas sustentables y economía circular. Está en el mapa porque conecta la contratación pública (ruta «contratar» de las guías) con la sostenibilidad: cada licitación es también una decisión ambiental.",
+   "fuente_contexto": "Redacción propia a partir del grafo — arista verificada de ficha 19 (ley-19886 da_soporte_a ods-12).",
    "fuente_descripcion": "Meta oficial ONU — Agenda 2030 (A/RES/70/1)",
    "pdf": "pdfs/agenda-2030-onu.pdf",
    "fuente_pdf": "ONU — Agenda 2030 (A/RES/70/1)",
@@ -1738,6 +1950,8 @@
    "alerta": null,
    "nota": null,
    "descripcion": "«De aquí a 2030, reducir significativamente las corrientes financieras y de armas ilícitas, fortalecer la recuperación y devolución de los activos robados y luchar contra todas las formas de delincuencia organizada».",
+   "contexto": "En concreto: perseguir el dinero de la corrupción —que las empresas respondan penalmente por cohecho o lavado (Ley 20.393), que los delitos económicos tengan tipos y sanciones modernizados (Ley 21.595) y que Chile coopere internacionalmente para recuperar activos (Convención de Mérida y Convención Interamericana). Está en el mapa porque es la cara punitiva del sistema de integridad: en la ruta «denunciar» de las guías, estos delitos se investigan por vía penal ante el Ministerio Público.",
+   "fuente_contexto": "Redacción propia a partir del grafo — aristas verificadas de fichas 20, 21, 30 y 35; ruta penal según guía 03 (D y E.1).",
    "fuente_descripcion": "Meta oficial ONU — Agenda 2030 (A/RES/70/1)",
    "pdf": "pdfs/agenda-2030-onu.pdf",
    "fuente_pdf": "ONU — Agenda 2030 (A/RES/70/1)",
@@ -1751,6 +1965,8 @@
    "alerta": null,
    "nota": null,
    "descripcion": "«Promover prácticas de adquisición pública que sean sostenibles, de conformidad con las políticas y prioridades nacionales». Citada por la ficha-23 (Ley 21.634, modernización de compras públicas).",
+   "contexto": "En concreto: la Ley 21.634 modernizó las compras públicas incorporando sustentabilidad y economía circular como criterios, y el D.S. 661/2024 (su reglamento) los hace exigibles con gasto público trazable. Está en el mapa porque es la meta fina del ODS 12 aplicada al Estado: que comprar bien también signifique comprar sostenible.",
+   "fuente_contexto": "Redacción propia a partir del grafo — aristas verificadas de fichas 23 y 39.",
    "fuente_descripcion": "Meta oficial ONU — Agenda 2030 (A/RES/70/1)",
    "pdf": "pdfs/agenda-2030-onu.pdf",
    "fuente_pdf": "ONU — Agenda 2030 (A/RES/70/1)",
@@ -1764,6 +1980,8 @@
    "alerta": null,
    "nota": null,
    "descripcion": "«Para 2030, reducir sustancialmente el número de muertes y enfermedades producidas por productos químicos peligrosos y la contaminación del aire, el agua y el suelo». Citada por la ficha-32 (Escazú) como meta del sujeto ambiental.",
+   "contexto": "En el acervo llega por vía ambiental: la ficha 32 la cita como meta del sujeto ambiental del Acuerdo de Escazú —el derecho a información, participación y justicia ambiental protege la salud frente a la contaminación del aire, el agua y el suelo. En la práctica chilena, eso se ejerce por ejemplo con observaciones ciudadanas en la evaluación ambiental de proyectos (guía 02, E.5).",
+   "fuente_contexto": "Redacción propia a partir del grafo — arista verificada de ficha 32 (escazu da_soporte_a ods-3-9); participación ambiental según guía 02 (E.5).",
    "fuente_descripcion": "Meta oficial ONU — Agenda 2030 (A/RES/70/1)",
    "pdf": "pdfs/agenda-2030-onu.pdf",
    "fuente_pdf": "ONU — Agenda 2030 (A/RES/70/1)",
@@ -1777,6 +1995,7 @@
    "tipo": "complementa",
    "evidencia": "legitima la Ley 20.285",
    "ficha_evidencia": 1,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1785,6 +2004,7 @@
    "tipo": "complementa",
    "evidencia": "su reglamento (D.S. 13/2009)",
    "ficha_evidencia": 1,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1793,6 +2013,7 @@
    "tipo": "complementa",
    "evidencia": "la Ley 20.730 (lobby",
    "ficha_evidencia": 1,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1801,6 +2022,7 @@
    "tipo": "complementa",
    "evidencia": "la Ley 19.628/21.719",
    "ficha_evidencia": 1,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1809,6 +2031,7 @@
    "tipo": "complementa",
    "evidencia": "la Ley 19.628/21.719",
    "ficha_evidencia": 1,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1817,6 +2040,7 @@
    "tipo": "complementa",
    "evidencia": "la Ley 20.500 (participación)",
    "ficha_evidencia": 1,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1825,6 +2049,7 @@
    "tipo": "desarrolla_reglamenta",
    "evidencia": "Se desarrolla reglamentariamente en el D.S. 13/2009",
    "ficha_evidencia": 2,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1833,6 +2058,7 @@
    "tipo": "complementa",
    "evidencia": "se apoya procedimentalmente en la Ley 19.880",
    "ficha_evidencia": 2,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1841,6 +2067,7 @@
    "tipo": "complementa",
    "evidencia": "se complementa con la Ley 20.730",
    "ficha_evidencia": 2,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1849,6 +2076,7 @@
    "tipo": "complementa",
    "evidencia": "se limita por la Ley 19.628/21.719",
    "ficha_evidencia": 2,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1857,6 +2085,7 @@
    "tipo": "complementa",
    "evidencia": "se limita por la Ley 19.628/21.719",
    "ficha_evidencia": 2,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1865,6 +2094,7 @@
    "tipo": "opera",
    "evidencia": "Consejo para la Transparencia (arts. 31°–44°)",
    "ficha_evidencia": 2,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1873,6 +2103,7 @@
    "tipo": "desarrolla_reglamenta",
    "evidencia": "Es la pieza de ejecución de la Ley 20.285",
    "ficha_evidencia": 3,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1881,6 +2112,7 @@
    "tipo": "complementa",
    "evidencia": "remite a la Ley 19.880 para notificaciones",
    "ficha_evidencia": 3,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1889,6 +2121,7 @@
    "tipo": "opera",
    "evidencia": "el Consejo para la Transparencia ha ido actualizando los estándares",
    "ficha_evidencia": 3,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1897,6 +2130,7 @@
    "tipo": "complementa",
    "evidencia": "Es el soporte procesal de la Ley 20.285",
    "ficha_evidencia": 4,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1905,6 +2139,7 @@
    "tipo": "complementa",
    "evidencia": "Límite material de la Ley 20.285",
    "ficha_evidencia": 5,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1913,6 +2148,7 @@
    "tipo": "opera",
    "evidencia": "Remite reclamaciones por datos publicados al Consejo para la Transparencia",
    "ficha_evidencia": 5,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1921,6 +2157,7 @@
    "tipo": "modifica",
    "evidencia": "Sustituye la Ley 19.628",
    "ficha_evidencia": 6,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1929,6 +2166,7 @@
    "tipo": "complementa",
    "evidencia": "Es el fundamento constitucional de la Ley 19.628 (hoy en vigencia) y de la Ley 21.719",
    "ficha_evidencia": 7,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1937,6 +2175,7 @@
    "tipo": "complementa",
    "evidencia": "Es el fundamento constitucional de la Ley 19.628 (hoy en vigencia) y de la Ley 21.719",
    "ficha_evidencia": 7,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1945,6 +2184,7 @@
    "tipo": "complementa",
    "evidencia": "opera como límite actualizado de la Ley 20.285",
    "ficha_evidencia": 6,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1953,6 +2193,7 @@
    "tipo": "complementa",
    "evidencia": "condiciona la Ley 21.180",
    "ficha_evidencia": 6,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1961,6 +2202,7 @@
    "tipo": "complementa",
    "evidencia": "Complementa la Ley 21.663",
    "ficha_evidencia": 6,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1969,6 +2211,7 @@
    "tipo": "complementa",
    "evidencia": "Complementa la Ley 20.285",
    "ficha_evidencia": 8,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1977,6 +2220,7 @@
    "tipo": "complementa",
    "evidencia": "se apoya en la Ley 19.880 para los procedimientos",
    "ficha_evidencia": 8,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1985,6 +2229,7 @@
    "tipo": "complementa",
    "evidencia": "se vincula con la Ley 19.418",
    "ficha_evidencia": 8,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -1993,6 +2238,7 @@
    "tipo": "complementa",
    "evidencia": "complementa la Ley 20.285 (transparencia de actos)",
    "ficha_evidencia": 9,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2001,6 +2247,7 @@
    "tipo": "opera",
    "evidencia": "el Consejo para la Transparencia ejerce atribuciones interpretativas",
    "ficha_evidencia": 9,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2009,6 +2256,7 @@
    "tipo": "da_soporte_a",
    "evidencia": "Incluida en el capítulo de datos abiertos de los planes OGP",
    "ficha_evidencia": 9,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2017,6 +2265,7 @@
    "tipo": "modifica",
    "evidencia": "Modifica directamente la Ley 19.880",
    "ficha_evidencia": 10,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2025,6 +2274,7 @@
    "tipo": "desarrolla_reglamenta",
    "evidencia": "Es el reglamento directo de la Ley 21.180",
    "ficha_evidencia": 12,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2033,6 +2283,7 @@
    "tipo": "complementa",
    "evidencia": "Es el complemento temporal de la Ley 21.180 y del D.S. 4",
    "ficha_evidencia": 13,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2041,6 +2292,7 @@
    "tipo": "opera",
    "evidencia": "la Ley 21.658 crea la Secretaría de Gobierno Digital que coordina su implementación",
    "ficha_evidencia": 10,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2049,6 +2301,7 @@
    "tipo": "complementa",
    "evidencia": "Es la institucionalización operativa de la Ley 21.180",
    "ficha_evidencia": 11,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2057,6 +2310,7 @@
    "tipo": "opera",
    "evidencia": "la Ley 21.658 crea la Secretaría de Gobierno Digital",
    "ficha_evidencia": 10,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2065,6 +2319,7 @@
    "tipo": "opera",
    "evidencia": "coordina con la Agencia Nacional de Ciberseguridad (Ley 21.663)",
    "ficha_evidencia": 11,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2073,6 +2328,7 @@
    "tipo": "complementa",
    "evidencia": "opera sobre los procedimientos de la Ley 19.880",
    "ficha_evidencia": 12,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2081,6 +2337,7 @@
    "tipo": "complementa",
    "evidencia": "su aplicación concreta depende del calendario del DFL 1",
    "ficha_evidencia": 12,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2089,6 +2346,7 @@
    "tipo": "opera",
    "evidencia": "las plataformas que regula son operadas por la Secretaría de Gobierno Digital",
    "ficha_evidencia": 12,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2097,6 +2355,7 @@
    "tipo": "complementa",
    "evidencia": "deben cumplir los requisitos de seguridad de la Ley 21.663",
    "ficha_evidencia": 12,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2105,6 +2364,7 @@
    "tipo": "opera",
    "evidencia": "Su ejecución es monitoreada por la Secretaría de Gobierno Digital",
    "ficha_evidencia": 13,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2113,6 +2373,7 @@
    "tipo": "complementa",
    "evidencia": "la Ley 21.658 coordina las plataformas, y la 21.663 protege",
    "ficha_evidencia": 14,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2121,6 +2382,7 @@
    "tipo": "complementa",
    "evidencia": "Debe armonizar con la protección de datos personales (Leyes 19.628 y 21.719)",
    "ficha_evidencia": 14,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2129,6 +2391,7 @@
    "tipo": "complementa",
    "evidencia": "Debe armonizar con la protección de datos personales (Leyes 19.628 y 21.719)",
    "ficha_evidencia": 14,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2137,6 +2400,7 @@
    "tipo": "complementa",
    "evidencia": "La Ley 20.285 sufre su límite más citado",
    "ficha_evidencia": 14,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2145,6 +2409,7 @@
    "tipo": "da_soporte_a",
    "evidencia": "usa como base legal",
    "ficha_evidencia": 17,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2153,6 +2418,7 @@
    "tipo": "da_soporte_a",
    "evidencia": "la Ley 21.180/21.658 (plataformas y gobierno digital)",
    "ficha_evidencia": 17,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2161,6 +2427,7 @@
    "tipo": "da_soporte_a",
    "evidencia": "la Ley 21.180/21.658 (plataformas y gobierno digital)",
    "ficha_evidencia": 17,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2169,6 +2436,7 @@
    "tipo": "da_soporte_a",
    "evidencia": "la Ley 20.500 (participación, compromiso 9)",
    "ficha_evidencia": 17,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2177,6 +2445,7 @@
    "tipo": "da_soporte_a",
    "evidencia": "remite a la Ley 21.663 en seguridad",
    "ficha_evidencia": 17,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2185,6 +2454,7 @@
    "tipo": "da_soporte_a",
    "evidencia": "La Ley 18.695/19.418 (Grupo D) aparecen en el compromiso 8",
    "ficha_evidencia": 17,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2193,6 +2463,7 @@
    "tipo": "da_soporte_a",
    "evidencia": "La Ley 18.695/19.418 (Grupo D) aparecen en el compromiso 8",
    "ficha_evidencia": 17,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2201,6 +2472,7 @@
    "tipo": "da_soporte_a",
    "evidencia": "la Ley 20.500 (participación, compromiso 9)",
    "ficha_evidencia": 17,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2209,6 +2481,7 @@
    "tipo": "opera",
    "evidencia": "el primer plan cocreado bajo la dirección de la Mesa Nacional de Estado Abierto (MNEA)",
    "ficha_evidencia": 17,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2217,6 +2490,7 @@
    "tipo": "opera",
    "evidencia": "1 del Judicial y 1 de la Contraloría General de la República",
    "ficha_evidencia": 17,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2225,6 +2499,7 @@
    "tipo": "opera",
    "evidencia": "justicia abierta (Corte Suprema + Defensoría Penal)",
    "ficha_evidencia": 17,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2233,6 +2508,7 @@
    "tipo": "opera",
    "evidencia": "justicia abierta (Corte Suprema + Defensoría Penal)",
    "ficha_evidencia": 17,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2241,6 +2517,7 @@
    "tipo": "opera",
    "evidencia": "1 del Legislativo (Grupo Bicameral de Transparencia)",
    "ficha_evidencia": 17,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2249,6 +2526,7 @@
    "tipo": "opera",
    "evidencia": "Hoja de ruta cuatrienal de Chile ante la Alianza para el Gobierno Abierto (OGP)",
    "ficha_evidencia": 17,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2257,6 +2535,7 @@
    "tipo": "complementa",
    "evidencia": "agrega el compromiso 12",
    "ficha_evidencia": 17,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2265,6 +2544,7 @@
    "tipo": "complementa",
    "evidencia": "Evalúa el plan que, a su vez, opera sobre el marco legal",
    "ficha_evidencia": 18,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2273,6 +2553,7 @@
    "tipo": "opera",
    "evidencia": "el mecanismo IRM de OGP",
    "ficha_evidencia": 30,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2281,6 +2562,7 @@
    "tipo": "complementa",
    "evidencia": "Puente temporal entre la carta OGP 2011 y los planes de acción",
    "ficha_evidencia": 28,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2289,6 +2571,7 @@
    "tipo": "complementa",
    "evidencia": "antecede al 6° Plan (ficha 17)",
    "ficha_evidencia": 28,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2297,6 +2580,7 @@
    "tipo": "complementa",
    "evidencia": "sus mandatos de datos abiertos encuentran desarrollo legal posterior en la Ley 21.180",
    "ficha_evidencia": 28,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2305,6 +2589,7 @@
    "tipo": "complementa",
    "evidencia": "la institucionalidad de la Ley 21.658",
    "ficha_evidencia": 28,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2313,6 +2598,7 @@
    "tipo": "complementa",
    "evidencia": "El art. 3° aparece en el Instructivo Presidencial 005/2012",
    "ficha_evidencia": 33,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2321,6 +2607,7 @@
    "tipo": "complementa",
    "evidencia": "Se complementa con la Ley 20.500",
    "ficha_evidencia": 15,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2329,6 +2616,7 @@
    "tipo": "complementa",
    "evidencia": "las municipalidades son sujetos obligados",
    "ficha_evidencia": 15,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2337,6 +2625,7 @@
    "tipo": "complementa",
    "evidencia": "la Ley 19.418 (organizaciones comunitarias que nutren el COSOC)",
    "ficha_evidencia": 15,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2345,6 +2634,7 @@
    "tipo": "se_aplica_a",
    "evidencia": "Nivel municipal y territorial (subunidad 2.5)",
    "ficha_evidencia": 15,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2353,6 +2643,7 @@
    "tipo": "complementa",
    "evidencia": "Son integrantes naturales del COSOC municipal (Leyes 20.500 art. 75 y 18.695)",
    "ficha_evidencia": 16,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2361,6 +2652,7 @@
    "tipo": "complementa",
    "evidencia": "Leyes 20.500 art. 75 y 18.695",
    "ficha_evidencia": 16,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2369,6 +2661,7 @@
    "tipo": "opera",
    "evidencia": "Ley 21.487/2022, con Registro Civil",
    "ficha_evidencia": 16,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2377,6 +2670,7 @@
    "tipo": "se_aplica_a",
    "evidencia": "Nivel municipal y territorial (subunidad 2.5)",
    "ficha_evidencia": 16,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2385,6 +2679,7 @@
    "tipo": "complementa",
    "evidencia": "Remite expresamente a la Ley 18.575",
    "ficha_evidencia": 34,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2393,6 +2688,7 @@
    "tipo": "complementa",
    "evidencia": "se aplica con la 20.285",
    "ficha_evidencia": 34,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2401,6 +2697,7 @@
    "tipo": "complementa",
    "evidencia": "la 20.500 (ficha 6: consejos de la sociedad civil en el FNDR)",
    "ficha_evidencia": 34,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2409,6 +2706,7 @@
    "tipo": "se_aplica_a",
    "evidencia": "Gobierno y Administración Regional",
    "ficha_evidencia": 34,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2417,6 +2715,7 @@
    "tipo": "complementa",
    "evidencia": "El 6° Plan de Estado Abierto (ficha 17) incluye compromisos subnacionales",
    "ficha_evidencia": 34,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2425,6 +2724,7 @@
    "tipo": "complementa",
    "evidencia": "Ley 20.730 (lobby) es el candado lateral",
    "ficha_evidencia": 19,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2433,6 +2733,7 @@
    "tipo": "complementa",
    "evidencia": "Conecta con 21.595/20.393 (responsabilidad penal por cohecho en contratación)",
    "ficha_evidencia": 19,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2441,6 +2742,7 @@
    "tipo": "complementa",
    "evidencia": "Conecta con 21.595/20.393 (responsabilidad penal por cohecho en contratación)",
    "ficha_evidencia": 19,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2449,6 +2751,7 @@
    "tipo": "complementa",
    "evidencia": "con la Ley 20.285 (transparencia de los órganos compradores)",
    "ficha_evidencia": 19,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2457,6 +2760,7 @@
    "tipo": "da_soporte_a",
    "evidencia": "El compromiso 2 del 6° Plan es directamente sobre esta ley",
    "ficha_evidencia": 19,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2465,6 +2769,7 @@
    "tipo": "complementa",
    "evidencia": "Complementa la Ley 21.595",
    "ficha_evidencia": 20,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2473,6 +2778,7 @@
    "tipo": "complementa",
    "evidencia": "se activa en contratación pública (19.886/21.634)",
    "ficha_evidencia": 20,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2481,6 +2787,7 @@
    "tipo": "complementa",
    "evidencia": "se activa en contratación pública (19.886/21.634)",
    "ficha_evidencia": 20,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2489,6 +2796,7 @@
    "tipo": "complementa",
    "evidencia": "se vincula a la Ley 20.730",
    "ficha_evidencia": 20,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2497,6 +2805,7 @@
    "tipo": "da_soporte_a",
    "evidencia": "El compromiso 2 del 6° Plan",
    "ficha_evidencia": 20,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2505,6 +2814,7 @@
    "tipo": "complementa",
    "evidencia": "Se lee en trilogía con 20.393",
    "ficha_evidencia": 21,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2513,6 +2823,7 @@
    "tipo": "complementa",
    "evidencia": "19.886/21.634 (donde ocurre la corrupción contractual)",
    "ficha_evidencia": 21,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2521,6 +2832,7 @@
    "tipo": "complementa",
    "evidencia": "19.886/21.634 (donde ocurre la corrupción contractual)",
    "ficha_evidencia": 21,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2529,6 +2841,7 @@
    "tipo": "complementa",
    "evidencia": "el lobby (20.730) es la puerta de entrada típica",
    "ficha_evidencia": 21,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2537,6 +2850,7 @@
    "tipo": "complementa",
    "evidencia": "la 20.285 permite rastrear los actos",
    "ficha_evidencia": 21,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2545,6 +2859,7 @@
    "tipo": "complementa",
    "evidencia": "la equivalencia funcional del art. 16 bis de la 19.880",
    "ficha_evidencia": 22,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2553,6 +2868,7 @@
    "tipo": "complementa",
    "evidencia": "el D.S. 4 regula el uso de firma en plataformas",
    "ficha_evidencia": 22,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2561,6 +2877,7 @@
    "tipo": "complementa",
    "evidencia": "la 21.658 moderniza su institucionalidad",
    "ficha_evidencia": 22,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2569,6 +2886,7 @@
    "tipo": "complementa",
    "evidencia": "sostiene la validez de declaraciones y transacciones en Mercado Público (19.886)",
    "ficha_evidencia": 22,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2577,6 +2895,7 @@
    "tipo": "modifica",
    "evidencia": "Modifica directamente la 19.886",
    "ficha_evidencia": 23,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2585,6 +2904,7 @@
    "tipo": "opera",
    "evidencia": "opera sobre Mercado Público",
    "ficha_evidencia": 23,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2593,6 +2913,7 @@
    "tipo": "complementa",
    "evidencia": "se activa con la 21.595/20.393",
    "ficha_evidencia": 23,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2601,6 +2922,7 @@
    "tipo": "complementa",
    "evidencia": "se activa con la 21.595/20.393",
    "ficha_evidencia": 23,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2609,6 +2931,7 @@
    "tipo": "complementa",
    "evidencia": "la 20.730 (lobby en compras)",
    "ficha_evidencia": 23,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2617,6 +2940,7 @@
    "tipo": "complementa",
    "evidencia": "la 20.880 (declaraciones de intereses",
    "ficha_evidencia": 23,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2625,6 +2949,7 @@
    "tipo": "complementa",
    "evidencia": "Complementa la 20.205",
    "ficha_evidencia": 24,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2633,6 +2958,7 @@
    "tipo": "complementa",
    "evidencia": "articula con la 21.634 (canal de denuncias reservadas de ChileCompra)",
    "ficha_evidencia": 24,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2641,6 +2967,7 @@
    "tipo": "opera",
    "evidencia": "canal de denuncias reservadas de ChileCompra",
    "ficha_evidencia": 24,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2649,6 +2976,7 @@
    "tipo": "complementa",
    "evidencia": "con la 19.886/20.730",
    "ficha_evidencia": 24,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2657,6 +2985,7 @@
    "tipo": "complementa",
    "evidencia": "con la 19.886/20.730",
    "ficha_evidencia": 24,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2665,6 +2994,7 @@
    "tipo": "complementa",
    "evidencia": "Las sanciones llegan por vía de la 21.595",
    "ficha_evidencia": 24,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2673,6 +3003,7 @@
    "tipo": "complementa",
    "evidencia": "el sistema disciplinario del Estatuto Administrativo (18.834",
    "ficha_evidencia": 24,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2681,6 +3012,7 @@
    "tipo": "complementa",
    "evidencia": "Opera dentro del Estatuto Administrativo",
    "ficha_evidencia": 25,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2689,6 +3021,7 @@
    "tipo": "complementa",
    "evidencia": "hoy se lee junto a la 21.592",
    "ficha_evidencia": 25,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2697,6 +3030,7 @@
    "tipo": "complementa",
    "evidencia": "los hechos que el funcionario debe denunciar remiten a la 21.595",
    "ficha_evidencia": 25,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2705,6 +3039,7 @@
    "tipo": "complementa",
    "evidencia": "a la 18.575 (Ley de Probidad",
    "ficha_evidencia": 25,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2713,6 +3048,7 @@
    "tipo": "complementa",
    "evidencia": "articula la 20.880 (declaraciones de intereses/patrimonio)",
    "ficha_evidencia": 26,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2721,6 +3057,7 @@
    "tipo": "complementa",
    "evidencia": "es puente con la 21.658",
    "ficha_evidencia": 26,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2729,6 +3066,7 @@
    "tipo": "complementa",
    "evidencia": "Complementa al Estatuto Administrativo",
    "ficha_evidencia": 26,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2737,6 +3075,7 @@
    "tipo": "da_soporte_a",
    "evidencia": "el compromiso 7 del 6° Plan (formación de altos directivos en Estado Abierto)",
    "ficha_evidencia": 26,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2745,6 +3084,7 @@
    "tipo": "complementa",
    "evidencia": "Es el cuerpo donde operan la 20.205",
    "ficha_evidencia": 27,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2753,6 +3093,7 @@
    "tipo": "complementa",
    "evidencia": "dialoga con la 21.592",
    "ficha_evidencia": 27,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2761,6 +3102,7 @@
    "tipo": "complementa",
    "evidencia": "los deberes de probidad remiten a la Ley 18.575",
    "ficha_evidencia": 27,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2769,6 +3111,7 @@
    "tipo": "complementa",
    "evidencia": "el nivel de alta dirección lo regula el sistema ADP (19.882/20.955",
    "ficha_evidencia": 27,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2777,6 +3120,7 @@
    "tipo": "opera",
    "evidencia": "el sistema disciplinario se conecta con el canal de la Contraloría (21.592)",
    "ficha_evidencia": 27,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2785,6 +3129,7 @@
    "tipo": "complementa",
    "evidencia": "Es citada expresamente por la 20.285",
    "ficha_evidencia": 33,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2793,6 +3138,7 @@
    "tipo": "complementa",
    "evidencia": "la 19.880 (ficha 3: transparencia del procedimiento)",
    "ficha_evidencia": 33,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2801,6 +3147,7 @@
    "tipo": "complementa",
    "evidencia": "la LOCGR 19.175 (ficha 34",
    "ficha_evidencia": 33,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2809,6 +3156,7 @@
    "tipo": "desarrolla_reglamenta",
    "evidencia": "Desarrolla el Título III de la LOCBAS 18.575",
    "ficha_evidencia": 36,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2817,6 +3165,7 @@
    "tipo": "complementa",
    "evidencia": "se articula con la 20.955",
    "ficha_evidencia": 36,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2825,6 +3174,7 @@
    "tipo": "complementa",
    "evidencia": "con la 19.799 (ficha 22bis, firma electrónica",
    "ficha_evidencia": 36,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2833,6 +3183,7 @@
    "tipo": "opera",
    "evidencia": "firma electrónica del sistema DIP de la Contraloría",
    "ficha_evidencia": 36,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2841,6 +3192,7 @@
    "tipo": "complementa",
    "evidencia": "dialoga con la 21.180",
    "ficha_evidencia": 36,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2849,6 +3201,7 @@
    "tipo": "complementa",
    "evidencia": "la 21.719 (ficha 13, protección de datos",
    "ficha_evidencia": 36,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2857,6 +3210,7 @@
    "tipo": "da_soporte_a",
    "evidencia": "Cumple estándares de la Convención Interamericana",
    "ficha_evidencia": 36,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2865,6 +3219,7 @@
    "tipo": "da_soporte_a",
    "evidencia": "UNCAC (ficha 30, art. 8)",
    "ficha_evidencia": 36,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2873,6 +3228,7 @@
    "tipo": "complementa",
    "evidencia": "Antecede y enmarca la carta de intención de Chile (2011)",
    "ficha_evidencia": 29,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2881,6 +3237,7 @@
    "tipo": "complementa",
    "evidencia": "los seis planes de acción (ficha 17)",
    "ficha_evidencia": 29,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2889,6 +3246,7 @@
    "tipo": "complementa",
    "evidencia": "sus compromisos de datos abiertos se materializan en la Ley 20.285",
    "ficha_evidencia": 29,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2897,6 +3255,7 @@
    "tipo": "complementa",
    "evidencia": "el Instructivo 005 (ficha 28)",
    "ficha_evidencia": 29,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2905,6 +3264,7 @@
    "tipo": "complementa",
    "evidencia": "la participación ODS remite a la Ley 20.500",
    "ficha_evidencia": 29,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2913,6 +3273,7 @@
    "tipo": "da_soporte_a",
    "evidencia": "sin UNCAC no hay 20.393",
    "ficha_evidencia": 30,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2921,6 +3282,7 @@
    "tipo": "complementa",
    "evidencia": "sin su capítulo de sociedad civil, la Ley 20.285 pierde contexto",
    "ficha_evidencia": 30,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2929,6 +3291,7 @@
    "tipo": "complementa",
    "evidencia": "La revisión entre pares es el ancestro del mecanismo IRM de OGP",
    "ficha_evidencia": 30,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2937,6 +3300,7 @@
    "tipo": "complementa",
    "evidencia": "es el espejo americano de la UNCAC",
    "ficha_evidencia": 31,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2945,6 +3309,7 @@
    "tipo": "complementa",
    "evidencia": "Complementa la ficha 31 (texto OEA del tratado)",
    "ficha_evidencia": 35,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2953,6 +3318,7 @@
    "tipo": "da_soporte_a",
    "evidencia": "Base internacional de la línea de probidad nacional: Ley 20.880",
    "ficha_evidencia": 35,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2961,6 +3327,7 @@
    "tipo": "da_soporte_a",
    "evidencia": "Ley 19.886 (ficha 19, contratación pública)",
    "ficha_evidencia": 35,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2969,6 +3336,7 @@
    "tipo": "da_soporte_a",
    "evidencia": "Ley 20.393 (ficha 20",
    "ficha_evidencia": 35,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2977,6 +3345,7 @@
    "tipo": "da_soporte_a",
    "evidencia": "protección al denunciante, deuda del Art. III.7",
    "ficha_evidencia": 35,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2985,6 +3354,7 @@
    "tipo": "complementa",
    "evidencia": "La Ley 20.730 de lobby (ficha 9) responde también a las recomendaciones MESICIC",
    "ficha_evidencia": 35,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -2993,6 +3363,7 @@
    "tipo": "da_soporte_a",
    "evidencia": "Compromiso 9 del 6° Plan",
    "ficha_evidencia": 32,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3001,6 +3372,7 @@
    "tipo": "complementa",
    "evidencia": "se sirve de la Ley 20.285",
    "ficha_evidencia": 32,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3009,6 +3381,7 @@
    "tipo": "complementa",
    "evidencia": "20.500 (participación)",
    "ficha_evidencia": 32,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3017,6 +3390,7 @@
    "tipo": "complementa",
    "evidencia": "dialoga con la Ley 18.695 en planificación territorial",
    "ficha_evidencia": 32,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3025,6 +3399,7 @@
    "tipo": "complementa",
    "evidencia": "Documento de origen del grupo C completo (Instructivo 005/2012",
    "ficha_evidencia": 37,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3033,6 +3408,7 @@
    "tipo": "complementa",
    "evidencia": "planes de acción, fichas 17-19",
    "ficha_evidencia": 37,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3041,6 +3417,7 @@
    "tipo": "complementa",
    "evidencia": "con la Declaración Conjunta 2015 (ficha 29)",
    "ficha_evidencia": 37,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3049,6 +3426,7 @@
    "tipo": "complementa",
    "evidencia": "infraestructura normada luego por las Leyes 21.180/21.658",
    "ficha_evidencia": 37,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3057,6 +3435,7 @@
    "tipo": "complementa",
    "evidencia": "infraestructura normada luego por las Leyes 21.180/21.658",
    "ficha_evidencia": 37,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3065,6 +3444,7 @@
    "tipo": "opera",
    "evidencia": "Carta de Intención de Chile para unirse a la Alianza",
    "ficha_evidencia": 37,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3073,6 +3453,7 @@
    "tipo": "desarrolla_reglamenta",
    "evidencia": "Reglamenta los procedimientos de la Declaración de Intereses y Patrimonio (DIP) de la Ley 20.880",
    "ficha_evidencia": 38,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3081,6 +3462,7 @@
    "tipo": "complementa",
    "evidencia": "se articula con 19.799 (ficha 22, firma/sistema electrónico)",
    "ficha_evidencia": 38,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3089,6 +3471,7 @@
    "tipo": "desarrolla_reglamenta",
    "evidencia": "Aprueba el nuevo Reglamento de la Ley de Compras Públicas",
    "ficha_evidencia": 39,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3097,6 +3480,7 @@
    "tipo": "desarrolla_reglamenta",
    "evidencia": "Reglamenta la 19.886 según 21.634",
    "ficha_evidencia": 39,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3105,6 +3489,7 @@
    "tipo": "opera",
    "evidencia": "opera sobre Mercado Público (nodo inst-chilecompra)",
    "ficha_evidencia": 39,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3113,6 +3498,7 @@
    "tipo": "da_soporte_a",
    "evidencia": "El compromiso 2 del 6° Plan (datos abiertos en compras, ficha 17) se implementa sobre esta base",
    "ficha_evidencia": 39,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3121,6 +3507,7 @@
    "tipo": "desarrolla_reglamenta",
    "evidencia": "Reglamenta la Ley 21.663 (ficha 14)",
    "ficha_evidencia": 40,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3129,6 +3516,7 @@
    "tipo": "opera",
    "evidencia": "opera con la ANCI (nodo inst-anci",
    "ficha_evidencia": 40,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3137,6 +3525,7 @@
    "tipo": "complementa",
    "evidencia": "Complementa al D.S. 4/2020 (ficha 12)",
    "ficha_evidencia": 40,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3145,6 +3534,7 @@
    "tipo": "complementa",
    "evidencia": "y 21.719 (ficha 6: las brechas de datos personales reportables a la futura Agencia)",
    "ficha_evidencia": 40,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3153,6 +3543,7 @@
    "tipo": "complementa",
    "evidencia": "se articula con 21.180/21.658 (fichas 10-11",
    "ficha_evidencia": 40,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3161,6 +3552,7 @@
    "tipo": "se_aplica_a",
    "evidencia": "Región: Metropolitana de Santiago (comuna de Peñalolén)",
    "ficha_evidencia": 101,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3169,6 +3561,7 @@
    "tipo": "se_aplica_a",
    "evidencia": "Región: Metropolitana de Santiago (comuna de Maipú)",
    "ficha_evidencia": 102,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3177,6 +3570,7 @@
    "tipo": "se_aplica_a",
    "evidencia": "Región: Metropolitana de Santiago (comuna de San Joaquín)",
    "ficha_evidencia": 103,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3185,6 +3579,7 @@
    "tipo": "se_aplica_a",
    "evidencia": "Región: Metropolitana de Santiago (comuna de Renca)",
    "ficha_evidencia": 104,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3193,6 +3588,7 @@
    "tipo": "se_aplica_a",
    "evidencia": "Región: Biobío (comuna de Concepción)",
    "ficha_evidencia": 106,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3201,6 +3597,7 @@
    "tipo": "se_aplica_a",
    "evidencia": "Región: Metropolitana de Santiago",
    "ficha_evidencia": 105,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3209,6 +3606,7 @@
    "tipo": "responsable_de",
    "evidencia": "I Plan de Acción de Gobierno Abierto, Municipalidad de Peñalolén 2021–2024",
    "ficha_evidencia": 101,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3217,6 +3615,7 @@
    "tipo": "responsable_de",
    "evidencia": "Plan de Acción – Maipú, Chile, 2023–2024",
    "ficha_evidencia": 102,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3225,6 +3624,7 @@
    "tipo": "responsable_de",
    "evidencia": "Primer Plan de Gobierno Abierto de San Joaquín (2023, implementación 2024)",
    "ficha_evidencia": 103,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3233,6 +3633,7 @@
    "tipo": "responsable_de",
    "evidencia": "Primer Plan de Acción Comunal de Gobierno Abierto de Chile (2019–2021)",
    "ficha_evidencia": 104,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3241,6 +3642,7 @@
    "tipo": "responsable_de",
    "evidencia": "I Plan de Acción de Gobierno Abierto Santiago 2026–2028",
    "ficha_evidencia": 105,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3249,6 +3651,7 @@
    "tipo": "responsable_de",
    "evidencia": "I Plan de Acción de Gobierno Abierto de Concepción (2026)",
    "ficha_evidencia": 106,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3257,6 +3660,7 @@
    "tipo": "opera",
    "evidencia": "en co-liderazgo con la Ilustre Municipalidad de Renca",
    "ficha_evidencia": 105,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {
@@ -3265,6 +3669,151 @@
    "tipo": "opera",
    "evidencia": "liderados por el Departamento de Modernización, Planificación Estratégica y Control de Gestión del GORE junto a la I. Municipalidad de Renca",
    "ficha_evidencia": 105,
+   "fuente_evidencia": null,
+   "verificada": true
+  },
+  {
+   "origen": "ley-20393",
+   "destino": "inst-minpublico",
+   "tipo": "opera",
+   "evidencia": "la investigación depende de capacidades del Ministerio Público",
+   "ficha_evidencia": 20,
+   "fuente_evidencia": null,
+   "verificada": true
+  },
+  {
+   "origen": "ley-21595",
+   "destino": "inst-minpublico",
+   "tipo": "opera",
+   "evidencia": "Vía penal (Fiscalía / Denuncia Seguro): cualquier delito (robos, tráfico, delitos económicos, corrupción como cohecho o malversación)",
+   "ficha_evidencia": 203,
+   "fuente_evidencia": "Guía 03 «Denunciar» (verificada 19-10-2026)",
+   "verificada": true
+  },
+  {
+   "origen": "ley-20205",
+   "destino": "inst-minpublico",
+   "tipo": "opera",
+   "evidencia": "Denunciar ante el Ministerio Público o ante la policía si no hubiere fiscalía en el lugar en que el funcionario presta servicios, con la debida prontitud, los crímenes o simples delitos",
+   "ficha_evidencia": 25,
+   "fuente_evidencia": null,
+   "verificada": true
+  },
+  {
+   "origen": "ley-19886",
+   "destino": "inst-minpublico",
+   "tipo": "opera",
+   "evidencia": "si hay posibles delitos o infracciones a la libre competencia, al Ministerio Público o a la FNE en 3 días hábiles (arts. 30 bis y 30 ter, Ley 19.886)",
+   "ficha_evidencia": 204,
+   "fuente_evidencia": "Guía 04 «Contratar con el Estado» (verificada 19-10-2026)",
+   "verificada": true
+  },
+  {
+   "origen": "inst-subprevencion",
+   "destino": "inst-minpublico",
+   "tipo": "complementa",
+   "evidencia": "Si la información es suficiente, el programa formaliza la denuncia ante el Ministerio Público y las policías",
+   "ficha_evidencia": 203,
+   "fuente_evidencia": "Guía 03 «Denunciar» (verificada 19-10-2026)",
+   "verificada": true
+  },
+  {
+   "origen": "ley-19886",
+   "destino": "inst-tcp",
+   "tipo": "opera",
+   "evidencia": "Créase un tribunal, denominado \"Tribunal de Contratación Pública\", que tendrá su asiento en Santiago",
+   "ficha_evidencia": 319,
+   "fuente_evidencia": "Ley 19.886, texto oficial (extracto del PDF del acervo)",
+   "verificada": true
+  },
+  {
+   "origen": "escazu",
+   "destino": "inst-sea",
+   "tipo": "se_aplica_a",
+   "evidencia": "información ambiental, participación pública en la toma de decisiones ambientales y acceso a la justicia en asuntos ambientales",
+   "ficha_evidencia": 32,
+   "fuente_evidencia": null,
+   "verificada": true
+  },
+  {
+   "origen": "ley-20500",
+   "destino": "inst-sea",
+   "tipo": "da_soporte_a",
+   "evidencia": "Administra la participación ciudadana en la evaluación ambiental de proyectos (Portal Ciudadano)",
+   "ficha_evidencia": 202,
+   "fuente_evidencia": "Guía 02 «Participar» (verificada 19-10-2026)",
+   "verificada": true
+  },
+  {
+   "origen": "ley-18695",
+   "destino": "inst-servel",
+   "tipo": "opera",
+   "evidencia": "certificación que expedirá el Director Regional del Servicio Electoral",
+   "ficha_evidencia": 315,
+   "fuente_evidencia": "Ley 18.695, texto oficial (extracto del PDF del acervo)",
+   "verificada": true
+  },
+  {
+   "origen": "ds-661-2024",
+   "destino": "inst-fne",
+   "tipo": "opera",
+   "evidencia": "la Dirección de Compras remitirá en el plazo de tres días hábiles los antecedentes al Ministerio Público o a la Fiscalía Nacional Económica, según corresponda",
+   "ficha_evidencia": 339,
+   "fuente_evidencia": "D.S. 661/2024, texto oficial (extracto del PDF del acervo)",
+   "verificada": true
+  },
+  {
+   "origen": "ley-19886",
+   "destino": "inst-fne",
+   "tipo": "opera",
+   "evidencia": "al Ministerio Público o a la FNE en 3 días hábiles",
+   "ficha_evidencia": 204,
+   "fuente_evidencia": "Guía 04 «Contratar con el Estado» (verificada 19-10-2026)",
+   "verificada": true
+  },
+  {
+   "origen": "inst-chilecompra",
+   "destino": "inst-fne",
+   "tipo": "da_soporte_a",
+   "evidencia": "Si hay indicios, deriva al organismo competente: Ministerio Público (delitos), FNE (libre competencia), CGR (probidad/legalidad), UAF (lavado)",
+   "ficha_evidencia": 204,
+   "fuente_evidencia": "Guía 04 «Contratar con el Estado» (verificada 19-10-2026)",
+   "verificada": true
+  },
+  {
+   "origen": "ley-20285",
+   "destino": "inst-corte-apelaciones",
+   "tipo": "opera",
+   "evidencia": "contra la denegatoria del Consejo, reclamo de ilegalidad ante la Corte de Apelaciones",
+   "ficha_evidencia": 2,
+   "fuente_evidencia": null,
+   "verificada": true
+  },
+  {
+   "origen": "ley-21719",
+   "destino": "inst-corte-apelaciones",
+   "tipo": "opera",
+   "evidencia": "podrán deducir un reclamo de ilegalidad ante la Corte de Apelaciones de Santiago o la del lugar donde se encuentre domiciliado el reclamante, a elección de este último",
+   "ficha_evidencia": 306,
+   "fuente_evidencia": "Ley 21.719, texto oficial (extracto del PDF del acervo)",
+   "verificada": true
+  },
+  {
+   "origen": "ley-19886",
+   "destino": "inst-corte-apelaciones",
+   "tipo": "opera",
+   "evidencia": "el que será conocido por la Corte de Apelaciones de Santiago",
+   "ficha_evidencia": 319,
+   "fuente_evidencia": "Ley 19.886, texto oficial (extracto del PDF del acervo)",
+   "verificada": true
+  },
+  {
+   "origen": "ley-21719",
+   "destino": "inst-apdp",
+   "tipo": "opera",
+   "evidencia": "Agencia de Protección de Datos Personales: autoridad administrativa autónoma, técnica y especializada, con facultades de fiscalización, instruir sumarios e imponer sanciones",
+   "ficha_evidencia": 6,
+   "fuente_evidencia": null,
    "verificada": true
   },
   {

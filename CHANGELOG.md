@@ -3,6 +3,47 @@
 Versión para público general del [Mapa del Sistema](https://github.com/bedeberna-debug/mapa-del-sistema).
 Numeración alineada con la app hermana; cada versión consume la misma data compilada.
 
+## Beta 0.10 — 8 nodos institucionales + contextos de horizontes + portales verificados (21-10-2026)
+- **8 nodos institucionales nuevos** (98 → **106 nodos**, 310 → **326 aristas**), con
+  textos TEXTUALES del dossier `plataforma/data-guias/98-nodos-nuevos.md`: Ministerio
+  Público (Fiscalía de Chile), Subsecretaría de Prevención del Delito (Denuncia Seguro
+  *4242), Tribunal de Contratación Pública, Servicio de Evaluación Ambiental, Servicio
+  Electoral, Fiscalía Nacional Económica, Cortes de Apelaciones (nodo de rol) y Agencia
+  de Protección de Datos Personales (con su alerta «en implementación» textual).
+- **16 aristas nuevas** (las 17 propuestas menos una, ver abajo), con las convenciones
+  y justificaciones del dossier y la regla dura de evidencia intacta: cada cita fue
+  verificada literal contra las fichas del acervo, las guías 01–04 o los extractos de
+  los PDFs oficiales (estos dos últimos entran al compilador como fuentes de evidencia,
+  sin generar nodos). La arista de SERVEL es tipo `opera` (decisión del equipo, coherente
+  con la convención norma → institución del grafo).
+- **Corrección del ancla FNE:** la conexión FNE–ChileCompra se ancla en el **art. 21**
+  del D.S. 661/2024 (y el acceso directo en el art. 13), no en el art. 19 como decía el
+  brief: contra el PDF oficial, el art. 19 regula el contenido de la denuncia.
+  `97-nodos-candidatos.md` ya registra la corrección.
+- **Arista omitida:** ley-20730 → Cortes de Apelaciones (#16 del dossier) **no se creó**:
+  su ancla es el art. 24 del *Reglamento* de la Ley 20.730, que no es nodo del grafo.
+  Queda anotada como candidata futura en el dossier 98.
+- **Contexto en los 29 nodos horizonte** (12 compromisos del 6° Plan + 17 objetivos/metas
+  ODS): campos nuevos `contexto` y `fuente_contexto`, textuales del dossier
+  `enriquecimiento-contextos.md` (sección A). El panel los muestra bajo la descripción,
+  con su fuente en la línea de evidencia. La cifra «24 normas conectadas» del contexto
+  de ODS 16.6 se verificó contra el grafo compilado: **calza exacta (24)**, sin ajuste.
+- **Portales oficiales:** campo nuevo `portal_url` en 24 instituciones (solo las
+  `verificado_ok` del chequeo HTTP del 21-10-2026, sección B del dossier) y botón
+  **"Visitar portal oficial"** en el panel (enlace externo, `rel=noopener`).
+  ⚠️ se mantienen visibles como nota, sin botón: `inst-mnea` (sin portal propio en el
+  acervo), `inst-corte-suprema` e `inst-corte-apelaciones` (pjud.cl no responde al
+  21-10-2026 — rechequeo pendiente), `inst-apdp` (agenciadeprotecciondedatos.gob.cl no
+  resuelve DNS — rechequeo pendiente) y el bloqueo anti-bots (HTTP 403) del portal de
+  San Joaquín (consta verificado en el directorio oficial CPLT).
+- Sincronización con la versión Estudio: `grafo.json` y `meta.json` idénticos en ambas
+  apps, verificados por hash SHA-256 (mismo procedimiento que Beta 0.6). La interfaz de
+  la versión Estudio no se tocó.
+- Cifras de la tarjeta 03 de la portada y de `landing-v2.md` actualizadas (106 nodos /
+  326 conexiones); recursos de `index.html` a `?v=093`.
+- Única modificación de código: `js/panel.js` (render de `contexto` + botón de portal).
+  No se tocaron colores del grafo, tokens compartidos ni la nota metodológica.
+
 ## Beta 0.9.2 — Jerarquía de títulos y scrollbar de navegación (20-10-2026)
 - **Subtítulos de sección en cobre rojizo** (`--tv-cobre`) en todas las vistas: los apartados de
   las guías ("En síntesis", "Ante quién: las instituciones clave", "Lo que la ley les exige",

@@ -3,8 +3,8 @@
    grilla numerada 01–07), con la gramática visual "Territorio Vivo"
    (clases tv- de css/territorio-vivo.css).
 
-   Cifras re-verificadas el 20-10-2026 contra la data compilada:
-   - grafo.json: 98 nodos / 310 aristas ✓ (tarjeta 03)
+   Cifras re-verificadas el 21-10-2026 contra la data compilada (Beta 0.10):
+   - grafo.json: 106 nodos / 326 aristas ✓ (tarjeta 03)
    - portales-municipios.json: 345 municipalidades ✓ (tarjeta 02)
    - subnacional.json: 1 gobierno regional + 5 municipalidades (NO 3+3 como
      decía el borrador de landing-v2.md: tarjeta 02 corregida y avisada).
@@ -16,7 +16,7 @@ const Landing = {
     { num: '02', titulo: 'Tu comuna', href: '#/tu-comuna',
       texto: 'Quiénes aplican planes de Gobierno Abierto en los territorios: un gobierno regional y cinco municipalidades, con sus compromisos, informes y plataformas. Incluye un directorio de los portales de transparencia de las 345 municipalidades del país.' },
     { num: '03', titulo: 'Mapa / Relaciones', href: '#/relaciones',
-      texto: 'Un grafo interactivo con 98 nodos y 310 conexiones: leyes, reglamentos, tratados, planes, instituciones y objetivos de desarrollo sostenible, y cómo se sostienen entre sí. Toca cualquier punto para ver qué es, por qué importa y dónde leerlo.' },
+      texto: 'Un grafo interactivo con 106 nodos y 326 conexiones: leyes, reglamentos, tratados, planes, instituciones y objetivos de desarrollo sostenible, y cómo se sostienen entre sí. Toca cualquier punto para ver qué es, por qué importa y dónde leerlo.' },
     { num: '04', titulo: 'Temas', href: '#/temas',
       texto: 'El sistema explicado por materias: transparencia y acceso a la información, participación ciudadana, integridad y probidad, transformación digital y datos personales. Cada tema con sus normas, explicación en lenguaje simple y conexión al resto del sistema.' },
     { num: '05', titulo: 'Tiempo', href: '#/tiempo',
